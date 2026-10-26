@@ -1,0 +1,35 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+build/
+dist/
+
+# ---- 打包 / 运行产物 ----
+runtime/
+release-portable/
+release_v*/
+*.zip
+*.exe
+*.dll
+*.log
+*.pid
+.server_pid
+*.local
+.dev/
+
+# ---- 前端 ----
+node_modules/
+app/dist/
+app/node_modules/
+app/src-tauri/target/
+app/src-tauri/gen/
+
+# ---- 工具 / 编辑器 ----
+.workbuddy/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

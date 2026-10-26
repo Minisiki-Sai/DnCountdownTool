@@ -1,0 +1,15 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>History damage regression</title><div id="app"></div><script type="module">
+import { createApp, ref, h } from 'vue';
+import HistoryDamageOverview from '/src/components/HistoryDamageOverview.vue';
+import '/src/styles.css';
+const skill = { skill_id:'1', name:'测试技能', damage:100, hits:2, cast_count:1, critical_hits:1, critical_samples:2, share:1, healing:0 };
+const member = (id, job) => ({source_id:String(id), ordinal:id, name:`${id} · ${job}`, job, damage:100, dps:10, hits:2, critical_rate:.5,
+  skills:[skill], skills_attributed:[skill], skills_unattributed:[{...skill,name:'未归因技能'}],
+  damage_series:[[0,0],[1,100],[2,0],[10,100]],
+  realizations:[{skill:'测试技能',hit_boss_rate:125.5,multiplier_boss_rate:null,landed_casts:1}],
+  boss_rows:[{id:'0',name:'测试Boss',damage:200,personalDamage:100,ranges:[{start:1,end:10}]}]});
+const a = {v:1,selected:1,elapsed_seconds:15,total_damage:200,members:[member(1,'冰灵'),member(2,'火舞')],damage_series:[[0,0],[1,200],[10,200]],boss_hp_curves:[],death_reports:[]};
+const archive=ref(a);
+window.setOldArchive=()=>{archive.value={v:1,selected:1,elapsed_seconds:15,total_damage:200,team:a.members,player:a.members[0],targets:[]};};
+createApp({setup:()=>()=>h(HistoryDamageOverview,{archive:archive.value})}).mount('#app');
+</script></html>

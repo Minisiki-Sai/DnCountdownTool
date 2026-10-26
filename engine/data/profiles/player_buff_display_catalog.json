@@ -1,0 +1,261 @@
+{
+  "schema_version": 1,
+  "buffs": [
+    {
+      "skill": "生还之息",
+      "category": "攻击增益",
+      "display": "物攻 +20%"
+    },
+    {
+      "skill": "高地人",
+      "scope": "team",
+      "category": "保命增益",
+      "display": "60秒内触发15秒保命"
+    },
+    {
+      "skill": "盾挡",
+      "category": "防御增益",
+      "display": "格挡 14次"
+    },
+    {
+      "skill": "神圣之锤",
+      "category": "追加伤害",
+      "display": "普攻追加光魔法伤害"
+    },
+    {
+      "skill": "时间加速",
+      "scope": "team",
+      "category": "冷却增益",
+      "display": "技能CD -70%"
+    },
+    {
+      "skill": "星云锁链",
+      "category": "减伤增益",
+      "display": "物理/魔法减伤 14%"
+    },
+    {
+      "skill": "心理感觉",
+      "category": "攻击增益",
+      "display": "物攻 +10%"
+    },
+    {
+      "skill": "铁布衫",
+      "category": "减伤增益",
+      "display": "减伤 75%、超级盔甲"
+    },
+    {
+      "skill": "生理感觉",
+      "category": "攻击增益",
+      "display": "物攻 +10%"
+    },
+    {
+      "skill": "神秘冥想",
+      "category": "资源恢复",
+      "display": "MP消耗 -20%、每2秒恢复0.8% MP",
+      "scope": "team"
+    },
+    {
+      "skill": "幽灵守卫",
+      "category": "防御增益",
+      "display": "超级盔甲、22%伤害转MP（消耗 -60%）"
+    },
+    {
+      "skill": "钢铁之轮",
+      "category": "减伤增益",
+      "display": "物理/魔法减伤 20%"
+    },
+    {
+      "skill": "突袭",
+      "scope": "team",
+      "category": "追加伤害",
+      "display": "暴击追加伤害 10%"
+    },
+    {
+      "skill": "冲锋怒吼",
+      "scope": "team",
+      "category": "防御增益",
+      "display": "物理/魔法减伤 15%、超级盔甲"
+    },
+    {
+      "skill": "奇迹之手",
+      "scope": "team",
+      "category": "减伤增益",
+      "display": "物理/魔法减伤 70%、清除异常"
+    },
+    {
+      "skill": "精神爆发",
+      "scope": "team",
+      "category": "速度/冷却",
+      "display": "团队移速/动作速度 +40%、技能CD -40%；施法者物攻 +10~25%"
+    },
+    {
+      "skill": "治愈之手",
+      "category": "治疗/减伤",
+      "display": "每2秒治疗、施法者减伤 20%"
+    },
+    {
+      "skill": "范围炸弹",
+      "scope": "team",
+      "effect_providers": ["毁灭者"],
+      "category": "护盾增益",
+      "display": "护盾：16000 + 最大HP 12%"
+    },
+    {
+      "skill": "演出时间",
+      "category": "冷却/恢复",
+      "display": "被动技能CD -90%、每2秒恢复5% MP"
+    },
+    {
+      "skill": "痊愈之手",
+      "category": "属性攻击",
+      "display": "光攻 +24%"
+    },
+    {
+      "skill": "阿兹那之息",
+      "category": "属性攻击",
+      "display": "光/暗攻 +7%"
+    },
+    {
+      "skill": "牺牲",
+      "scope": "team",
+      "provider": "药剂师",
+      "category": "减伤增益",
+      "display": "物理/魔法减伤 21%"
+    },
+    {
+      "skill": "特制强化药剂",
+      "scope": "team",
+      "provider": "药剂师",
+      "category": "攻击增益",
+      "display": "物攻/魔攻 +12%"
+    },
+    {
+      "skill": "查克拉治愈术",
+      "category": "攻击增益",
+      "display": "物攻/魔攻 +30%"
+    },
+    {
+      "skill": "无情打击",
+      "category": "攻击增益",
+      "display": "物攻/魔攻 +18%"
+    },
+    {
+      "skill": "元素光环",
+      "category": "属性攻击/抗性",
+      "display": "火/水攻 +24%，火/水抗 +30%"
+    },
+    {
+      "skill": "判定光环",
+      "category": "属性攻击/抗性",
+      "display": "光攻 +25%，光抗 +20%"
+    },
+    {
+      "skill": "激增灵魂",
+      "category": "攻击增益",
+      "display": "魔攻提升（按技能等级）"
+    },
+    {
+      "skill": "九天之舞2阶",
+      "scope": "team",
+      "category": "条件增伤",
+      "display": "敌人每损失1%生命，额外伤害 +0.9%（最多45%，约40%等效）"
+    },
+    {
+      "skill": "奉献乌鸦",
+      "scope": "team",
+      "category": "条件增伤",
+      "display": "Boss生命高于30%时，按当前生命提供额外伤害"
+    },
+    {
+      "skill": "暗淡消逝",
+      "scope": "personal",
+      "category": "攻击增益",
+      "display": "物攻/魔攻 +35%"
+    },
+    {
+      "skill": "幽灵复仇者",
+      "scope": "personal",
+      "category": "速度/冷却",
+      "display": "动作速度 +30%、技能CD -30%"
+    },
+    {
+      "skill": "致残惩罚者",
+      "scope": "personal",
+      "category": "速度增益",
+      "display": "动作速度 +30%"
+    },
+    {
+      "skill": "幻影凝视",
+      "scope": "personal",
+      "category": "速度增益",
+      "display": "精神舞蹈系列动作速度 +15%"
+    },
+    {
+      "skill": "弗里兹科",
+      "scope": "personal",
+      "category": "致命增益",
+      "display": "刀锋舞蹈系列致命 +30%"
+    },
+    {
+      "skill": "地狱火海",
+      "scope": "personal",
+      "provider": "元素",
+      "category": "技能强化",
+      "display": "10秒内火球伤害 +50%，首个目标额外 +15%"
+    },
+    {
+      "skill": "灼热火焰",
+      "scope": "team",
+      "provider": "元素",
+      "category": "速度/冷却",
+      "display": "团队移速/动作速度 +40%、技能CD -40%",
+      "cast_duration_from_skill_table": true,
+      "skill_table_fallback_level": 15,
+      "skill_table_fallback_max_required_level": 80
+    },
+    {
+      "skill": "火焰光环",
+      "scope": "team",
+      "provider": "元素",
+      "category": "属性攻击",
+      "display": "团队火攻 +5~13%（按等级）"
+    },
+    {
+      "skill": "寒冰光环",
+      "scope": "team",
+      "provider": "元素",
+      "category": "属性攻击",
+      "display": "团队水攻 +5~13%（按等级）"
+    },
+    {
+      "skill": "机械时刻",
+      "scope": "personal",
+      "provider": "机械大师",
+      "category": "攻击/致命",
+      "display": "物攻 +20%、致命面板 +20%"
+    },
+    {
+      "skill": "猎人之眼",
+      "scope": "personal",
+      "provider": "猎人",
+      "category": "攻击/属性",
+      "display": "智力 +30%、魔攻 +15%"
+    },
+    {
+      "skill": "银色猎人",
+      "scope": "personal",
+      "provider": "银色猎人",
+      "category": "变身增益",
+      "display": "智力转魔攻 +3/6/9%（按等级）",
+      "cast_duration_from_activation_rule": true
+    },
+    {
+      "skill": "猎光本能",
+      "scope": "personal",
+      "provider": "银色猎人",
+      "category": "被动",
+      "display": "光攻 +15%；指定技能命中使银色猎人CD -3秒",
+      "overlay": false
+    }
+  ]
+}

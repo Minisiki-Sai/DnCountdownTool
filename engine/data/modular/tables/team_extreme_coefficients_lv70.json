@@ -1,0 +1,277 @@
+{
+  "version": "LV70v1",
+  "source": "??????LV70v1",
+  "generated_from": "exports/skill_sim_dps_60L_all_jobs_candidate_after_element_lightning_change.json",
+  "baseline": "????(??=1)",
+  "notes": [
+    "??=??DPS??/???DPS?????",
+    "????????=????(??=1)*0.3????????????",
+    "??????/?????????????????"
+  ],
+  "mean_dps": 972.4928436656846,
+  "coefficients": {
+    "魔羽": 1.716748,
+    "刀锋舞者": 1.476016,
+    "机械大师": 1.426137,
+    "剑皇": 1.361306,
+    "月之领主": 1.281502,
+    "狂战士": 1.269528,
+    "灵魂舞者": 1.263293,
+    "风行者": 1.195107,
+    "影舞者": 1.187138,
+    "时空领主": 1.128485,
+    "狙翎": 1.117592,
+    "重炮手": 1.096963,
+    "曜": 0.31079,
+    "暗": 1.028634,
+    "烈": 0.974175,
+    "雷神": 0.973227,
+    "毁灭者": 0.927758,
+    "噬魂者": 0.826119,
+    "黑暗复仇者": 0.822411,
+    "火舞": 0.819447,
+    "黑暗萨满": 0.815579,
+    "炼金圣士": 0.770056,
+    "影": 0.758915,
+    "药剂师": 0.707087,
+    "圣徒": 0.683017,
+    "黑暗女王": 0.666179,
+    "十字军": 0.642908,
+    "冰灵": 0.553474,
+    "圣骑士": 0.47523
+  },
+  "rows": [
+    {
+      "rank": 1,
+      "first_job": "箭神",
+      "second_job": "魔羽",
+      "dps_total": 1669.524725,
+      "mean_coefficient": 1.716748,
+      "extreme_team_coefficient": 1.716748
+    },
+    {
+      "rank": 2,
+      "first_job": "舞者",
+      "second_job": "刀锋舞者",
+      "dps_total": 1435.41521,
+      "mean_coefficient": 1.476016,
+      "extreme_team_coefficient": 1.476016
+    },
+    {
+      "rank": 3,
+      "first_job": "工程",
+      "second_job": "机械大师",
+      "dps_total": 1386.908139,
+      "mean_coefficient": 1.426137,
+      "extreme_team_coefficient": 1.426137
+    },
+    {
+      "rank": 4,
+      "first_job": "剑圣",
+      "second_job": "剑皇",
+      "dps_total": 1323.860366,
+      "mean_coefficient": 1.361306,
+      "extreme_team_coefficient": 1.361306
+    },
+    {
+      "rank": 5,
+      "first_job": "剑圣",
+      "second_job": "月之领主",
+      "dps_total": 1246.251444,
+      "mean_coefficient": 1.281502,
+      "extreme_team_coefficient": 1.281502
+    },
+    {
+      "rank": 6,
+      "first_job": "战神",
+      "second_job": "狂战士",
+      "dps_total": 1234.607161,
+      "mean_coefficient": 1.269528,
+      "extreme_team_coefficient": 1.269528
+    },
+    {
+      "rank": 7,
+      "first_job": "舞者",
+      "second_job": "灵魂舞者",
+      "dps_total": 1228.54366,
+      "mean_coefficient": 1.263293,
+      "extreme_team_coefficient": 1.263293
+    },
+    {
+      "rank": 8,
+      "first_job": "游侠",
+      "second_job": "风行者",
+      "dps_total": 1162.23345,
+      "mean_coefficient": 1.195107,
+      "extreme_team_coefficient": 1.195107
+    },
+    {
+      "rank": 9,
+      "first_job": "游侠",
+      "second_job": "影舞者",
+      "dps_total": 1154.483591,
+      "mean_coefficient": 1.187138,
+      "extreme_team_coefficient": 1.187138
+    },
+    {
+      "rank": 10,
+      "first_job": "魔导",
+      "second_job": "时空领主",
+      "dps_total": 1097.443232,
+      "mean_coefficient": 1.128485,
+      "extreme_team_coefficient": 1.128485
+    },
+    {
+      "rank": 11,
+      "first_job": "箭神",
+      "second_job": "狙翎",
+      "dps_total": 1086.850389,
+      "mean_coefficient": 1.117592,
+      "extreme_team_coefficient": 1.117592
+    },
+    {
+      "rank": 12,
+      "first_job": "工程",
+      "second_job": "重炮手",
+      "dps_total": 1066.788445,
+      "mean_coefficient": 1.096963,
+      "extreme_team_coefficient": 1.096963
+    },
+    {
+      "rank": 13,
+      "first_job": "光明之怒",
+      "second_job": "曜",
+      "dps_total": 1007.470773,
+      "mean_coefficient": 1.035967,
+      "extreme_team_coefficient": 0.31079
+    },
+    {
+      "rank": 14,
+      "first_job": "光明之怒",
+      "second_job": "暗",
+      "dps_total": 1000.338809,
+      "mean_coefficient": 1.028634,
+      "extreme_team_coefficient": 1.028634
+    },
+    {
+      "rank": 15,
+      "first_job": "暗之使徒",
+      "second_job": "烈",
+      "dps_total": 947.377912,
+      "mean_coefficient": 0.974175,
+      "extreme_team_coefficient": 0.974175
+    },
+    {
+      "rank": 16,
+      "first_job": "祭司",
+      "second_job": "雷神",
+      "dps_total": 946.456338,
+      "mean_coefficient": 0.973227,
+      "extreme_team_coefficient": 0.973227
+    },
+    {
+      "rank": 17,
+      "first_job": "战神",
+      "second_job": "毁灭者",
+      "dps_total": 902.238474,
+      "mean_coefficient": 0.927758,
+      "extreme_team_coefficient": 0.927758
+    },
+    {
+      "rank": 18,
+      "first_job": "呐喊者",
+      "second_job": "噬魂者",
+      "dps_total": 803.395051,
+      "mean_coefficient": 0.826119,
+      "extreme_team_coefficient": 0.826119
+    },
+    {
+      "rank": 19,
+      "first_job": "复仇者",
+      "second_job": "黑暗复仇者",
+      "dps_total": 799.788472,
+      "mean_coefficient": 0.822411,
+      "extreme_team_coefficient": 0.822411
+    },
+    {
+      "rank": 20,
+      "first_job": "元素",
+      "second_job": "火舞",
+      "dps_total": 796.906681,
+      "mean_coefficient": 0.819447,
+      "extreme_team_coefficient": 0.819447
+    },
+    {
+      "rank": 21,
+      "first_job": "呐喊者",
+      "second_job": "黑暗萨满",
+      "dps_total": 793.144937,
+      "mean_coefficient": 0.815579,
+      "extreme_team_coefficient": 0.815579
+    },
+    {
+      "rank": 22,
+      "first_job": "炼金",
+      "second_job": "炼金圣士",
+      "dps_total": 748.873859,
+      "mean_coefficient": 0.770056,
+      "extreme_team_coefficient": 0.770056
+    },
+    {
+      "rank": 23,
+      "first_job": "暗之使徒",
+      "second_job": "影",
+      "dps_total": 738.039213,
+      "mean_coefficient": 0.758915,
+      "extreme_team_coefficient": 0.758915
+    },
+    {
+      "rank": 24,
+      "first_job": "炼金",
+      "second_job": "药剂师",
+      "dps_total": 687.637504,
+      "mean_coefficient": 0.707087,
+      "extreme_team_coefficient": 0.707087
+    },
+    {
+      "rank": 25,
+      "first_job": "祭司",
+      "second_job": "圣徒",
+      "dps_total": 664.229588,
+      "mean_coefficient": 0.683017,
+      "extreme_team_coefficient": 0.683017
+    },
+    {
+      "rank": 26,
+      "first_job": "魔导",
+      "second_job": "黑暗女王",
+      "dps_total": 647.85439,
+      "mean_coefficient": 0.666179,
+      "extreme_team_coefficient": 0.666179
+    },
+    {
+      "rank": 27,
+      "first_job": "贤者",
+      "second_job": "十字军",
+      "dps_total": 625.223442,
+      "mean_coefficient": 0.642908,
+      "extreme_team_coefficient": 0.642908
+    },
+    {
+      "rank": 28,
+      "first_job": "元素",
+      "second_job": "冰灵",
+      "dps_total": 538.249735,
+      "mean_coefficient": 0.553474,
+      "extreme_team_coefficient": 0.553474
+    },
+    {
+      "rank": 29,
+      "first_job": "贤者",
+      "second_job": "圣骑士",
+      "dps_total": 462.157475,
+      "mean_coefficient": 0.47523,
+      "extreme_team_coefficient": 0.47523
+    }
+  ]
+}

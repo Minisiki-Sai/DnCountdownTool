@@ -1,0 +1,8 @@
+Offline speech assets generated with Qwen3-TTS-12Hz-1.7B-CustomVoice.
+Model: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice
+Revision: 0c0e3051f131929182e2c023b9537f8b1c68adfe
+Upstream implementation: https://github.com/QwenLM/Qwen3-TTS
+Upstream model and implementation license: Apache License 2.0.
+Speakers: Vivian, Serena, Uncle_Fu, Dylan.
+These are synthetic game-announcement recordings, not human voice recordings.
+The model weights are NOT included in the ACT distribution.

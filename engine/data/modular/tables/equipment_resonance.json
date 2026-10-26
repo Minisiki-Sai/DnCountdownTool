@@ -1,0 +1,807 @@
+{
+  "version": 20261017,
+  "tiers": [
+    {
+      "id": 24310,
+      "level": 24,
+      "quality": 3,
+      "enhance": 10,
+      "attrs": {
+        "致命": 57.4
+      },
+      "buff_name_code": 2,
+      "buff_description_code": 5
+    },
+    {
+      "id": 24311,
+      "level": 24,
+      "quality": 3,
+      "enhance": 11,
+      "attrs": {
+        "最小物攻": 23.92,
+        "最大物攻": 23.92,
+        "最小魔攻": 23.92,
+        "最大魔攻": 23.92
+      },
+      "buff_name_code": 2,
+      "buff_description_code": 5
+    },
+    {
+      "id": 24312,
+      "level": 24,
+      "quality": 3,
+      "enhance": 12,
+      "attrs": {
+        "力量": 21.26,
+        "敏捷": 21.26,
+        "智力": 16.0
+      },
+      "buff_name_code": 2,
+      "buff_description_code": 5
+    },
+    {
+      "id": 24313,
+      "level": 24,
+      "quality": 3,
+      "enhance": 13,
+      "attrs": {
+        "最小物攻": 58.46,
+        "最大物攻": 58.46,
+        "最小魔攻": 58.46,
+        "最大魔攻": 58.46,
+        "致命": 105.0,
+        "最终": 23.3
+      },
+      "buff_name_code": 2,
+      "buff_description_code": 5
+    },
+    {
+      "id": 32310,
+      "level": 32,
+      "quality": 3,
+      "enhance": 10,
+      "attrs": {
+        "致命": 81.83
+      },
+      "buff_name_code": 2,
+      "buff_description_code": 5
+    },
+    {
+      "id": 32311,
+      "level": 32,
+      "quality": 3,
+      "enhance": 11,
+      "attrs": {
+        "最小物攻": 34.1,
+        "最大物攻": 34.1,
+        "最小魔攻": 34.1,
+        "最大魔攻": 34.1
+      },
+      "buff_name_code": 2,
+      "buff_description_code": 5
+    },
+    {
+      "id": 32312,
+      "level": 32,
+      "quality": 3,
+      "enhance": 12,
+      "attrs": {
+        "力量": 30.31,
+        "敏捷": 30.31,
+        "智力": 22.81
+      },
+      "buff_name_code": 2,
+      "buff_description_code": 5
+    },
+    {
+      "id": 32313,
+      "level": 32,
+      "quality": 3,
+      "enhance": 13,
+      "attrs": {
+        "最小物攻": 83.34,
+        "最大物攻": 83.34,
+        "最小魔攻": 83.34,
+        "最大魔攻": 83.34,
+        "致命": 149.69,
+        "最终": 33.21
+      },
+      "buff_name_code": 2,
+      "buff_description_code": 5
+    },
+    {
+      "id": 40310,
+      "level": 40,
+      "quality": 3,
+      "enhance": 10,
+      "attrs": {
+        "致命": 114.39
+      },
+      "buff_name_code": 2,
+      "buff_description_code": 5
+    },
+    {
+      "id": 40311,
+      "level": 40,
+      "quality": 3,
+      "enhance": 11,
+      "attrs": {
+        "最小物攻": 47.67,
+        "最大物攻": 47.67,
+        "最小魔攻": 47.67,
+        "最大魔攻": 47.67
+      },
+      "buff_name_code": 2,
+      "buff_description_code": 5
+    },
+    {
+      "id": 40312,
+      "level": 40,
+      "quality": 3,
+      "enhance": 12,
+      "attrs": {
+        "力量": 42.37,
+        "敏捷": 42.37,
+        "智力": 31.88
+      },
+      "buff_name_code": 2,
+      "buff_description_code": 5
+    },
+    {
+      "id": 40313,
+      "level": 40,
+      "quality": 3,
+      "enhance": 13,
+      "attrs": {
+        "最小物攻": 116.5,
+        "最大物攻": 116.5,
+        "最小魔攻": 116.5,
+        "最大魔攻": 116.5,
+        "致命": 209.26,
+        "最终": 46.42
+      },
+      "buff_name_code": 2,
+      "buff_description_code": 5
+    },
+    {
+      "id": 50310,
+      "level": 50,
+      "quality": 3,
+      "enhance": 10,
+      "attrs": {
+        "致命": 158.54
+      },
+      "buff_name_code": 2,
+      "buff_description_code": 5
+    },
+    {
+      "id": 50311,
+      "level": 50,
+      "quality": 3,
+      "enhance": 11,
+      "attrs": {
+        "最小物攻": 66.07,
+        "最大物攻": 66.07,
+        "最小魔攻": 66.07,
+        "最大魔攻": 66.07
+      },
+      "buff_name_code": 2,
+      "buff_description_code": 5
+    },
+    {
+      "id": 50312,
+      "level": 50,
+      "quality": 3,
+      "enhance": 12,
+      "attrs": {
+        "力量": 58.72,
+        "敏捷": 58.72,
+        "智力": 44.18
+      },
+      "buff_name_code": 2,
+      "buff_description_code": 5
+    },
+    {
+      "id": 50313,
+      "level": 50,
+      "quality": 3,
+      "enhance": 13,
+      "attrs": {
+        "最小物攻": 161.46,
+        "最大物攻": 161.46,
+        "最小魔攻": 161.46,
+        "最大魔攻": 161.46,
+        "致命": 290.03,
+        "最终": 64.33
+      },
+      "buff_name_code": 2,
+      "buff_description_code": 5
+    },
+    {
+      "id": 60310,
+      "level": 60,
+      "quality": 3,
+      "enhance": 10,
+      "attrs": {
+        "致命": 190.88
+      },
+      "buff_name_code": 2,
+      "buff_description_code": 5
+    },
+    {
+      "id": 60311,
+      "level": 60,
+      "quality": 3,
+      "enhance": 11,
+      "attrs": {
+        "最小物攻": 79.54,
+        "最大物攻": 79.54,
+        "最小魔攻": 79.54,
+        "最大魔攻": 79.54
+      },
+      "buff_name_code": 2,
+      "buff_description_code": 5
+    },
+    {
+      "id": 60312,
+      "level": 60,
+      "quality": 3,
+      "enhance": 12,
+      "attrs": {
+        "力量": 70.69,
+        "敏捷": 70.69,
+        "智力": 53.19
+      },
+      "buff_name_code": 2,
+      "buff_description_code": 5
+    },
+    {
+      "id": 60313,
+      "level": 60,
+      "quality": 3,
+      "enhance": 13,
+      "attrs": {
+        "最小物攻": 194.39,
+        "最大物攻": 194.39,
+        "最小魔攻": 194.39,
+        "最大魔攻": 194.39,
+        "致命": 349.19,
+        "最终": 77.45
+      },
+      "buff_name_code": 2,
+      "buff_description_code": 5
+    },
+    {
+      "id": 70310,
+      "level": 70,
+      "quality": 3,
+      "enhance": 10,
+      "attrs": {
+        "致命": 112.39,
+        "致命伤害": 84.2925
+      },
+      "buff_name_code": 2,
+      "buff_description_code": 5
+    },
+    {
+      "id": 70311,
+      "level": 70,
+      "quality": 3,
+      "enhance": 11,
+      "attrs": {
+        "最小物攻": 93.66,
+        "最大物攻": 93.66,
+        "最小魔攻": 93.66,
+        "最大魔攻": 93.66
+      },
+      "buff_name_code": 2,
+      "buff_description_code": 5
+    },
+    {
+      "id": 70312,
+      "level": 70,
+      "quality": 3,
+      "enhance": 12,
+      "attrs": {
+        "力量": 83.24,
+        "敏捷": 83.24,
+        "智力": 62.63
+      },
+      "buff_name_code": 2,
+      "buff_description_code": 5
+    },
+    {
+      "id": 70313,
+      "level": 70,
+      "quality": 3,
+      "enhance": 13,
+      "attrs": {
+        "最小物攻": 228.91,
+        "最大物攻": 228.91,
+        "最小魔攻": 228.91,
+        "最大魔攻": 228.91,
+        "致命": 205.6,
+        "致命伤害": 154.2,
+        "最终": 91.2
+      },
+      "buff_name_code": 2,
+      "buff_description_code": 5
+    },
+    {
+      "id": 40410,
+      "level": 40,
+      "quality": 4,
+      "enhance": 10,
+      "attrs": {
+        "致命": 160.0
+      },
+      "buff_name_code": 2,
+      "buff_description_code": 5
+    },
+    {
+      "id": 40411,
+      "level": 40,
+      "quality": 4,
+      "enhance": 11,
+      "attrs": {
+        "最小物攻": 66.0,
+        "最大物攻": 66.0,
+        "最小魔攻": 66.0,
+        "最大魔攻": 66.0
+      },
+      "buff_name_code": 2,
+      "buff_description_code": 5
+    },
+    {
+      "id": 40412,
+      "level": 40,
+      "quality": 4,
+      "enhance": 12,
+      "attrs": {
+        "力量": 59.0,
+        "敏捷": 59.0,
+        "智力": 44.0,
+        "物攻%": 0.5,
+        "魔攻%": 0.5
+      },
+      "buff_name_code": 2,
+      "buff_description_code": 5
+    },
+    {
+      "id": 40413,
+      "level": 40,
+      "quality": 4,
+      "enhance": 13,
+      "attrs": {
+        "最小物攻": 163.0,
+        "最大物攻": 163.0,
+        "最小魔攻": 163.0,
+        "最大魔攻": 163.0,
+        "致命": 292.0,
+        "最终": 64.0,
+        "力量%": 0.625,
+        "敏捷%": 0.625,
+        "智力%": 0.5
+      },
+      "buff_name_code": 2,
+      "buff_description_code": 5
+    },
+    {
+      "id": 50410,
+      "level": 50,
+      "quality": 4,
+      "enhance": 10,
+      "attrs": {
+        "致命": 192.64
+      },
+      "buff_name_code": 2,
+      "buff_description_code": 5
+    },
+    {
+      "id": 50411,
+      "level": 50,
+      "quality": 4,
+      "enhance": 11,
+      "attrs": {
+        "最小物攻": 79.46,
+        "最大物攻": 79.46,
+        "最小魔攻": 79.46,
+        "最大魔攻": 79.46
+      },
+      "buff_name_code": 2,
+      "buff_description_code": 5
+    },
+    {
+      "id": 50412,
+      "level": 50,
+      "quality": 4,
+      "enhance": 12,
+      "attrs": {
+        "力量": 71.03,
+        "敏捷": 71.03,
+        "智力": 52.97,
+        "物攻%": 0.5,
+        "魔攻%": 0.5
+      },
+      "buff_name_code": 2,
+      "buff_description_code": 5
+    },
+    {
+      "id": 50413,
+      "level": 50,
+      "quality": 4,
+      "enhance": 13,
+      "attrs": {
+        "最小物攻": 196.25,
+        "最大物攻": 196.25,
+        "最小魔攻": 196.25,
+        "最大魔攻": 196.25,
+        "致命": 351.56,
+        "最终": 77.05,
+        "力量%": 0.625,
+        "敏捷%": 0.625,
+        "智力%": 0.5
+      },
+      "buff_name_code": 2,
+      "buff_description_code": 5
+    },
+    {
+      "id": 60410,
+      "level": 60,
+      "quality": 4,
+      "enhance": 10,
+      "attrs": {
+        "致命": 230.39
+      },
+      "buff_name_code": 2,
+      "buff_description_code": 5
+    },
+    {
+      "id": 60411,
+      "level": 60,
+      "quality": 4,
+      "enhance": 11,
+      "attrs": {
+        "最小物攻": 95.03,
+        "最大物攻": 95.03,
+        "最小魔攻": 95.03,
+        "最大魔攻": 95.03
+      },
+      "buff_name_code": 2,
+      "buff_description_code": 5
+    },
+    {
+      "id": 60412,
+      "level": 60,
+      "quality": 4,
+      "enhance": 12,
+      "attrs": {
+        "力量": 84.95,
+        "敏捷": 84.95,
+        "智力": 63.35,
+        "物攻%": 0.5,
+        "魔攻%": 0.5
+      },
+      "buff_name_code": 2,
+      "buff_description_code": 5
+    },
+    {
+      "id": 60413,
+      "level": 60,
+      "quality": 4,
+      "enhance": 13,
+      "attrs": {
+        "最小物攻": 234.71,
+        "最大物攻": 234.71,
+        "最小魔攻": 234.71,
+        "最大魔攻": 234.71,
+        "致命": 420.46,
+        "最终": 92.15,
+        "力量%": 0.625,
+        "敏捷%": 0.625,
+        "智力%": 0.5
+      },
+      "buff_name_code": 2,
+      "buff_description_code": 5
+    },
+    {
+      "id": 70410,
+      "level": 70,
+      "quality": 4,
+      "enhance": 10,
+      "attrs": {
+        "致命": 139.27,
+        "致命伤害": 104.4525
+      },
+      "buff_name_code": 2,
+      "buff_description_code": 5
+    },
+    {
+      "id": 70411,
+      "level": 70,
+      "quality": 4,
+      "enhance": 11,
+      "attrs": {
+        "最小物攻": 114.89,
+        "最大物攻": 114.89,
+        "最小魔攻": 114.89,
+        "最大魔攻": 114.89
+      },
+      "buff_name_code": 2,
+      "buff_description_code": 5
+    },
+    {
+      "id": 70412,
+      "level": 70,
+      "quality": 4,
+      "enhance": 12,
+      "attrs": {
+        "力量": 102.7,
+        "敏捷": 102.7,
+        "智力": 76.59,
+        "物攻%": 0.5,
+        "魔攻%": 0.5
+      },
+      "buff_name_code": 2,
+      "buff_description_code": 5
+    },
+    {
+      "id": 70413,
+      "level": 70,
+      "quality": 4,
+      "enhance": 13,
+      "attrs": {
+        "最小物攻": 283.76,
+        "最大物攻": 283.76,
+        "最小魔攻": 283.76,
+        "最大魔攻": 283.76,
+        "致命": 254.165,
+        "致命伤害": 190.62375,
+        "最终": 111.4,
+        "力量%": 0.625,
+        "敏捷%": 0.625,
+        "智力%": 0.5
+      },
+      "buff_name_code": 2,
+      "buff_description_code": 5
+    },
+    {
+      "id": 40510,
+      "level": 40,
+      "quality": 5,
+      "enhance": 10,
+      "attrs": {
+        "致命": 208.0
+      },
+      "buff_name_code": 2,
+      "buff_description_code": 5
+    },
+    {
+      "id": 40511,
+      "level": 40,
+      "quality": 5,
+      "enhance": 11,
+      "attrs": {
+        "最小物攻": 85.0,
+        "最大物攻": 85.0,
+        "最小魔攻": 85.0,
+        "最大魔攻": 85.0
+      },
+      "buff_name_code": 2,
+      "buff_description_code": 5
+    },
+    {
+      "id": 40512,
+      "level": 40,
+      "quality": 5,
+      "enhance": 12,
+      "attrs": {
+        "力量": 76.0,
+        "敏捷": 76.0,
+        "智力": 57.0,
+        "物攻%": 1.0,
+        "魔攻%": 1.0
+      },
+      "buff_name_code": 2,
+      "buff_description_code": 5
+    },
+    {
+      "id": 40513,
+      "level": 40,
+      "quality": 5,
+      "enhance": 13,
+      "attrs": {
+        "最小物攻": 211.0,
+        "最大物攻": 211.0,
+        "最小魔攻": 211.0,
+        "最大魔攻": 211.0,
+        "致命": 379.0,
+        "最终": 83.0,
+        "力量%": 1.25,
+        "敏捷%": 1.25,
+        "智力%": 1.0
+      },
+      "buff_name_code": 2,
+      "buff_description_code": 5
+    },
+    {
+      "id": 50510,
+      "level": 50,
+      "quality": 5,
+      "enhance": 10,
+      "attrs": {
+        "致命": 256.88
+      },
+      "buff_name_code": 2,
+      "buff_description_code": 5
+    },
+    {
+      "id": 50511,
+      "level": 50,
+      "quality": 5,
+      "enhance": 11,
+      "attrs": {
+        "最小物攻": 104.97,
+        "最大物攻": 104.97,
+        "最小魔攻": 104.97,
+        "最大魔攻": 104.97
+      },
+      "buff_name_code": 2,
+      "buff_description_code": 5
+    },
+    {
+      "id": 50512,
+      "level": 50,
+      "quality": 5,
+      "enhance": 12,
+      "attrs": {
+        "力量": 93.86,
+        "敏捷": 93.86,
+        "智力": 70.39,
+        "物攻%": 1.0,
+        "魔攻%": 1.0
+      },
+      "buff_name_code": 2,
+      "buff_description_code": 5
+    },
+    {
+      "id": 50513,
+      "level": 50,
+      "quality": 5,
+      "enhance": 13,
+      "attrs": {
+        "最小物攻": 260.58,
+        "最大物攻": 260.58,
+        "最小魔攻": 260.58,
+        "最大魔攻": 260.58,
+        "致命": 468.06,
+        "最终": 102.5,
+        "力量%": 1.25,
+        "敏捷%": 1.25,
+        "智力%": 1.0
+      },
+      "buff_name_code": 2,
+      "buff_description_code": 5
+    },
+    {
+      "id": 60510,
+      "level": 60,
+      "quality": 5,
+      "enhance": 10,
+      "attrs": {
+        "致命": 306.45
+      },
+      "buff_name_code": 2,
+      "buff_description_code": 5
+    },
+    {
+      "id": 60511,
+      "level": 60,
+      "quality": 5,
+      "enhance": 11,
+      "attrs": {
+        "最小物攻": 125.22,
+        "最大物攻": 125.22,
+        "最小魔攻": 125.22,
+        "最大魔攻": 125.22
+      },
+      "buff_name_code": 2,
+      "buff_description_code": 5
+    },
+    {
+      "id": 60512,
+      "level": 60,
+      "quality": 5,
+      "enhance": 12,
+      "attrs": {
+        "力量": 111.97,
+        "敏捷": 111.97,
+        "智力": 83.97,
+        "物攻%": 1.0,
+        "魔攻%": 1.0
+      },
+      "buff_name_code": 2,
+      "buff_description_code": 5
+    },
+    {
+      "id": 60513,
+      "level": 60,
+      "quality": 5,
+      "enhance": 13,
+      "attrs": {
+        "最小物攻": 310.87,
+        "最大物攻": 310.87,
+        "最小魔攻": 310.87,
+        "最大魔攻": 310.87,
+        "致命": 558.39,
+        "最终": 122.28,
+        "力量%": 1.25,
+        "敏捷%": 1.25,
+        "智力%": 1.0
+      },
+      "buff_name_code": 2,
+      "buff_description_code": 5
+    },
+    {
+      "id": 70510,
+      "level": 70,
+      "quality": 5,
+      "enhance": 10,
+      "attrs": {
+        "致命": 184.175,
+        "致命伤害": 138.13125
+      },
+      "buff_name_code": 2,
+      "buff_description_code": 5
+    },
+    {
+      "id": 70511,
+      "level": 70,
+      "quality": 5,
+      "enhance": 11,
+      "attrs": {
+        "最小物攻": 150.51,
+        "最大物攻": 150.51,
+        "最小魔攻": 150.51,
+        "最大魔攻": 150.51
+      },
+      "buff_name_code": 2,
+      "buff_description_code": 5
+    },
+    {
+      "id": 70512,
+      "level": 70,
+      "quality": 5,
+      "enhance": 12,
+      "attrs": {
+        "力量": 134.58,
+        "敏捷": 134.58,
+        "智力": 100.93,
+        "物攻%": 1.0,
+        "魔攻%": 1.0
+      },
+      "buff_name_code": 2,
+      "buff_description_code": 5
+    },
+    {
+      "id": 70513,
+      "level": 70,
+      "quality": 5,
+      "enhance": 13,
+      "attrs": {
+        "最小物攻": 373.66,
+        "最大物攻": 373.66,
+        "最小魔攻": 373.66,
+        "最大魔攻": 373.66,
+        "致命": 335.59,
+        "致命伤害": 251.6925,
+        "最终": 146.98,
+        "力量%": 1.25,
+        "敏捷%": 1.25,
+        "智力%": 1.0
+      },
+      "buff_name_code": 2,
+      "buff_description_code": 5
+    }
+  ]
+}

@@ -1,0 +1,3838 @@
+{
+  "profile": "v576",
+  "source": "skilltable_character + skillleveltable_character*",
+  "skills": {
+    "554": [
+      {
+        "source_skill_id": 406,
+        "source_skill_name": "惩戒波",
+        "kind": "burn",
+        "label": "烧伤",
+        "effect_class": 42,
+        "variants": [
+          {
+            "parameters": "1;0.2;0",
+            "duration_ms": 11000
+          }
+        ]
+      }
+    ],
+    "2002": [
+      {
+        "source_skill_id": 2002,
+        "source_skill_name": "火焰虫",
+        "kind": "burn",
+        "label": "烧伤",
+        "effect_class": 42,
+        "variants": [
+          {
+            "parameters": "1;0.01;1",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;10",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;1020",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;1148",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;124",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;1279",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;13",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;139",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;1413",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;154",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;1548",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;16",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;170",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;187",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;19",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;1990",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;2",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;2167",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;22",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;222",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;230",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;232",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;2358",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;239",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;248",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;2565",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;257",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;26",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;278",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;2789",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;289",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;299",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;3",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;309",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;31",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;320",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;330",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;331",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;342",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;3498",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;351",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;36",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;361",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;370",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;3800",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;4",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;4128",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;4483",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;45",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;4868",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;5",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;5077",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;5362",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;5601",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;5868",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;59",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;6",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;62",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;67",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;684",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;7",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;73",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;8",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;85",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;92",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;97",
+            "duration_ms": 11000
+          }
+        ]
+      }
+    ],
+    "2026": [
+      {
+        "source_skill_id": 2026,
+        "source_skill_name": "毒云",
+        "kind": "poison",
+        "label": "中毒",
+        "effect_class": 44,
+        "variants": [
+          {
+            "parameters": "-2146826273",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;1",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;10",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;1020",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;1162",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;123",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;1322",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;1503",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;158",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;18",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;2",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;213",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;223",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;259",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;272",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;277",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;291",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;307",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;31",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;366",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;383",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;384",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;4",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;401",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;420",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;43",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;440",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;446",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;5",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;513",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;56",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;588",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;672",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;7",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;74",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;894",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;97",
+            "duration_ms": 6000
+          }
+        ]
+      }
+    ],
+    "2205": [
+      {
+        "source_skill_id": 2205,
+        "source_skill_name": "火径",
+        "kind": "burn",
+        "label": "烧伤",
+        "effect_class": 42,
+        "variants": [
+          {
+            "parameters": "1;0.05;1004",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;102",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;1084",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;122",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;1221",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;1363",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;145",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;1512",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;169",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;194",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;2034",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;2238",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;236",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;237",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;2459",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;2698",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;271",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;2957",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;306",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;344",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;3798",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;383",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;4150",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;4530",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;475",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;4941",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;499",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;503",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;524",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;5384",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;551",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;580",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;590",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;6719",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;675",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;69",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;707",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;7311",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;742",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;75",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;778",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;7950",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;815",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;920",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;953",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;961",
+            "duration_ms": 11000
+          }
+        ]
+      }
+    ],
+    "2207": [
+      {
+        "source_skill_id": 2207,
+        "source_skill_name": "火鸟",
+        "kind": "burn",
+        "label": "烧伤",
+        "effect_class": 42,
+        "variants": [
+          {
+            "parameters": "1;0.05;0",
+            "duration_ms": 21000
+          },
+          {
+            "parameters": "1;0.05;10",
+            "duration_ms": 21000
+          },
+          {
+            "parameters": "1;0.05;110",
+            "duration_ms": 21000
+          },
+          {
+            "parameters": "1;0.05;1133",
+            "duration_ms": 21000
+          },
+          {
+            "parameters": "1;0.05;128",
+            "duration_ms": 21000
+          },
+          {
+            "parameters": "1;0.05;1301",
+            "duration_ms": 21000
+          },
+          {
+            "parameters": "1;0.05;135",
+            "duration_ms": 21000
+          },
+          {
+            "parameters": "1;0.05;14",
+            "duration_ms": 21000
+          },
+          {
+            "parameters": "1;0.05;1493",
+            "duration_ms": 21000
+          },
+          {
+            "parameters": "1;0.05;1711",
+            "duration_ms": 21000
+          },
+          {
+            "parameters": "1;0.05;172",
+            "duration_ms": 21000
+          },
+          {
+            "parameters": "1;0.05;180",
+            "duration_ms": 21000
+          },
+          {
+            "parameters": "1;0.05;189",
+            "duration_ms": 21000
+          },
+          {
+            "parameters": "1;0.05;199",
+            "duration_ms": 21000
+          },
+          {
+            "parameters": "1;0.05;209",
+            "duration_ms": 21000
+          },
+          {
+            "parameters": "1;0.05;21",
+            "duration_ms": 21000
+          },
+          {
+            "parameters": "1;0.05;249",
+            "duration_ms": 21000
+          },
+          {
+            "parameters": "1;0.05;2490",
+            "duration_ms": 21000
+          },
+          {
+            "parameters": "1;0.05;25",
+            "duration_ms": 21000
+          },
+          {
+            "parameters": "1;0.05;26",
+            "duration_ms": 21000
+          },
+          {
+            "parameters": "1;0.05;260",
+            "duration_ms": 21000
+          },
+          {
+            "parameters": "1;0.05;2852",
+            "duration_ms": 21000
+          },
+          {
+            "parameters": "1;0.05;300",
+            "duration_ms": 21000
+          },
+          {
+            "parameters": "1;0.05;32",
+            "duration_ms": 21000
+          },
+          {
+            "parameters": "1;0.05;391",
+            "duration_ms": 21000
+          },
+          {
+            "parameters": "1;0.05;465",
+            "duration_ms": 21000
+          },
+          {
+            "parameters": "1;0.05;542",
+            "duration_ms": 21000
+          },
+          {
+            "parameters": "1;0.05;6",
+            "duration_ms": 21000
+          },
+          {
+            "parameters": "1;0.05;626",
+            "duration_ms": 21000
+          },
+          {
+            "parameters": "1;0.05;65",
+            "duration_ms": 21000
+          },
+          {
+            "parameters": "1;0.05;7",
+            "duration_ms": 21000
+          },
+          {
+            "parameters": "1;0.05;75",
+            "duration_ms": 21000
+          },
+          {
+            "parameters": "1;0.05;86",
+            "duration_ms": 21000
+          },
+          {
+            "parameters": "1;0.05;92",
+            "duration_ms": 21000
+          },
+          {
+            "parameters": "1;0.05;984",
+            "duration_ms": 21000
+          }
+        ]
+      }
+    ],
+    "2213": [
+      {
+        "source_skill_id": 2213,
+        "source_skill_name": "火焰盾",
+        "kind": "burn",
+        "label": "烧伤",
+        "effect_class": 42,
+        "variants": [
+          {
+            "parameters": "105",
+            "duration_ms": 10000
+          },
+          {
+            "parameters": "150",
+            "duration_ms": 10000
+          },
+          {
+            "parameters": "200",
+            "duration_ms": 10000
+          },
+          {
+            "parameters": "260",
+            "duration_ms": 10000
+          },
+          {
+            "parameters": "330",
+            "duration_ms": 10000
+          },
+          {
+            "parameters": "410",
+            "duration_ms": 10000
+          },
+          {
+            "parameters": "50",
+            "duration_ms": 10000
+          },
+          {
+            "parameters": "600",
+            "duration_ms": 10000
+          },
+          {
+            "parameters": "64",
+            "duration_ms": 10000
+          }
+        ]
+      }
+    ],
+    "2215": [
+      {
+        "source_skill_id": 2215,
+        "source_skill_name": "火焰风暴",
+        "kind": "burn",
+        "label": "烧伤",
+        "effect_class": 42,
+        "variants": [
+          {
+            "parameters": "1;0;1792",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0;2688",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0;33929",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0;50894",
+            "duration_ms": 11000
+          }
+        ]
+      }
+    ],
+    "2217": [
+      {
+        "source_skill_id": 2217,
+        "source_skill_name": "火焰闪耀",
+        "kind": "burn",
+        "label": "烧伤",
+        "effect_class": 42,
+        "variants": [
+          {
+            "parameters": "1;0.01;11",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;6",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.02;16",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.02;9",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.03;23",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.03;27",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.04;30",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.04;34",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;0",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;49",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;89",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.06;103",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.06;252",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.07;129",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.07;336",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.08;156",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.08;408",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.09;1004",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.09;1152",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.09;1318",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.09;1739",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.09;185",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.09;1988",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.09;211",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.09;266",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.09;282",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.09;300",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.09;319",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.09;338",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.09;399",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.09;421",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.09;482",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.09;559",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.09;759",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.09;874",
+            "duration_ms": 11000
+          }
+        ]
+      }
+    ],
+    "2220": [
+      {
+        "source_skill_id": 2220,
+        "source_skill_name": "火球",
+        "kind": "burn",
+        "label": "烧伤",
+        "effect_class": 42,
+        "variants": [
+          {
+            "parameters": "1;0.05;10",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;107",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;11",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;11614",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;120",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;12643",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;13",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;132",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;13755",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;14957",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;16",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;16256",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;167",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;173",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;175",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;18",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;180",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;187",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;195",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;20134",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;2033",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;21872",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;225",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;23",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;233",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;23754",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;241",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;25",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;250",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;25790",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;258",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;260",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;291",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;2931",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;301",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;312",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;322",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;3575",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;36",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;37",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;4018",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;44",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;4471",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;4936",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;52",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;54",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;61",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;6473",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;65",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;654",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;7063",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;7713",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;796",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;84",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;8416",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;9175",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;95",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;964",
+            "duration_ms": 11000
+          }
+        ]
+      }
+    ],
+    "2303": [
+      {
+        "source_skill_id": 2303,
+        "source_skill_name": "漫长熔浆",
+        "kind": "burn",
+        "label": "烧伤",
+        "effect_class": 42,
+        "variants": [
+          {
+            "parameters": "1;0.3;1019",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.3;10845",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.3;11896",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.3;1303",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.3;13046",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.3;1332",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.3;1364",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.3;1400",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.3;14301",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.3;1440",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.3;1476",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.3;15021",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.3;1512",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.3;1549",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.3;1584",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.3;1617",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.3;16200",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.3;1653",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.3;1690",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.3;17508",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.3;18455",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.3;19627",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.3;20885",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.3;21896",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.3;4839",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.3;5379",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.3;5948",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.3;6544",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.3;7173",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.3;721",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.3;801",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.3;886",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.3;975",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.3;9884",
+            "duration_ms": 11000
+          }
+        ]
+      }
+    ],
+    "2304": [
+      {
+        "source_skill_id": 2206,
+        "source_skill_name": "地狱火海",
+        "kind": "burn",
+        "label": "烧伤",
+        "effect_class": 42,
+        "variants": [
+          {
+            "parameters": "1;0.05;103",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.1;2500",
+            "duration_ms": 11000
+          }
+        ]
+      }
+    ],
+    "2305": [
+      {
+        "source_skill_id": 2202,
+        "source_skill_name": "火墙",
+        "kind": "burn",
+        "label": "烧伤",
+        "effect_class": 42,
+        "variants": [
+          {
+            "parameters": "1;0.05;78",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.1;2500",
+            "duration_ms": 11000
+          }
+        ]
+      }
+    ],
+    "3019": [
+      {
+        "source_skill_id": 3019,
+        "source_skill_name": "连锁闪电",
+        "kind": "shock",
+        "label": "触电",
+        "effect_class": 43,
+        "variants": [
+          {
+            "parameters": "0.1;-0.15",
+            "duration_ms": 10000
+          }
+        ]
+      }
+    ],
+    "3202": [
+      {
+        "source_skill_id": 3202,
+        "source_skill_name": "雷电冲击",
+        "kind": "shock",
+        "label": "触电",
+        "effect_class": 43,
+        "variants": [
+          {
+            "parameters": "1;-0.15",
+            "duration_ms": 10000
+          }
+        ]
+      }
+    ],
+    "3203": [
+      {
+        "source_skill_id": 3203,
+        "source_skill_name": "重击",
+        "kind": "shock",
+        "label": "触电",
+        "effect_class": 43,
+        "variants": [
+          {
+            "parameters": "0.3;-0.15",
+            "duration_ms": 10000
+          }
+        ]
+      }
+    ],
+    "3402": [
+      {
+        "source_skill_id": 3402,
+        "source_skill_name": "电光箭",
+        "kind": "shock",
+        "label": "触电",
+        "effect_class": 43,
+        "variants": [
+          {
+            "parameters": "0.1;-0.15",
+            "duration_ms": 10000
+          }
+        ]
+      }
+    ],
+    "3407": [
+      {
+        "source_skill_id": 3407,
+        "source_skill_name": "闪电风暴",
+        "kind": "shock",
+        "label": "触电",
+        "effect_class": 43,
+        "variants": [
+          {
+            "parameters": "1;-0.15",
+            "duration_ms": 12000
+          }
+        ]
+      }
+    ],
+    "3411": [
+      {
+        "source_skill_id": 3411,
+        "source_skill_name": "天堂审判",
+        "kind": "shock",
+        "label": "触电",
+        "effect_class": 43,
+        "variants": [
+          {
+            "parameters": "0.25;-0.3",
+            "duration_ms": 15000
+          }
+        ]
+      }
+    ],
+    "3554": [
+      {
+        "source_skill_id": 3425,
+        "source_skill_name": "精神爆破",
+        "kind": "shock",
+        "label": "触电",
+        "effect_class": 43,
+        "variants": [
+          {
+            "parameters": "1;-0.15",
+            "duration_ms": 5000
+          },
+          {
+            "parameters": "1;-0.3",
+            "duration_ms": 7000
+          }
+        ]
+      }
+    ],
+    "4222": [
+      {
+        "source_skill_id": 4222,
+        "source_skill_name": "凝固汽油弹",
+        "kind": "burn",
+        "label": "烧伤",
+        "effect_class": 42,
+        "variants": [
+          {
+            "parameters": "1;0.01;1",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;10",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;1020",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;1112",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;119",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;12",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;1291",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;13",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;14",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;1433",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;1439",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;1445",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;1446",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;1453",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;1460",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;1600",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;170",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;1725",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;1732",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;1739",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;1746",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;1752",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;1756",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;1758",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;1765",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;1772",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;1777",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;18",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;1914",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;2",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;201",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;21",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;236",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;24",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;2529",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;2743",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;294",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;2975",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;31",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;3227",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;347",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;3500",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;4",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;406",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;4495",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;46",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;486",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;4878",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;5",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;50",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;5294",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;5745",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;6236",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;6488",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;69",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;6975",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;7",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;7427",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;750",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;79",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;7916",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;836",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;840",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;87",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0.01;930",
+            "duration_ms": 6000
+          }
+        ]
+      }
+    ],
+    "4409": [
+      {
+        "source_skill_id": 4409,
+        "source_skill_name": "岩浆戳刺",
+        "kind": "burn",
+        "label": "烧伤",
+        "effect_class": 42,
+        "variants": [
+          {
+            "parameters": "1;0.01;1",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;113",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;1283",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;1395",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;14",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;15",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;1517",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;1649",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;177",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;1793",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;195",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;2",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;217",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;2295",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;24",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;242",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;2496",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;267",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;2715",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;293",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;2952",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;3",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;305",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;37",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;374",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;4",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;405",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;406",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;407",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;408",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;417",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;44",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;460",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;495",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;496",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;497",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;498",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;499",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;5",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;504",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;53",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;586",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;587",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;588",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;589",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;6",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;64",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;698",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;757",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;77",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;8",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;823",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;894",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;92",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;972",
+            "duration_ms": 11000
+          }
+        ]
+      }
+    ],
+    "4410": [
+      {
+        "source_skill_id": 4410,
+        "source_skill_name": "岩浆墙",
+        "kind": "burn",
+        "label": "烧伤",
+        "effect_class": 42,
+        "variants": []
+      }
+    ],
+    "4411": [
+      {
+        "source_skill_id": 4411,
+        "source_skill_name": "岩浆波流",
+        "kind": "burn",
+        "label": "烧伤",
+        "effect_class": 42,
+        "variants": [
+          {
+            "parameters": "1;0.05;108",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;1118",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;1182",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;1189",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;1195",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;1202",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;1209",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;1249",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;129",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;1381",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;1410",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;1417",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;1423",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;1514",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;1648",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;2244",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;243",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;2435",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;2642",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;270",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;2865",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;289",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;309",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;3108",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;4072",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;42",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;4418",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;4793",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;500",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;5201",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;558",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;5643",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;605",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;617",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;677",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;693",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;7195",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;737",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;7811",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;8480",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;95",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;954",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;961",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;968",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;974",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;981",
+            "duration_ms": 11000
+          }
+        ]
+      }
+    ],
+    "4413": [
+      {
+        "source_skill_id": 4413,
+        "source_skill_name": "冰柱释放",
+        "kind": "burn",
+        "label": "烧伤",
+        "effect_class": 42,
+        "variants": [
+          {
+            "parameters": "1;0;1423",
+            "duration_ms": 5000
+          },
+          {
+            "parameters": "1;0;2134",
+            "duration_ms": 5000
+          },
+          {
+            "parameters": "1;0;3185",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0;4777",
+            "duration_ms": 11000
+          }
+        ]
+      }
+    ],
+    "4414": [
+      {
+        "source_skill_id": 4414,
+        "source_skill_name": "毒气聚能",
+        "kind": "poison",
+        "label": "中毒",
+        "effect_class": 44,
+        "variants": [
+          {
+            "parameters": "1;0.01;1056",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;1098",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;113",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;1143",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;1160",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;1197",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;1239",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;1288",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;129",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;1334",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;1379",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;15",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;16",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;195",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;2",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;216",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;223",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;242",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;267",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;292",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;3",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;318",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;36",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;373",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;405",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;406",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;410",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;416",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;422",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;44",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;460",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;5",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;504",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;53",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;548",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;6",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;633",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;64",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;756",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;76",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;8",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;822",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;894",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;9",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;92",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.01;971",
+            "duration_ms": 11000
+          }
+        ]
+      }
+    ],
+    "4417": [
+      {
+        "source_skill_id": 4417,
+        "source_skill_name": "疾病",
+        "kind": "disease",
+        "label": "疾病中毒",
+        "effect_class": 136,
+        "variants": [
+          {
+            "parameters": "1;0;1017;200",
+            "duration_ms": 15000
+          },
+          {
+            "parameters": "1;0;110;200",
+            "duration_ms": 15000
+          },
+          {
+            "parameters": "1;0;1162;200",
+            "duration_ms": 15000
+          },
+          {
+            "parameters": "1;0;11;200",
+            "duration_ms": 15000
+          },
+          {
+            "parameters": "1;0;1327;200",
+            "duration_ms": 15000
+          },
+          {
+            "parameters": "1;0;1516;200",
+            "duration_ms": 15000
+          },
+          {
+            "parameters": "1;0;15;200",
+            "duration_ms": 15000
+          },
+          {
+            "parameters": "1;0;1733;200",
+            "duration_ms": 15000
+          },
+          {
+            "parameters": "1;0;179;200",
+            "duration_ms": 15000
+          },
+          {
+            "parameters": "1;0;18;200",
+            "duration_ms": 15000
+          },
+          {
+            "parameters": "1;0;213;200",
+            "duration_ms": 15000
+          },
+          {
+            "parameters": "1;0;219;200",
+            "duration_ms": 15000
+          },
+          {
+            "parameters": "1;0;247;200",
+            "duration_ms": 15000
+          },
+          {
+            "parameters": "1;0;282;200",
+            "duration_ms": 15000
+          },
+          {
+            "parameters": "1;0;30;200",
+            "duration_ms": 15000
+          },
+          {
+            "parameters": "1;0;322;200",
+            "duration_ms": 15000
+          },
+          {
+            "parameters": "1;0;358;200",
+            "duration_ms": 15000
+          },
+          {
+            "parameters": "1;0;35;200",
+            "duration_ms": 15000
+          },
+          {
+            "parameters": "1;0;425;200",
+            "duration_ms": 15000
+          },
+          {
+            "parameters": "1;0;445;200",
+            "duration_ms": 15000
+          },
+          {
+            "parameters": "1;0;48;200",
+            "duration_ms": 15000
+          },
+          {
+            "parameters": "1;0;494;200",
+            "duration_ms": 15000
+          },
+          {
+            "parameters": "1;0;509;200",
+            "duration_ms": 15000
+          },
+          {
+            "parameters": "1;0;564;200",
+            "duration_ms": 15000
+          },
+          {
+            "parameters": "1;0;581;200",
+            "duration_ms": 15000
+          },
+          {
+            "parameters": "1;0;644;200",
+            "duration_ms": 15000
+          },
+          {
+            "parameters": "1;0;664;200",
+            "duration_ms": 15000
+          },
+          {
+            "parameters": "1;0;6;200",
+            "duration_ms": 15000
+          },
+          {
+            "parameters": "1;0;758;200",
+            "duration_ms": 15000
+          },
+          {
+            "parameters": "1;0;867;200",
+            "duration_ms": 15000
+          },
+          {
+            "parameters": "1;0;890;200",
+            "duration_ms": 15000
+          },
+          {
+            "parameters": "1;0;96;200",
+            "duration_ms": 15000
+          }
+        ]
+      }
+    ],
+    "4418": [
+      {
+        "source_skill_id": 4418,
+        "source_skill_name": "混合感染",
+        "kind": "poison",
+        "label": "中毒",
+        "effect_class": 44,
+        "variants": [
+          {
+            "parameters": "1;0.05;1028",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;1180",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;124",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;1356",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;1558",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;170",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;2283",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;233",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;25",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;2624",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;3017",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;312",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;3468",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;3988",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;402",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;43",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;512",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;538",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;597",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;632",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;634",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;637",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;72",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;812",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;815",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;817",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;820",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;822",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;882",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;98",
+            "duration_ms": 11000
+          }
+        ]
+      }
+    ],
+    "4420": [
+      {
+        "source_skill_id": 4420,
+        "source_skill_name": "毒池",
+        "kind": "poison",
+        "label": "中毒",
+        "effect_class": 44,
+        "variants": [
+          {
+            "parameters": "1;0;1070",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0;10701",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0;713",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0;7134",
+            "duration_ms": 11000
+          }
+        ]
+      }
+    ],
+    "5214": [
+      {
+        "source_skill_id": 5214,
+        "source_skill_name": "灵魂之纸",
+        "kind": "curse",
+        "label": "诅咒伤害",
+        "effect_class": 244,
+        "variants": [
+          {
+            "parameters": "1;0;2000",
+            "duration_ms": 5000
+          },
+          {
+            "parameters": "1;0;2000",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0;2000",
+            "duration_ms": 7000
+          },
+          {
+            "parameters": "1;0;2000",
+            "duration_ms": 8000
+          },
+          {
+            "parameters": "1;0;2000",
+            "duration_ms": 9000
+          },
+          {
+            "parameters": "1;0;2000",
+            "duration_ms": 10000
+          },
+          {
+            "parameters": "1;0;2000",
+            "duration_ms": 12000
+          },
+          {
+            "parameters": "1;0;2000",
+            "duration_ms": 14000
+          },
+          {
+            "parameters": "1;0;2000",
+            "duration_ms": 16000
+          },
+          {
+            "parameters": "1;0;2000",
+            "duration_ms": 18000
+          },
+          {
+            "parameters": "1;0;2000",
+            "duration_ms": 20000
+          }
+        ]
+      }
+    ],
+    "5217": [
+      {
+        "source_skill_id": 5217,
+        "source_skill_name": "野兽之灵",
+        "kind": "curse",
+        "label": "诅咒伤害",
+        "effect_class": 244,
+        "variants": [
+          {
+            "parameters": "1;0;2000",
+            "duration_ms": 5000
+          },
+          {
+            "parameters": "1;0;2000",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "1;0;2000",
+            "duration_ms": 7000
+          },
+          {
+            "parameters": "1;0;2000",
+            "duration_ms": 8000
+          },
+          {
+            "parameters": "1;0;2000",
+            "duration_ms": 9000
+          },
+          {
+            "parameters": "1;0;2000",
+            "duration_ms": 10000
+          },
+          {
+            "parameters": "1;0;2000",
+            "duration_ms": 12000
+          },
+          {
+            "parameters": "1;0;2000",
+            "duration_ms": 14000
+          },
+          {
+            "parameters": "1;0;2000",
+            "duration_ms": 16000
+          },
+          {
+            "parameters": "1;0;2000",
+            "duration_ms": 18000
+          },
+          {
+            "parameters": "1;0;2000",
+            "duration_ms": 20000
+          }
+        ]
+      }
+    ],
+    "7603": [
+      {
+        "source_skill_id": 7603,
+        "source_skill_name": "[噩梦]新月之刃",
+        "kind": "burn",
+        "label": "烧伤",
+        "effect_class": 42,
+        "variants": [
+          {
+            "parameters": "1;0.05;10384",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;1098",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;11038",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;11732",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;12434",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;1353",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;1578",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;183",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;1833",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;246",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;2889",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;3171",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;3732",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;4269",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;4956",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;6309",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;8265",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;828",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;9063",
+            "duration_ms": 11000
+          },
+          {
+            "parameters": "1;0.05;9663",
+            "duration_ms": 11000
+          }
+        ]
+      }
+    ],
+    "7622": [
+      {
+        "source_skill_id": 7508,
+        "source_skill_name": "火焰冲击",
+        "kind": "burn",
+        "label": "烧伤",
+        "effect_class": 42,
+        "variants": [
+          {
+            "parameters": "1;0.5;0;0",
+            "duration_ms": 10000
+          }
+        ]
+      }
+    ],
+    "7626": [
+      {
+        "source_skill_id": 7608,
+        "source_skill_name": "[噩梦]火焰冲击",
+        "kind": "burn",
+        "label": "烧伤",
+        "effect_class": 42,
+        "variants": [
+          {
+            "parameters": "1;0.5;0;0",
+            "duration_ms": 10000
+          }
+        ]
+      }
+    ],
+    "7627": [
+      {
+        "source_skill_id": 7627,
+        "source_skill_name": "[觉醒]觉醒•黑暗之刃",
+        "kind": "burn",
+        "label": "烧伤",
+        "effect_class": 42,
+        "variants": [
+          {
+            "parameters": "1;0.5;0;0",
+            "duration_ms": 10000
+          }
+        ]
+      }
+    ],
+    "7628": [
+      {
+        "source_skill_id": 7628,
+        "source_skill_name": "[觉醒]觉醒•黑暗之刃",
+        "kind": "burn",
+        "label": "烧伤",
+        "effect_class": 42,
+        "variants": [
+          {
+            "parameters": "1;0.5;0;0",
+            "duration_ms": 10000
+          }
+        ]
+      }
+    ],
+    "30612": [
+      {
+        "source_skill_id": 3409,
+        "source_skill_name": "雷电之手",
+        "kind": "shock",
+        "label": "触电",
+        "effect_class": 43,
+        "variants": [
+          {
+            "parameters": "0.1;-0.15",
+            "duration_ms": 6000
+          }
+        ]
+      }
+    ],
+    "30616": [
+      {
+        "source_skill_id": 3409,
+        "source_skill_name": "雷电之手",
+        "kind": "shock",
+        "label": "触电",
+        "effect_class": 43,
+        "variants": [
+          {
+            "parameters": "0.1;-0.15",
+            "duration_ms": 6000
+          }
+        ]
+      }
+    ],
+    "30810": [
+      {
+        "source_skill_id": 4405,
+        "source_skill_name": "召唤魔法草",
+        "kind": "burn",
+        "label": "烧伤",
+        "effect_class": 42,
+        "variants": [
+          {
+            "parameters": "1;0.1;15",
+            "duration_ms": 7000
+          }
+        ]
+      }
+    ],
+    "30812": [
+      {
+        "source_skill_id": 4405,
+        "source_skill_name": "召唤魔法草",
+        "kind": "poison",
+        "label": "中毒",
+        "effect_class": 44,
+        "variants": [
+          {
+            "parameters": "1;0.1;15",
+            "duration_ms": 7000
+          }
+        ]
+      }
+    ],
+    "30813": [
+      {
+        "source_skill_id": 4410,
+        "source_skill_name": "岩浆墙",
+        "kind": "burn",
+        "label": "烧伤",
+        "effect_class": 42,
+        "variants": []
+      }
+    ],
+    "30820": [
+      {
+        "source_skill_id": 5216,
+        "source_skill_name": "灵魂之门",
+        "kind": "curse",
+        "label": "诅咒伤害",
+        "effect_class": 244,
+        "variants": [
+          {
+            "parameters": "1;0;2000",
+            "duration_ms": 5000
+          },
+          {
+            "parameters": "1;0;2000",
+            "duration_ms": 10000
+          }
+        ]
+      }
+    ],
+    "30823": [
+      {
+        "source_skill_id": 5216,
+        "source_skill_name": "灵魂之门",
+        "kind": "curse",
+        "label": "诅咒伤害",
+        "effect_class": 244,
+        "variants": [
+          {
+            "parameters": "1;0;2000",
+            "duration_ms": 10000
+          }
+        ]
+      }
+    ],
+    "30824": [
+      {
+        "source_skill_id": 5216,
+        "source_skill_name": "灵魂之门",
+        "kind": "curse",
+        "label": "诅咒伤害",
+        "effect_class": 244,
+        "variants": [
+          {
+            "parameters": "1;0;2000",
+            "duration_ms": 10000
+          }
+        ]
+      }
+    ],
+    "260401": [
+      {
+        "source_skill_id": 4217,
+        "source_skill_name": "重磅轰击",
+        "kind": "shock",
+        "label": "触电",
+        "effect_class": 43,
+        "variants": [
+          {
+            "parameters": "0",
+            "duration_ms": 9000
+          },
+          {
+            "parameters": "0",
+            "duration_ms": 12000
+          },
+          {
+            "parameters": "0.2",
+            "duration_ms": 3000
+          },
+          {
+            "parameters": "0.2",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "0.2",
+            "duration_ms": 9000
+          },
+          {
+            "parameters": "0.2",
+            "duration_ms": 12000
+          }
+        ]
+      }
+    ],
+    "260402": [
+      {
+        "source_skill_id": 4217,
+        "source_skill_name": "重磅轰击",
+        "kind": "shock",
+        "label": "触电",
+        "effect_class": 43,
+        "variants": [
+          {
+            "parameters": "0.2",
+            "duration_ms": 3000
+          },
+          {
+            "parameters": "0.2",
+            "duration_ms": 12000
+          }
+        ]
+      }
+    ],
+    "260403": [
+      {
+        "source_skill_id": 4217,
+        "source_skill_name": "重磅轰击",
+        "kind": "shock",
+        "label": "触电",
+        "effect_class": 43,
+        "variants": [
+          {
+            "parameters": "0.2",
+            "duration_ms": 3000
+          },
+          {
+            "parameters": "0.2",
+            "duration_ms": 12000
+          }
+        ]
+      }
+    ],
+    "260404": [
+      {
+        "source_skill_id": 4217,
+        "source_skill_name": "重磅轰击",
+        "kind": "shock",
+        "label": "触电",
+        "effect_class": 43,
+        "variants": [
+          {
+            "parameters": "0.2",
+            "duration_ms": 3000
+          },
+          {
+            "parameters": "0.2",
+            "duration_ms": 12000
+          }
+        ]
+      }
+    ],
+    "260405": [
+      {
+        "source_skill_id": 4217,
+        "source_skill_name": "重磅轰击",
+        "kind": "shock",
+        "label": "触电",
+        "effect_class": 43,
+        "variants": [
+          {
+            "parameters": "0.2",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "0.2",
+            "duration_ms": 12000
+          }
+        ]
+      }
+    ],
+    "260406": [
+      {
+        "source_skill_id": 4217,
+        "source_skill_name": "重磅轰击",
+        "kind": "shock",
+        "label": "触电",
+        "effect_class": 43,
+        "variants": [
+          {
+            "parameters": "0.2",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "0.2",
+            "duration_ms": 12000
+          }
+        ]
+      }
+    ],
+    "260407": [
+      {
+        "source_skill_id": 4217,
+        "source_skill_name": "重磅轰击",
+        "kind": "shock",
+        "label": "触电",
+        "effect_class": 43,
+        "variants": [
+          {
+            "parameters": "0.2",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "0.2",
+            "duration_ms": 12000
+          }
+        ]
+      }
+    ],
+    "260408": [
+      {
+        "source_skill_id": 4217,
+        "source_skill_name": "重磅轰击",
+        "kind": "shock",
+        "label": "触电",
+        "effect_class": 43,
+        "variants": [
+          {
+            "parameters": "0.2",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "0.2",
+            "duration_ms": 12000
+          }
+        ]
+      }
+    ],
+    "260409": [
+      {
+        "source_skill_id": 4217,
+        "source_skill_name": "重磅轰击",
+        "kind": "shock",
+        "label": "触电",
+        "effect_class": 43,
+        "variants": [
+          {
+            "parameters": "0.2",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "0.2",
+            "duration_ms": 12000
+          }
+        ]
+      }
+    ],
+    "260410": [
+      {
+        "source_skill_id": 4217,
+        "source_skill_name": "重磅轰击",
+        "kind": "shock",
+        "label": "触电",
+        "effect_class": 43,
+        "variants": [
+          {
+            "parameters": "0.2",
+            "duration_ms": 6000
+          },
+          {
+            "parameters": "0.2",
+            "duration_ms": 12000
+          }
+        ]
+      }
+    ],
+    "260411": [
+      {
+        "source_skill_id": 4217,
+        "source_skill_name": "重磅轰击",
+        "kind": "shock",
+        "label": "触电",
+        "effect_class": 43,
+        "variants": [
+          {
+            "parameters": "0.2",
+            "duration_ms": 9000
+          },
+          {
+            "parameters": "0.2",
+            "duration_ms": 12000
+          }
+        ]
+      }
+    ],
+    "260412": [
+      {
+        "source_skill_id": 4217,
+        "source_skill_name": "重磅轰击",
+        "kind": "shock",
+        "label": "触电",
+        "effect_class": 43,
+        "variants": [
+          {
+            "parameters": "0.2",
+            "duration_ms": 9000
+          },
+          {
+            "parameters": "0.2",
+            "duration_ms": 12000
+          }
+        ]
+      }
+    ],
+    "260413": [
+      {
+        "source_skill_id": 4217,
+        "source_skill_name": "重磅轰击",
+        "kind": "shock",
+        "label": "触电",
+        "effect_class": 43,
+        "variants": [
+          {
+            "parameters": "0.2",
+            "duration_ms": 9000
+          },
+          {
+            "parameters": "0.2",
+            "duration_ms": 12000
+          }
+        ]
+      }
+    ],
+    "260414": [
+      {
+        "source_skill_id": 4217,
+        "source_skill_name": "重磅轰击",
+        "kind": "shock",
+        "label": "触电",
+        "effect_class": 43,
+        "variants": [
+          {
+            "parameters": "0.2",
+            "duration_ms": 9000
+          },
+          {
+            "parameters": "0.2",
+            "duration_ms": 12000
+          }
+        ]
+      }
+    ],
+    "260415": [
+      {
+        "source_skill_id": 4217,
+        "source_skill_name": "重磅轰击",
+        "kind": "shock",
+        "label": "触电",
+        "effect_class": 43,
+        "variants": [
+          {
+            "parameters": "0.2",
+            "duration_ms": 9000
+          },
+          {
+            "parameters": "0.2",
+            "duration_ms": 12000
+          }
+        ]
+      }
+    ],
+    "260416": [
+      {
+        "source_skill_id": 4217,
+        "source_skill_name": "重磅轰击",
+        "kind": "shock",
+        "label": "触电",
+        "effect_class": 43,
+        "variants": [
+          {
+            "parameters": "0",
+            "duration_ms": 9000
+          },
+          {
+            "parameters": "0",
+            "duration_ms": 12000
+          }
+        ]
+      }
+    ],
+    "260417": [
+      {
+        "source_skill_id": 4217,
+        "source_skill_name": "重磅轰击",
+        "kind": "shock",
+        "label": "触电",
+        "effect_class": 43,
+        "variants": [
+          {
+            "parameters": "0",
+            "duration_ms": 9000
+          },
+          {
+            "parameters": "0",
+            "duration_ms": 12000
+          }
+        ]
+      }
+    ],
+    "260418": [
+      {
+        "source_skill_id": 4217,
+        "source_skill_name": "重磅轰击",
+        "kind": "shock",
+        "label": "触电",
+        "effect_class": 43,
+        "variants": []
+      }
+    ],
+    "260419": [
+      {
+        "source_skill_id": 4217,
+        "source_skill_name": "重磅轰击",
+        "kind": "shock",
+        "label": "触电",
+        "effect_class": 43,
+        "variants": []
+      }
+    ],
+    "260420": [
+      {
+        "source_skill_id": 4217,
+        "source_skill_name": "重磅轰击",
+        "kind": "shock",
+        "label": "触电",
+        "effect_class": 43,
+        "variants": []
+      }
+    ],
+    "260421": [
+      {
+        "source_skill_id": 4217,
+        "source_skill_name": "重磅轰击",
+        "kind": "shock",
+        "label": "触电",
+        "effect_class": 43,
+        "variants": []
+      }
+    ],
+    "260422": [
+      {
+        "source_skill_id": 4217,
+        "source_skill_name": "重磅轰击",
+        "kind": "shock",
+        "label": "触电",
+        "effect_class": 43,
+        "variants": []
+      }
+    ],
+    "260423": [
+      {
+        "source_skill_id": 4217,
+        "source_skill_name": "重磅轰击",
+        "kind": "shock",
+        "label": "触电",
+        "effect_class": 43,
+        "variants": []
+      }
+    ],
+    "260424": [
+      {
+        "source_skill_id": 4217,
+        "source_skill_name": "重磅轰击",
+        "kind": "shock",
+        "label": "触电",
+        "effect_class": 43,
+        "variants": []
+      }
+    ],
+    "260425": [
+      {
+        "source_skill_id": 4217,
+        "source_skill_name": "重磅轰击",
+        "kind": "shock",
+        "label": "触电",
+        "effect_class": 43,
+        "variants": []
+      }
+    ],
+    "260426": [
+      {
+        "source_skill_id": 4217,
+        "source_skill_name": "重磅轰击",
+        "kind": "shock",
+        "label": "触电",
+        "effect_class": 43,
+        "variants": []
+      }
+    ],
+    "260427": [
+      {
+        "source_skill_id": 4217,
+        "source_skill_name": "重磅轰击",
+        "kind": "shock",
+        "label": "触电",
+        "effect_class": 43,
+        "variants": []
+      }
+    ],
+    "260428": [
+      {
+        "source_skill_id": 4217,
+        "source_skill_name": "重磅轰击",
+        "kind": "shock",
+        "label": "触电",
+        "effect_class": 43,
+        "variants": []
+      }
+    ],
+    "260429": [
+      {
+        "source_skill_id": 4217,
+        "source_skill_name": "重磅轰击",
+        "kind": "shock",
+        "label": "触电",
+        "effect_class": 43,
+        "variants": []
+      }
+    ],
+    "260430": [
+      {
+        "source_skill_id": 4217,
+        "source_skill_name": "重磅轰击",
+        "kind": "shock",
+        "label": "触电",
+        "effect_class": 43,
+        "variants": []
+      }
+    ],
+    "261401": [
+      {
+        "source_skill_id": 4217,
+        "source_skill_name": "重磅轰击",
+        "kind": "shock",
+        "label": "触电",
+        "effect_class": 43,
+        "variants": []
+      }
+    ],
+    "261402": [
+      {
+        "source_skill_id": 4217,
+        "source_skill_name": "重磅轰击",
+        "kind": "shock",
+        "label": "触电",
+        "effect_class": 43,
+        "variants": []
+      }
+    ],
+    "261403": [
+      {
+        "source_skill_id": 4217,
+        "source_skill_name": "重磅轰击",
+        "kind": "shock",
+        "label": "触电",
+        "effect_class": 43,
+        "variants": []
+      }
+    ],
+    "261404": [
+      {
+        "source_skill_id": 4217,
+        "source_skill_name": "重磅轰击",
+        "kind": "shock",
+        "label": "触电",
+        "effect_class": 43,
+        "variants": []
+      }
+    ],
+    "261405": [
+      {
+        "source_skill_id": 4217,
+        "source_skill_name": "重磅轰击",
+        "kind": "shock",
+        "label": "触电",
+        "effect_class": 43,
+        "variants": []
+      }
+    ],
+    "261406": [
+      {
+        "source_skill_id": 4217,
+        "source_skill_name": "重磅轰击",
+        "kind": "shock",
+        "label": "触电",
+        "effect_class": 43,
+        "variants": []
+      }
+    ],
+    "261407": [
+      {
+        "source_skill_id": 4217,
+        "source_skill_name": "重磅轰击",
+        "kind": "shock",
+        "label": "触电",
+        "effect_class": 43,
+        "variants": []
+      }
+    ],
+    "261408": [
+      {
+        "source_skill_id": 4217,
+        "source_skill_name": "重磅轰击",
+        "kind": "shock",
+        "label": "触电",
+        "effect_class": 43,
+        "variants": []
+      }
+    ],
+    "261409": [
+      {
+        "source_skill_id": 4217,
+        "source_skill_name": "重磅轰击",
+        "kind": "shock",
+        "label": "触电",
+        "effect_class": 43,
+        "variants": []
+      }
+    ],
+    "261410": [
+      {
+        "source_skill_id": 4217,
+        "source_skill_name": "重磅轰击",
+        "kind": "shock",
+        "label": "触电",
+        "effect_class": 43,
+        "variants": []
+      }
+    ],
+    "261411": [
+      {
+        "source_skill_id": 4217,
+        "source_skill_name": "重磅轰击",
+        "kind": "shock",
+        "label": "触电",
+        "effect_class": 43,
+        "variants": []
+      }
+    ],
+    "261412": [
+      {
+        "source_skill_id": 4217,
+        "source_skill_name": "重磅轰击",
+        "kind": "shock",
+        "label": "触电",
+        "effect_class": 43,
+        "variants": []
+      }
+    ],
+    "261413": [
+      {
+        "source_skill_id": 4217,
+        "source_skill_name": "重磅轰击",
+        "kind": "shock",
+        "label": "触电",
+        "effect_class": 43,
+        "variants": []
+      }
+    ],
+    "261414": [
+      {
+        "source_skill_id": 4217,
+        "source_skill_name": "重磅轰击",
+        "kind": "shock",
+        "label": "触电",
+        "effect_class": 43,
+        "variants": []
+      }
+    ],
+    "261415": [
+      {
+        "source_skill_id": 4217,
+        "source_skill_name": "重磅轰击",
+        "kind": "shock",
+        "label": "触电",
+        "effect_class": 43,
+        "variants": []
+      }
+    ],
+    "261416": [
+      {
+        "source_skill_id": 4217,
+        "source_skill_name": "重磅轰击",
+        "kind": "shock",
+        "label": "触电",
+        "effect_class": 43,
+        "variants": []
+      }
+    ],
+    "261417": [
+      {
+        "source_skill_id": 4217,
+        "source_skill_name": "重磅轰击",
+        "kind": "shock",
+        "label": "触电",
+        "effect_class": 43,
+        "variants": []
+      }
+    ],
+    "261418": [
+      {
+        "source_skill_id": 4217,
+        "source_skill_name": "重磅轰击",
+        "kind": "shock",
+        "label": "触电",
+        "effect_class": 43,
+        "variants": []
+      }
+    ],
+    "261419": [
+      {
+        "source_skill_id": 4217,
+        "source_skill_name": "重磅轰击",
+        "kind": "shock",
+        "label": "触电",
+        "effect_class": 43,
+        "variants": []
+      }
+    ],
+    "261420": [
+      {
+        "source_skill_id": 4217,
+        "source_skill_name": "重磅轰击",
+        "kind": "shock",
+        "label": "触电",
+        "effect_class": 43,
+        "variants": []
+      }
+    ]
+  }
+}

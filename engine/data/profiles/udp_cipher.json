@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "protocol_version": "v576",
+  "source_sha256": "164437FEA744CEFCED9570A6A07091ABF39E2EA28BAC9A566CC7988BCADA3F86",
+  "source_kind": "current_client_runtime_image",
+  "key_rva": "0x0115E220",
+  "key_length": 13,
+  "key_hex_client_order": "3f2642fd8a723474c8bfcda494",
+  "act_legacy_rotation": 8,
+  "phase_formula": "(11-signature_byte)%13",
+  "forward_bit_table_rva": "0x0115E210",
+  "forward_bit_table_hex": "0602070001030504",
+  "inverse_bit_table_rva": "0x0115E218",
+  "inverse_bit_table_hex": "0304010507060002",
+  "decoder_rva": "0x00254220",
+  "encoder_rva": "0x00254380",
+  "modulus": 13,
+  "body_offset_in_inner_frame": 7,
+  "outer_prefix_bytes": 3,
+  "body_offset_on_wire": 10,
+  "derivation": "CNetSocketRUDP/CCryptoPacket RTTI and virtual-call chain; no capture bytes were used to derive the table"
+}

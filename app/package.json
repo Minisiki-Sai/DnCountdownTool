@@ -1,0 +1,43 @@
+{
+  "name": "dragon-nest-countdown",
+  "private": true,
+  "version": "4.88.0",
+  "type": "module",
+  "engines": {
+    "node": ">=22.6"
+  },
+  "scripts": {
+    "dev": "cd src-tauri && tauri dev",
+    "dev:web": "vite --host 127.0.0.1",
+    "build": "vue-tsc --noEmit && cd src-tauri && tauri build",
+    "build:web": "vue-tsc --noEmit && pnpm verify:voices && vite build",
+    "check": "vue-tsc --noEmit",
+    "test": "node --experimental-strip-types --test \"tests/**/*.test.ts\" \"tests/**/*.test.mjs\"",
+    "verify:voices": "node scripts/verify_voice_assets.mjs",
+    "test:voices": "node --experimental-strip-types --test tests/qwenVoicePlayer.test.ts tests/qwenVoiceAssets.test.ts tests/voiceAnnouncements.test.ts tests/voiceReplay1018.test.ts tests/shadowExplosion.test.ts tests/skillCountdowns.test.ts",
+    "test:capture-replay": "node --experimental-strip-types --test tests/captureReplay.test.ts",
+    "selftest:replay": "node --experimental-strip-types scripts/replaySelfTest.ts",
+    "test:global-hotkeys": "node --test tests/globalHotkeys.test.ts",
+    "test:overlay-runtime": "node --test tests/overlayRuntimePolicy.test.ts",
+    "test:overlay-events": "node --test tests/overlayEventProtocol.test.ts",
+    "test:overlay-identity": "node --test tests/skillIdentity.test.ts",
+    "smoke:overlay-events": "node scripts/overlay_event_smoke.mjs",
+    "benchmark:overlay-events": "node scripts/benchmark_overlay_event_migration.mjs",
+    "test:live-workspace-state": "node scripts/live_workspace_state_smoke.mjs"
+  },
+  "dependencies": {
+    "@lucide/vue": "^1.0.0",
+    "@tauri-apps/api": "^2.8.0",
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.8.0",
+    "@types/node": "^22.10.5",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "playwright-core": "1.54.2",
+    "typescript": "~5.7.2",
+    "vite": "^6.0.7",
+    "vue-tsc": "^2.2.0"
+  },
+  "packageManager": "pnpm@10.34.7"
+}

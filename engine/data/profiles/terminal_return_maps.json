@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "protocol_version": "v576",
+  "evidence_policy": "exact_map_leave+tcp_scene_teardown+udp_transition_ack+verified_destination",
+  "maps": {
+    "14514": 11
+  },
+  "evidence": {
+    "14514": {
+      "source": "black_dragon_three_direct_return_capture",
+      "destination_name": "神圣天堂",
+      "note": "终局可能不再发送21 0C；仅在完整离场证据链后使用。"
+    }
+  }
+}

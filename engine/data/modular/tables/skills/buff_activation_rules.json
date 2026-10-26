@@ -1,0 +1,251 @@
+{
+  "version": 1,
+  "personal_buffs": {
+    "毁灭者|力量掌握": {
+      "mode": "triggered",
+      "duration": 10,
+      "trigger_skills": [
+        "战吼",
+        "反击怒吼",
+        "毁灭呐喊"
+      ]
+    },
+    "狙翎|精神放逐": {
+      "mode": "permanent"
+    },
+    "魔羽|精神放逐": {
+      "mode": "permanent"
+    },
+    "风行者|精神放逐": {
+      "mode": "permanent"
+    },
+    "影舞者|精神放逐": {
+      "mode": "permanent"
+    },
+    "时空领主|神秘": {
+      "mode": "permanent"
+    },
+    "黑暗女王|魔法盗取": {
+      "mode": "permanent"
+    },
+    "烈|阿索尼斯特": {
+      "mode": "periodic",
+      "duration": 24,
+      "cooldown": 30
+    },
+    "圣骑士|神圣化身": {
+      "mode": "periodic",
+      "duration": 20,
+      "cooldown": 125
+    },
+    "十字军|神圣化身": {
+      "mode": "periodic",
+      "duration": 20,
+      "cooldown": 125
+    },
+    "十字军|审判力量": {
+      "mode": "periodic",
+      "duration": 40,
+      "cooldown": 60
+    },
+    "黑暗萨满|激增灵魂": {
+      "mode": "permanent"
+    },
+    "噬魂者|激增灵魂": {
+      "mode": "permanent"
+    },
+    "曜|精通光明查克拉": {
+      "mode": "triggered",
+      "duration": 10,
+      "trigger_skills": [
+        "暴怒",
+        "奇迹之轮"
+      ]
+    },
+    "暗|精通深渊查克拉": {
+      "mode": "triggered",
+      "duration": 10,
+      "trigger_skills": [
+        "幻象攻击",
+        "暗影聚焦"
+      ]
+    },
+    "黑暗复仇者|觉醒": {
+      "mode": "permanent"
+    },
+    "剑皇|勇敢": {
+      "mode": "periodic",
+      "duration": 15,
+      "cooldown": 35
+    },
+    "剑皇|体能暴涨": {
+      "mode": "permanent"
+    },
+    "月之领主|勇敢": {
+      "mode": "periodic",
+      "duration": 15,
+      "cooldown": 35
+    },
+    "月之领主|魔法爆发": {
+      "mode": "permanent"
+    },
+    "狂战士|致命一击掌握": {
+      "mode": "triggered",
+      "duration": 10,
+      "trigger_skills": [
+        "战吼",
+        "反击怒吼",
+        "毁灭呐喊"
+      ]
+    },
+    "狙翎|精确瞄准": {
+      "mode": "periodic",
+      "duration": 18,
+      "cooldown": 44
+    },
+    "魔羽|精确瞄准": {
+      "mode": "periodic",
+      "duration": 18,
+      "cooldown": 44
+    },
+    "冰灵|寒冰障碍": {
+      "mode": "periodic",
+      "duration": 25,
+      "cooldown": 40
+    },
+    "十字军|魔法之息": {
+      "mode": "triggered",
+      "duration": 5,
+      "trigger_element": "光"
+    },
+    "圣徒|复活之息": {
+      "mode": "triggered",
+      "duration": 5,
+      "trigger_skills": [
+        "雷电之手",
+        "治愈之手",
+        "痊愈之手",
+        "掌握之手",
+        "奇迹之手"
+      ]
+    },
+    "机械大师|机械模式": {
+      "mode": "mode"
+    },
+    "机械大师|机械时刻": {
+      "mode": "triggered",
+      "duration": 30,
+      "cooldown": 60,
+      "trigger_skills": [
+        "机械模式"
+      ]
+    },
+    "炼金圣士|元素和声": {
+      "mode": "triggered",
+      "duration": 10,
+      "trigger_on_damage": true,
+      "timeline_attrs": [
+        "魔攻%"
+      ]
+    },
+    "药剂师|生化和声": {
+      "mode": "triggered",
+      "duration": 10,
+      "trigger_on_damage": true,
+      "timeline_attrs": [
+        "魔攻%"
+      ]
+    },
+    "狂战士|荆棘": {
+      "mode": "permanent"
+    },
+    "毁灭者|荆棘": {
+      "mode": "permanent"
+    },
+    "魔羽|魔法暴雪": {
+      "mode": "permanent"
+    },
+    "狙翎|偷袭点": {
+      "mode": "periodic",
+      "duration": 14,
+      "cooldown": 32
+    },
+    "刀锋舞者|弗里兹科之舞": {
+      "mode": "periodic",
+      "duration": 12,
+      "cooldown": 15
+    },
+    "灵魂舞者|幻影之舞": {
+      "mode": "periodic",
+      "duration": 12,
+      "cooldown": 15
+    },
+    "月之领主|旋风斩EX": {
+      "mode": "triggered",
+      "duration": 8,
+      "trigger_skills": [
+        "旋风斩"
+      ]
+    },
+    "游侠|精神爆发": {
+      "mode": "triggered",
+      "trigger_skills": [
+        "精神爆发"
+      ],
+      "duration_from_skill": true
+    },
+    "元素|地狱火海": {
+      "mode": "triggered",
+      "duration": 10,
+      "trigger_skills": [
+        "地狱火海"
+      ],
+      "skill_scope": [
+        "火球"
+      ],
+      "first_target": true
+    },
+    "银色猎人|银色猎人": {
+      "mode": "periodic",
+      "duration": 60,
+      "cooldown": 75,
+      "force_timeline_cast": true,
+      "mandatory_uptime": true,
+      "continuous_uptime": true
+    },
+    "猎人|猎人之眼": {
+      "mode": "permanent",
+      "duration": 180,
+      "cooldown": 10
+    }
+  },
+  "team_buffs": {
+    "元素|灼热火焰": {
+      "mode": "periodic",
+      "force_timeline_cast": true,
+      "mandatory_uptime": true
+    },
+    "元素|火焰光环": {
+      "mode": "permanent",
+      "exclusive_group": "元素师元素光环",
+      "preferred_jobs": ["火舞"]
+    },
+    "元素|寒冰光环": {
+      "mode": "permanent",
+      "exclusive_group": "元素师元素光环",
+      "preferred_jobs": ["冰灵"]
+    },
+    "通用|特制强化药剂": {
+      "mode": "periodic",
+      "duration": 180,
+      "cooldown": 5,
+      "force_timeline_cast": true,
+      "mandatory_uptime": true,
+      "continuous_uptime": true
+    },
+    "通用|阿兹那之息": {
+      "mode": "intermittent_refresh",
+      "refresh_interval": 5
+    }
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "DN倒计时工具",
+  "version": "4.88.0",
+  "identifier": "com.gcg.dragon-nest-simulator.v420",
+  "build": {
+    "beforeDevCommand": "pnpm dev:web",
+    "devUrl": "http://127.0.0.1:1420",
+    "beforeBuildCommand": "pnpm build:web",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "label": "main",
+        "title": "DN倒计时工具 V4.88",
+        "width": 1080,
+        "height": 720,
+        "minWidth": 900,
+        "minHeight": 600,
+        "center": true,
+        "maximized": false,
+        "resizable": true,
+        "fullscreen": false,
+        "decorations": false,
+        "transparent": true,
+        "shadow": true
+      },
+      {
+        "label": "buff-overlay",
+        "create": false,
+        "title": "增益 / 减益倒计时",
+        "url": "index.html?view=buff-overlay",
+        "width": 320,
+        "height": 46,
+        "resizable": false,
+        "decorations": false,
+        "transparent": true,
+        "alwaysOnTop": true,
+        "skipTaskbar": true,
+        "shadow": false,
+        "visible": false,
+        "focus": false
+      },
+      {
+        "label": "skill-countdown-overlay",
+        "create": false,
+        "title": "Boss 技能倒计时",
+        "url": "index.html?view=skill-countdown-overlay",
+        "width": 320,
+        "height": 160,
+        "resizable": false,
+        "decorations": false,
+        "transparent": true,
+        "alwaysOnTop": true,
+        "skipTaskbar": true,
+        "shadow": false,
+        "visible": false,
+        "focus": false
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self'; connect-src 'self' http://127.0.0.1:48710; img-src 'self' data: blob: asset: http://asset.localhost http://127.0.0.1:48710; media-src 'self' data: blob:; style-src 'self' 'unsafe-inline'; font-src 'self'; worker-src 'self' blob:; script-src 'self' 'wasm-unsafe-eval'"
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": [
+      "nsis"
+    ],
+    "resources": {
+      "../../runtime/engine-package.zip": "runtime/engine-package.zip",
+      "../../runtime/install-manifest.json": "runtime/install-manifest.json",
+      "../../tools/verify_install_manifest.ps1": "runtime/verify-install.ps1",
+      "../../third_party/npcap/npcap-1.88.exe": "third_party/npcap/npcap-1.88.exe"
+    },
+    "icon": [
+      "../../engine/assets/app_icon_build.ico",
+      "../public/app-icon.png"
+    ],
+    "windows": {
+      "webviewInstallMode": {
+        "type": "downloadBootstrapper",
+        "silent": true
+      },
+      "nsis": {
+        "installMode": "currentUser",
+        "languages": [
+          "SimpChinese"
+        ],
+        "customLanguageFiles": {
+          "SimpChinese": "languages/SimpChinese.nsh"
+        },
+        "installerHooks": "installer-hooks.nsh"
+      }
+    }
+  }
+}

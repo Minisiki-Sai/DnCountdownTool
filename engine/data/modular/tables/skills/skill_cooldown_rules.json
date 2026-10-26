@@ -1,0 +1,850 @@
+{
+  "version": 1,
+  "external_cdr_cap": 0.7,
+  "description": "技能长期平均等效CD规则。基础CD优先读取当前技能数据，fallback仅在技能数据缺失时使用。",
+  "jobs": {
+    "冰灵": {
+      "冰柱喷射": {
+        "base_cooldown_fallback": 30,
+        "passive_percent": 0,
+        "self_refund_seconds": 5,
+        "extra_resets": 0,
+        "sources": [
+          {
+            "skill": "冰河",
+            "type": "fixed_seconds",
+            "source_cooldown_fallback": 24,
+            "value": 0.5
+          },
+          {
+            "skill": "冰刃",
+            "type": "fixed_seconds",
+            "source_cooldown_fallback": 11,
+            "value": 0.5
+          },
+          {
+            "skill": "冰刺",
+            "type": "fixed_seconds",
+            "source_cooldown_fallback": 13,
+            "value": 0.5
+          },
+          {
+            "skill": "霜冻",
+            "type": "fixed_seconds",
+            "source_cooldown_fallback": 18,
+            "value": 0.5
+          },
+          {
+            "skill": "冰雾",
+            "type": "fixed_seconds",
+            "source_cooldown_fallback": 27,
+            "value": 0.5
+          }
+        ]
+      },
+      "冰河": {
+        "base_cooldown_fallback": 24,
+        "passive_percent": 0,
+        "self_refund_seconds": 5,
+        "extra_resets": 0,
+        "sources": []
+      },
+      "寒冰障碍": {
+        "base_cooldown_fallback": 40,
+        "passive_percent": 0,
+        "self_refund_seconds": 5,
+        "extra_resets": 0,
+        "sources": []
+      }
+    },
+    "刀锋舞者": {
+      "弗里兹科之舞": {
+        "base_cooldown_fallback": 15,
+        "passive_percent": 0.12,
+        "self_refund_seconds": 0,
+        "extra_resets": 0,
+        "sources": []
+      },
+      "傲慢狂风": {
+        "base_cooldown_fallback": 28,
+        "passive_percent": 0,
+        "self_refund_seconds": 0,
+        "extra_resets": 0,
+        "sources": [
+          {
+            "skill": "小甜甜圆周",
+            "type": "fixed_seconds",
+            "source_cooldown_fallback": 10,
+            "value": 1.5
+          },
+          {
+            "skill": "璀璨星光",
+            "type": "fixed_seconds",
+            "source_cooldown_fallback": 12,
+            "value": 1.5
+          },
+          {
+            "skill": "草原之舞",
+            "type": "fixed_seconds",
+            "source_cooldown_fallback": 9,
+            "value": 1.5
+          }
+        ]
+      },
+      "烈风痴狂": {
+        "base_cooldown_fallback": 22,
+        "passive_percent": 0,
+        "self_refund_seconds": 0,
+        "extra_resets": 0,
+        "sources": [
+          {
+            "skill": "小甜甜圆周",
+            "type": "fixed_seconds",
+            "source_cooldown_fallback": 10,
+            "value": 1
+          },
+          {
+            "skill": "璀璨星光",
+            "type": "fixed_seconds",
+            "source_cooldown_fallback": 12,
+            "value": 1
+          },
+          {
+            "skill": "草原之舞",
+            "type": "fixed_seconds",
+            "source_cooldown_fallback": 9,
+            "value": 1
+          }
+        ]
+      }
+    },
+    "剑皇": {
+      "三连斩": {
+        "base_cooldown_fallback": 12,
+        "passive_percent": 0,
+        "self_refund_seconds": 0,
+        "extra_resets": 0,
+        "sources": [
+          {
+            "skill": "回避斩",
+            "type": "reset",
+            "source_cooldown_fallback": 6.5
+          },
+          {
+            "skill": "惩罚攻击",
+            "type": "target_percent",
+            "source_cooldown_fallback": 21,
+            "value": 0.3
+          }
+        ]
+      },
+      "切骨之刺": {
+        "base_cooldown_fallback": 13,
+        "passive_percent": 0,
+        "self_refund_seconds": 0,
+        "extra_resets": 0,
+        "sources": [
+          {
+            "skill": "回避斩",
+            "type": "reset",
+            "source_cooldown_fallback": 6.5
+          },
+          {
+            "skill": "惩罚攻击",
+            "type": "target_percent",
+            "source_cooldown_fallback": 21,
+            "value": 0.3
+          }
+        ]
+      },
+      "直线冲击": {
+        "base_cooldown_fallback": 27,
+        "passive_percent": 0,
+        "self_refund_seconds": 0,
+        "extra_resets": 0,
+        "sources": [
+          {
+            "skill": "惩罚攻击",
+            "type": "target_percent",
+            "source_cooldown_fallback": 21,
+            "value": 0.3
+          }
+        ]
+      },
+      "回避斩": {
+        "base_cooldown_fallback": 6.5,
+        "passive_percent": 0,
+        "self_refund_seconds": 0,
+        "extra_resets": 0,
+        "sources": [
+          {
+            "skill": "惩罚攻击",
+            "type": "target_percent",
+            "source_cooldown_fallback": 21,
+            "value": 0.3
+          }
+        ]
+      }
+    },
+    "十字军": {
+      "审判力量": {
+        "base_cooldown_fallback": 60,
+        "passive_percent": 0,
+        "self_refund_seconds": 0,
+        "extra_resets": 0,
+        "sources": [
+          {
+            "skill": "神圣十字",
+            "type": "fixed_seconds",
+            "source_cooldown_fallback": 14,
+            "value": 1.5
+          },
+          {
+            "skill": "雷电冲击",
+            "type": "fixed_seconds",
+            "source_cooldown_fallback": 26,
+            "value": 1.5
+          },
+          {
+            "skill": "重击",
+            "type": "fixed_seconds",
+            "source_cooldown_fallback": 27,
+            "value": 1.5
+          },
+          {
+            "skill": "审判锤",
+            "type": "fixed_seconds",
+            "source_cooldown_fallback": 13,
+            "value": 1.5
+          }
+        ]
+      },
+      "重击": {
+        "base_cooldown_fallback": 27,
+        "passive_percent": 0,
+        "self_refund_seconds": 0,
+        "extra_resets": 0,
+        "sources": [
+          {
+            "skill": "魔法之息触发",
+            "type": "fixed_seconds",
+            "source_cooldown_fallback": 5,
+            "value": 1,
+            "affected_by_external_cdr": false
+          }
+        ]
+      }
+    },
+    "圣徒": {
+      "电光箭": {
+        "base_cooldown_fallback": 13,
+        "passive_percent": 0,
+        "self_refund_seconds": 0,
+        "extra_resets": 0,
+        "sources": [
+          {
+            "skill": "雷暴",
+            "type": "reset",
+            "source_cooldown_fallback": 17
+          }
+        ]
+      }
+    },
+    "影舞者": {
+      "踢射": {
+        "base_cooldown_fallback": 8,
+        "passive_percent": 0,
+        "self_refund_seconds": 2,
+        "extra_resets": 0,
+        "sources": []
+      },
+      "螺旋风暴": {
+        "base_cooldown_fallback": 20,
+        "passive_percent": 0,
+        "self_refund_seconds": 0,
+        "extra_resets": 0,
+        "sources": [
+          {
+            "skill": "踢射",
+            "type": "fixed_seconds",
+            "source_cooldown_fallback": 8,
+            "value": 2
+          }
+        ]
+      },
+      "飓风舞": {
+        "base_cooldown_fallback": 30,
+        "passive_percent": 0,
+        "self_refund_seconds": 0,
+        "extra_resets": 0,
+        "sources": [
+          {
+            "skill": "踢射",
+            "type": "fixed_seconds",
+            "source_cooldown_fallback": 8,
+            "value": 2
+          }
+        ]
+      }
+    },
+    "时空领主": {
+      "光雨": {
+        "base_cooldown_fallback": 23,
+        "passive_percent": 0.15,
+        "self_refund_seconds": 0,
+        "extra_resets": 0,
+        "sources": [
+          {
+            "skill": "九尾激光",
+            "type": "fixed_seconds",
+            "source_cooldown_fallback": 10,
+            "value": 1.5,
+            "use_effective_cooldown": true
+          }
+        ]
+      },
+      "激光破碎": {
+        "base_cooldown_fallback": 20,
+        "passive_percent": 0.15,
+        "self_refund_seconds": 0,
+        "extra_resets": 0,
+        "sources": [
+          {
+            "skill": "九尾激光",
+            "type": "fixed_seconds",
+            "source_cooldown_fallback": 10,
+            "value": 1,
+            "use_effective_cooldown": true
+          }
+        ]
+      },
+      "能量爆炸": {
+        "base_cooldown_fallback": 17,
+        "passive_percent": 0.15,
+        "self_refund_seconds": 0,
+        "extra_resets": 0,
+        "sources": [
+          {
+            "skill": "九尾激光",
+            "type": "fixed_seconds",
+            "source_cooldown_fallback": 10,
+            "value": 1,
+            "use_effective_cooldown": true
+          }
+        ]
+      },
+      "聚能激光": {
+        "base_cooldown_fallback": 11,
+        "passive_percent": 0.15,
+        "self_refund_seconds": 0,
+        "extra_resets": 0,
+        "sources": []
+      },
+      "九尾激光": {
+        "base_cooldown_fallback": 10,
+        "passive_percent": 0.15,
+        "self_refund_seconds": 0,
+        "extra_resets": 0,
+        "sources": [
+          {
+            "skill": "聚能激光",
+            "type": "grant_charge",
+            "value": 1,
+            "source_cooldown_fallback": 11,
+            "use_effective_cooldown": true
+          }
+        ]
+      }
+    },
+    "月之领主": {
+      "挥砍姿态": {
+        "base_cooldown_fallback": 25,
+        "passive_percent": 0,
+        "self_refund_seconds": 0,
+        "extra_resets": 0,
+        "sources": [
+          {
+            "skill": "月光碎片",
+            "type": "fixed_seconds",
+            "source_cooldown_fallback": 8,
+            "value": 2
+          }
+        ]
+      },
+      "致命劈砍": {
+        "base_cooldown_fallback": 18,
+        "passive_percent": 0,
+        "self_refund_seconds": 0,
+        "extra_resets": 0,
+        "sources": [
+          {
+            "skill": "月光碎片",
+            "type": "fixed_seconds",
+            "source_cooldown_fallback": 8,
+            "value": 1
+          }
+        ]
+      }
+    },
+    "毁灭者": {
+      "毁灭呐喊": {
+        "base_cooldown_fallback": 60,
+        "passive_percent": 0,
+        "self_refund_seconds": 0,
+        "extra_resets": 0,
+        "sources": [
+          {
+            "skill": "大漩涡怒吼",
+            "type": "fixed_seconds",
+            "source_cooldown_fallback": 25,
+            "value": 20
+          }
+        ]
+      },
+      "冲锋怒吼": {
+        "base_cooldown_fallback": 90,
+        "passive_percent": 0,
+        "self_refund_seconds": 0,
+        "extra_resets": 0,
+        "sources": [
+          {
+            "skill": "大漩涡怒吼",
+            "type": "fixed_seconds",
+            "source_cooldown_fallback": 25,
+            "value": 20
+          }
+        ]
+      },
+      "铁布衫": {
+        "base_cooldown_fallback": 45,
+        "passive_percent": 0,
+        "self_refund_seconds": 0,
+        "extra_resets": 0,
+        "sources": [
+          {
+            "skill": "惩戒波",
+            "type": "fixed_seconds",
+            "source_cooldown_fallback": 10,
+            "value": 4
+          },
+          {
+            "skill": "飞行冲击",
+            "type": "fixed_seconds",
+            "source_cooldown_fallback": 9,
+            "value": 4
+          }
+        ]
+      }
+    },
+    "火舞": {
+      "火径": {
+        "base_cooldown_fallback": 35,
+        "passive_percent": 0,
+        "self_refund_seconds": 0,
+        "extra_resets": 0,
+        "sources": [
+          {
+            "skill": "灼烧之手",
+            "type": "fixed_seconds",
+            "source_cooldown_fallback": 2,
+            "value": 2
+          }
+        ]
+      },
+      "漫长熔浆": {
+        "base_cooldown_fallback": 24,
+        "passive_percent": 0,
+        "self_refund_seconds": 0,
+        "extra_resets": 0,
+        "sources": [
+          {
+            "skill": "灼烧之手",
+            "type": "fixed_seconds",
+            "source_cooldown_fallback": 2,
+            "value": 1
+          }
+        ]
+      }
+    },
+    "灵魂舞者": {
+      "幻影之舞": {
+        "base_cooldown_fallback": 15,
+        "passive_percent": 0.12,
+        "self_refund_seconds": 0,
+        "extra_resets": 0,
+        "sources": []
+      }
+    },
+    "炼金圣士": {
+      "冰光束": {
+        "base_cooldown_fallback": 19,
+        "passive_percent": 0,
+        "self_refund_seconds": 0,
+        "extra_resets": 0,
+        "sources": [
+          {
+            "skill": "寒冰戳刺",
+            "type": "fixed_seconds",
+            "source_cooldown_fallback": 6,
+            "value": 1
+          }
+        ]
+      }
+    },
+    "狂战士": {
+      "旋风": {
+        "base_cooldown_fallback": 25,
+        "passive_percent": 0,
+        "self_refund_seconds": 0,
+        "extra_resets": 0,
+        "sources": [
+          {
+            "skill": "屠戮盛宴",
+            "type": "fixed_seconds",
+            "source_cooldown_fallback": 12,
+            "value": 5
+          },
+          {
+            "skill": "践踏",
+            "type": "fixed_seconds",
+            "source_cooldown_fallback": 8,
+            "value": 5
+          }
+        ]
+      },
+      "滚动攻击": {
+        "base_cooldown_fallback": 28,
+        "passive_percent": 0,
+        "self_refund_seconds": 0,
+        "extra_resets": 0,
+        "sources": []
+      }
+    },
+    "狙翎": {
+      "包围": {
+        "base_cooldown_fallback": 25,
+        "passive_percent": 0,
+        "self_refund_seconds": 0,
+        "extra_resets": 0,
+        "sources": [
+          {
+            "skill": "聚能射击",
+            "type": "fixed_seconds",
+            "source_cooldown_fallback": 13,
+            "value": 5
+          },
+          {
+            "skill": "飞空连射",
+            "type": "fixed_seconds",
+            "source_cooldown_fallback": 15,
+            "value": 5
+          }
+        ]
+      },
+      "箭雨风暴": {
+        "base_cooldown_fallback": 25,
+        "passive_percent": 0,
+        "self_refund_seconds": 0,
+        "extra_resets": 0,
+        "sources": [
+          {
+            "skill": "聚能射击",
+            "type": "fixed_seconds",
+            "source_cooldown_fallback": 13,
+            "value": 5
+          },
+          {
+            "skill": "飞空连射",
+            "type": "fixed_seconds",
+            "source_cooldown_fallback": 15,
+            "value": 5
+          }
+        ]
+      },
+      "追踪箭": {
+        "base_cooldown_fallback": 12,
+        "passive_percent": 0,
+        "self_refund_seconds": 0,
+        "extra_resets": 0,
+        "sources": [
+          {
+            "skill": "集中射击",
+            "type": "fixed_seconds",
+            "source_cooldown_fallback": 10,
+            "value": 2
+          }
+        ]
+      }
+    },
+    "药剂师": {
+      "牺牲": {
+        "base_cooldown_fallback": 60,
+        "passive_percent": 0,
+        "self_refund_seconds": 0,
+        "extra_resets": 0,
+        "sources": [
+          {
+            "skill": "喷射",
+            "type": "fixed_seconds",
+            "source_cooldown_fallback": 11,
+            "value": 10
+          }
+        ]
+      },
+      "召唤魔法草": {
+        "base_cooldown_fallback": 20,
+        "passive_percent": 0,
+        "self_refund_seconds": 0,
+        "extra_resets": 0,
+        "sources": [
+          {
+            "skill": "爱情病毒",
+            "type": "reset",
+            "source_cooldown_fallback": 17
+          }
+        ]
+      }
+    },
+    "雷神": {
+      "电光箭": {
+        "base_cooldown_fallback": 13,
+        "passive_percent": 0,
+        "self_refund_seconds": 0,
+        "extra_resets": 0,
+        "sources": [
+          {
+            "skill": "雷暴",
+            "type": "reset",
+            "source_cooldown_fallback": 17
+          }
+        ]
+      }
+    },
+    "风行者": {
+      "嗜血狂潮": {
+        "base_cooldown_fallback": 30,
+        "passive_percent": 0,
+        "self_refund_seconds": 0,
+        "extra_resets": 0,
+        "sources": [
+          {
+            "skill": "鹰击长空",
+            "type": "fixed_seconds",
+            "source_cooldown_fallback": 11,
+            "value": 1.5
+          },
+          {
+            "skill": "爆裂踢",
+            "type": "fixed_seconds",
+            "source_cooldown_fallback": 11,
+            "value": 1.5
+          },
+          {
+            "skill": "旋风飞腿",
+            "type": "fixed_seconds",
+            "source_cooldown_fallback": 20,
+            "value": 1.5
+          }
+        ]
+      }
+    },
+    "魔羽": {
+      "追踪箭": {
+        "base_cooldown_fallback": 12,
+        "passive_percent": 0,
+        "self_refund_seconds": 0,
+        "extra_resets": 0,
+        "sources": [
+          {
+            "skill": "集中射击",
+            "type": "fixed_seconds",
+            "source_cooldown_fallback": 10,
+            "value": 2
+          }
+        ]
+      },
+      "爆炸箭矢": {
+        "base_cooldown_fallback": 28,
+        "passive_percent": 0,
+        "self_refund_seconds": 0,
+        "extra_resets": 0,
+        "sources": [
+          {
+            "skill": "魔法箭矢",
+            "type": "fixed_seconds",
+            "source_cooldown_fallback": 8,
+            "value": 1
+          },
+          {
+            "skill": "集中射击",
+            "type": "fixed_seconds",
+            "source_cooldown_fallback": 10,
+            "value": 1
+          },
+          {
+            "skill": "迅捷箭",
+            "type": "fixed_seconds",
+            "source_cooldown_fallback": 10,
+            "value": 1
+          },
+          {
+            "skill": "追风箭",
+            "type": "fixed_seconds",
+            "source_cooldown_fallback": 11,
+            "value": 1
+          },
+          {
+            "skill": "追踪箭",
+            "type": "fixed_seconds",
+            "source_cooldown_fallback": 12,
+            "value": 1
+          }
+        ]
+      }
+    },
+    "银色猎人": {
+      "银色猎人": {
+        "base_cooldown_fallback": 75,
+        "passive_percent": 0,
+        "self_refund_seconds": 0,
+        "extra_resets": 0,
+        "sources": [
+          {
+            "skill": "瞬步射击",
+            "type": "fixed_seconds",
+            "source_cooldown_fallback": 5.5,
+            "value": 3
+          },
+          {
+            "skill": "银色箭雨",
+            "type": "fixed_seconds",
+            "source_cooldown_fallback": 9,
+            "value": 3
+          },
+          {
+            "skill": "箭矢风暴",
+            "type": "fixed_seconds",
+            "source_cooldown_fallback": 7.5,
+            "value": 3
+          },
+          {
+            "skill": "银色飞弹",
+            "type": "fixed_seconds",
+            "source_cooldown_fallback": 6,
+            "value": 3
+          },
+          {
+            "skill": "螺旋飓风",
+            "type": "fixed_seconds",
+            "source_cooldown_fallback": 14,
+            "value": 3
+          }
+        ]
+      }
+    },
+    "黑暗萨满": {
+      "狂暴之爪": {
+        "base_cooldown_fallback": 23,
+        "passive_percent": 0,
+        "self_refund_seconds": 0,
+        "extra_resets": 0,
+        "sources": [
+          {
+            "skill": "复仇之手",
+            "type": "fixed_seconds",
+            "source_cooldown_fallback": 13,
+            "value": 2
+          }
+        ]
+      },
+      "憎恶之境": {
+        "base_cooldown_fallback": 32,
+        "passive_percent": 0,
+        "self_refund_seconds": 0,
+        "extra_resets": 0,
+        "sources": [
+          {
+            "skill": "复仇之手",
+            "type": "fixed_seconds",
+            "source_cooldown_fallback": 13,
+            "value": 2
+          }
+        ]
+      },
+      "混沌阵": {
+        "base_cooldown_fallback": 30,
+        "passive_percent": 0,
+        "self_refund_seconds": 0,
+        "extra_resets": 0,
+        "sources": [
+          {
+            "skill": "复仇之手",
+            "type": "fixed_seconds",
+            "source_cooldown_fallback": 13,
+            "value": 2
+          }
+        ]
+      },
+      "幽灵之怒": {
+        "base_cooldown_fallback": 12,
+        "passive_percent": 0,
+        "self_refund_seconds": 0,
+        "extra_resets": 0,
+        "sources": [
+          {
+            "skill": "幽灵之爪",
+            "type": "fixed_seconds",
+            "source_cooldown_fallback": 10,
+            "value": 1
+          },
+          {
+            "skill": "束缚之爪",
+            "type": "fixed_seconds",
+            "source_cooldown_fallback": 7.5,
+            "value": 1
+          }
+        ]
+      },
+      "闪电之爪": {
+        "base_cooldown_fallback": 11,
+        "passive_percent": 0,
+        "self_refund_seconds": 0,
+        "extra_resets": 0,
+        "sources": [
+          {
+            "skill": "幽灵之爪",
+            "type": "fixed_seconds",
+            "source_cooldown_fallback": 10,
+            "value": 1
+          },
+          {
+            "skill": "束缚之爪",
+            "type": "fixed_seconds",
+            "source_cooldown_fallback": 7.5,
+            "value": 1
+          }
+        ]
+      },
+      "复仇之手": {
+        "base_cooldown_fallback": 13,
+        "passive_percent": 0,
+        "self_refund_seconds": 0,
+        "extra_resets": 0,
+        "sources": [
+          {
+            "skill": "幽灵之爪",
+            "type": "fixed_seconds",
+            "source_cooldown_fallback": 10,
+            "value": 1
+          },
+          {
+            "skill": "束缚之爪",
+            "type": "fixed_seconds",
+            "source_cooldown_fallback": 7.5,
+            "value": 1
+          }
+        ]
+      }
+    }
+  }
+}

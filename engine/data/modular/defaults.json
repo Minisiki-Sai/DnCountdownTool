@@ -1,0 +1,1732 @@
+{
+  "build1": {
+    "talismans": [
+      {"slot": "200%槽位1", "grade": "无", "name": "无", "extra": "无"},
+      {"slot": "200%槽位2", "grade": "无", "name": "无", "extra": "无"},
+      {"slot": "175%槽位1", "grade": "无", "name": "无", "extra": "无"},
+      {"slot": "175%槽位2", "grade": "无", "name": "无", "extra": "无"},
+      {"slot": "125%槽位1", "grade": "无", "name": "无", "extra": "无"},
+      {"slot": "125%槽位2", "grade": "无", "name": "无", "extra": "无"},
+      {"slot": "100%槽位1", "grade": "无", "name": "无", "extra": "无"},
+      {"slot": "100%槽位2", "grade": "无", "name": "无", "extra": "无"}
+    ],
+    "first_job": "元素",
+    "second_job": "冰灵",
+    "crit_resist_value": 19000,
+    "equipment": [
+      {
+        "slot": "头盔",
+        "name": "霸龙消灭者三重冠",
+        "suffix": "铁壁II",
+        "enhance": 11,
+        "enchants": [
+          "体质3.25%",
+          "智力3.5%",
+          "HP6.5%"
+        ]
+      },
+      {
+        "slot": "上装",
+        "name": "霸龙消灭者长袍",
+        "suffix": "铁壁II",
+        "enhance": 11,
+        "enchants": [
+          "体质3.25%",
+          "智力3.5%",
+          "HP6.5%"
+        ]
+      },
+      {
+        "slot": "下装",
+        "name": "霸龙消灭者紧身裤",
+        "suffix": "铁壁II",
+        "enhance": 11,
+        "enchants": [
+          "敏捷4.5%",
+          "智力3.5%",
+          "HP6.5%"
+        ]
+      },
+      {
+        "slot": "手套",
+        "name": "霸龙消灭者套袖",
+        "suffix": "铁壁II",
+        "enhance": 11,
+        "enchants": [
+          "敏捷4.5%",
+          "智力3.5%",
+          "HP6.5%"
+        ]
+      },
+      {
+        "slot": "鞋子",
+        "name": "霸龙消灭者高跟鞋",
+        "suffix": "铁壁II",
+        "enhance": 11,
+        "enchants": [
+          "敏捷4.5%",
+          "智力3.5%",
+          "HP6.5%"
+        ]
+      },
+      {
+        "slot": "主手",
+        "name": "霸龙消灭者宝珠",
+        "suffix": "智慧II",
+        "enhance": 13,
+        "enchants": [
+          "魔攻2.88%",
+          "敏捷4.5%",
+          "智力3.5%",
+          "水攻8%"
+        ]
+      },
+      {
+        "slot": "副手",
+        "name": "霸龙消灭者法杖",
+        "suffix": "智慧II",
+        "enhance": 13,
+        "enchants": [
+          "魔攻2.88%",
+          "敏捷4.5%",
+          "智力3.5%",
+          "水攻8%"
+        ]
+      }
+    ],
+    "jewelry": [
+      {
+        "slot": "项链",
+        "name": "霸龙猎人项链",
+        "variant": "敏智",
+        "enchants": [
+          "敏捷4.5%",
+          "智力3.5%",
+          "HP6.5%"
+        ]
+      },
+      {
+        "slot": "耳环",
+        "name": "霸龙猎人耳环",
+        "variant": "敏智",
+        "enchants": [
+          "敏捷4.5%",
+          "智力3.5%",
+          "HP6.5%"
+        ]
+      },
+      {
+        "slot": "戒指1",
+        "name": "霸龙猎人戒指",
+        "variant": "敏智",
+        "enchants": [
+          "魔攻2.88%",
+          "敏捷4.5%",
+          "智力3.5%",
+          "水攻8%"
+        ]
+      },
+      {
+        "slot": "戒指2",
+        "name": "霸龙猎人戒指",
+        "variant": "敏智",
+        "enchants": [
+          "魔攻2.88%",
+          "敏捷4.5%",
+          "智力3.5%",
+          "水攻8%"
+        ]
+      }
+    ],
+    "glyph_a": [
+      {
+        "level": "70A",
+        "name": "最高级健康的强化纹章",
+        "extra": "智力"
+      },
+      {
+        "level": "70A",
+        "name": "最高级帷幕的强化纹章",
+        "extra": "智力"
+      },
+      {
+        "level": "60A",
+        "name": "最高级智慧的强化纹章",
+        "extra": "最大魔攻"
+      },
+      {
+        "level": "70A",
+        "name": "最高级最终的强化纹章",
+        "extra": "智力"
+      },
+      {
+        "level": "70A",
+        "name": "最高级极限之强化纹章",
+        "extra": "智力"
+      },
+      {
+        "level": "70A",
+        "name": "最高级生命的强化纹章",
+        "extra": "致命"
+      },
+      {
+        "level": "70A",
+        "name": "最高级疾风的强化纹章",
+        "extra": "智力"
+      },
+      {
+        "level": "70A",
+        "name": "最高级致命的强化纹章",
+        "extra": "智力"
+      },
+      {
+        "level": "70A",
+        "name": "最高级铁壁的强化纹章",
+        "extra": "智力"
+      },
+      {
+        "level": "70A",
+        "name": "最高级魔力的强化纹章",
+        "extra": "致命"
+      },
+      {
+        "level": "70A",
+        "name": "最高级不屈的强化纹章",
+        "extra": "最大魔攻"
+      }
+    ],
+    "glyph_s": [
+      {
+        "level": "70S",
+        "name": "上升之远征队纹章",
+        "base_attr1": "智力",
+        "rank1": 9,
+        "base_attr2": null,
+        "rank2": null,
+        "extra": null
+      },
+      {
+        "level": "70S",
+        "name": "攻击之远征队纹章",
+        "base_attr1": "魔攻",
+        "rank1": 8,
+        "base_attr2": null,
+        "rank2": null,
+        "extra": null
+      },
+      {
+        "level": "70S",
+        "name": "根源之远征队纹章",
+        "base_attr1": null,
+        "rank1": null,
+        "base_attr2": null,
+        "rank2": null,
+        "extra": "智力"
+      },
+      {
+        "level": "70S",
+        "name": "抵抗之远征队纹章",
+        "base_attr1": null,
+        "rank1": null,
+        "base_attr2": null,
+        "rank2": null,
+        "extra": "智力"
+      }
+    ],
+    "normal_runes": [
+      {
+        "type": "攻击",
+        "level": "60",
+        "entries": [
+          {
+            "attr": "最终",
+            "rank": 5
+          },
+          {
+            "attr": "最终",
+            "rank": 5
+          },
+          {
+            "attr": "魔攻",
+            "rank": 5
+          },
+          {
+            "attr": "魔攻",
+            "rank": 5
+          },
+          {
+            "attr": "智力",
+            "rank": 5
+          },
+          {
+            "attr": "智力",
+            "rank": 5
+          }
+        ]
+      },
+      {
+        "type": "攻击",
+        "level": "70",
+        "entries": [
+          {
+            "attr": "最终",
+            "rank": 5
+          },
+          {
+            "attr": "最终",
+            "rank": 5
+          },
+          {
+            "attr": "魔攻",
+            "rank": 5
+          },
+          {
+            "attr": "魔攻",
+            "rank": 5
+          },
+          {
+            "attr": null,
+            "rank": null
+          },
+          {
+            "attr": null,
+            "rank": null
+          }
+        ]
+      },
+      {
+        "type": "防御",
+        "level": null,
+        "entries": [
+          {
+            "attr": null,
+            "rank": null
+          },
+          {
+            "attr": null,
+            "rank": null
+          },
+          {
+            "attr": null,
+            "rank": null
+          },
+          {
+            "attr": null,
+            "rank": null
+          },
+          {
+            "attr": null,
+            "rank": null
+          },
+          {
+            "attr": null,
+            "rank": null
+          }
+        ]
+      },
+      {
+        "type": "防御",
+        "level": null,
+        "entries": [
+          {
+            "attr": null,
+            "rank": null
+          },
+          {
+            "attr": null,
+            "rank": null
+          },
+          {
+            "attr": null,
+            "rank": null
+          },
+          {
+            "attr": null,
+            "rank": null
+          },
+          {
+            "attr": null,
+            "rank": null
+          },
+          {
+            "attr": null,
+            "rank": null
+          }
+        ]
+      }
+    ],
+    "core_rune": {
+      "level": "60",
+      "conversion": "魔防→魔攻",
+      "ratio_rank": 13,
+      "coeff_rank": 17,
+      "enhance": 10
+    },
+    "collection_level": 33,
+    "mastery": [
+      {
+        "name": "最大生命值",
+        "level": 10
+      },
+      {
+        "name": "最大魔法值",
+        "level": 10
+      },
+      {
+        "name": "物理攻击力",
+        "level": 10
+      },
+      {
+        "name": "魔法攻击力",
+        "level": 10
+      },
+      {
+        "name": "物理防御",
+        "level": 10
+      },
+      {
+        "name": "魔法防御",
+        "level": 10
+      },
+      {
+        "name": "致命一击",
+        "level": 10
+      },
+      {
+        "name": "最终伤害",
+        "level": 10
+      }
+    ],
+    "title": "焚沙◆煮海",
+    "fashion": [
+      {
+        "slot": "主手",
+        "name": "时装主手(70级)"
+      },
+      {
+        "slot": "副手",
+        "name": "时装副手（70级）"
+      },
+      {
+        "slot": "翅膀",
+        "name": "时装翅膀（70级）"
+      },
+      {
+        "slot": "尾巴",
+        "name": "时装尾巴(70级)"
+      },
+      {
+        "slot": "印花",
+        "name": "时装印花(70级)"
+      },
+      {
+        "slot": "精灵",
+        "name": "无"
+      },
+      {
+        "slot": "项链",
+        "name": "A项链"
+      },
+      {
+        "slot": "耳环",
+        "name": "A耳环"
+      },
+      {
+        "slot": "戒指1",
+        "name": "A戒指"
+      },
+      {
+        "slot": "戒指2",
+        "name": "A戒指"
+      }
+    ],
+    "buffs": [
+      {
+        "skill": "",
+        "level": null
+      },
+      {
+        "skill": null,
+        "level": null
+      },
+      {
+        "skill": null,
+        "level": null
+      },
+      {
+        "skill": null,
+        "level": null
+      },
+      {
+        "skill": null,
+        "level": null
+      },
+      {
+        "skill": null,
+        "level": null
+      },
+      {
+        "skill": null,
+        "level": null
+      },
+      {
+        "skill": null,
+        "level": null
+      },
+      {
+        "skill": null,
+        "level": null
+      },
+      {
+        "skill": null,
+        "level": null
+      }
+    ],
+    "card_grades": [
+      {
+        "name": "副官翁扎卡",
+        "grade": "L"
+      },
+      {
+        "name": "副官翁哈尔",
+        "grade": "L"
+      },
+      {
+        "name": "深红大将翁曼巴",
+        "grade": "L"
+      },
+      {
+        "name": "牛头怪骑士",
+        "grade": "L"
+      },
+      {
+        "name": "牛头怪指挥官",
+        "grade": "L"
+      },
+      {
+        "name": "利爪小精灵",
+        "grade": "L"
+      },
+      {
+        "name": "布洛怪萨满",
+        "grade": "L"
+      },
+      {
+        "name": "食人魔奴隶",
+        "grade": "L"
+      },
+      {
+        "name": "食人魔 指挥官",
+        "grade": "L"
+      },
+      {
+        "name": "地狱犬卡卡里",
+        "grade": "L"
+      },
+      {
+        "name": "恶臭石像鬼",
+        "grade": "L"
+      },
+      {
+        "name": "女妖袭击者",
+        "grade": "L"
+      },
+      {
+        "name": "巨大岩石半石人",
+        "grade": "L"
+      },
+      {
+        "name": "狮蝎领主克雷姆",
+        "grade": "L"
+      },
+      {
+        "name": "恐惧的戴斯莱伊",
+        "grade": "L"
+      },
+      {
+        "name": "深夜的消亡哭喊幽灵",
+        "grade": "L"
+      },
+      {
+        "name": "五兄弟的亡灵",
+        "grade": "L"
+      },
+      {
+        "name": "燃起心中复仇欲火的琳",
+        "grade": "L"
+      },
+      {
+        "name": "执着的格兰特",
+        "grade": "L"
+      },
+      {
+        "name": "偏执的赫伯特",
+        "grade": "L"
+      },
+      {
+        "name": "愤怒的翁哈玛",
+        "grade": "L"
+      },
+      {
+        "name": "骄傲的莱班特",
+        "grade": "L"
+      },
+      {
+        "name": "狂信的布兰",
+        "grade": "L"
+      },
+      {
+        "name": "审判者天启",
+        "grade": "L"
+      },
+      {
+        "name": "独眼巨人狂战士",
+        "grade": "L"
+      },
+      {
+        "name": "食人魔战士",
+        "grade": "L"
+      },
+      {
+        "name": "牛头怪",
+        "grade": "L"
+      },
+      {
+        "name": "腐烂的独眼巨人",
+        "grade": "L"
+      },
+      {
+        "name": "石人拉巴",
+        "grade": "L"
+      },
+      {
+        "name": "复活的卡卡里",
+        "grade": "L"
+      },
+      {
+        "name": "卷土重来的卡卡里",
+        "grade": "L"
+      },
+      {
+        "name": "蜥蜴人兄弟克罗",
+        "grade": "L"
+      },
+      {
+        "name": "蜥蜴人兄弟吐司",
+        "grade": "L"
+      },
+      {
+        "name": "蜥蜴人兄弟泰伊",
+        "grade": "L"
+      },
+      {
+        "name": "侦查队长诺巴尔克",
+        "grade": "L"
+      },
+      {
+        "name": "石人蒙塔",
+        "grade": "L"
+      },
+      {
+        "name": "海龙萨芬特拉",
+        "grade": "S"
+      },
+      {
+        "name": "萨满巫妖安达拉",
+        "grade": "L"
+      },
+      {
+        "name": "半石人毒菌",
+        "grade": "L"
+      },
+      {
+        "name": "背信弃义的传道者阿道夫",
+        "grade": "L"
+      },
+      {
+        "name": "复仇的暗杀者宝妮塔",
+        "grade": "L"
+      },
+      {
+        "name": "冷血无情的魔法师拉斯琴",
+        "grade": "L"
+      },
+      {
+        "name": "堕落的贤者巴里乌斯",
+        "grade": "L"
+      },
+      {
+        "name": "死而复生的惩戒者布拉斯",
+        "grade": "L"
+      },
+      {
+        "name": "大主教卡扎满",
+        "grade": "L"
+      },
+      {
+        "name": "石人胡知诺斯",
+        "grade": "L"
+      },
+      {
+        "name": "门卫麻栎子",
+        "grade": "L"
+      },
+      {
+        "name": "监视者布兰科04",
+        "grade": "L"
+      },
+      {
+        "name": "缺德者的亡灵",
+        "grade": "L"
+      },
+      {
+        "name": "奴隶队长昆斯坦",
+        "grade": "L"
+      },
+      {
+        "name": "巨人族马赫",
+        "grade": "L"
+      },
+      {
+        "name": "主教盖内乌斯",
+        "grade": "L"
+      },
+      {
+        "name": "石人莫尔干",
+        "grade": "L"
+      },
+      {
+        "name": "白眼克拉凯斯",
+        "grade": "L"
+      },
+      {
+        "name": "沼泽女王兹贝尔",
+        "grade": "L"
+      },
+      {
+        "name": "魔法师卡拉翰",
+        "grade": "L"
+      },
+      {
+        "name": "绿龙卡拉翰",
+        "grade": "S"
+      },
+      {
+        "name": "实验编号287泰勒那库伦改良型",
+        "grade": "L"
+      },
+      {
+        "name": "实验编号171卡拉马里帝埃努",
+        "grade": "L"
+      },
+      {
+        "name": "实验编号172卡拉马里艾鲁夫",
+        "grade": "L"
+      },
+      {
+        "name": "实验编号060原型欧米茄",
+        "grade": "L"
+      },
+      {
+        "name": "小仙女皇后蓝塔娜",
+        "grade": "L"
+      },
+      {
+        "name": "实验编号665巨型XXXX",
+        "grade": "L"
+      },
+      {
+        "name": "K博士",
+        "grade": "L"
+      },
+      {
+        "name": "被诅咒的灵魂勇士",
+        "grade": "L"
+      },
+      {
+        "name": "被诅咒的灵魂花边衬衫",
+        "grade": "L"
+      },
+      {
+        "name": "园丁卡兰德",
+        "grade": "L"
+      },
+      {
+        "name": "铁匠李特森",
+        "grade": "L"
+      },
+      {
+        "name": "兽人金",
+        "grade": "L"
+      },
+      {
+        "name": "鹰身人黑暗法师",
+        "grade": "L"
+      },
+      {
+        "name": "台风",
+        "grade": "L"
+      },
+      {
+        "name": "幽灵花伊克尼斯",
+        "grade": "L"
+      },
+      {
+        "name": "暴风的支配者朱武",
+        "grade": "L"
+      },
+      {
+        "name": "峡谷的监视者阿卜杜拉",
+        "grade": "L"
+      },
+      {
+        "name": "沙虫哈扎尔",
+        "grade": "L"
+      },
+      {
+        "name": "忠实的崇拜者卡基夫",
+        "grade": "L"
+      },
+      {
+        "name": "沙漠龙扎卡德",
+        "grade": "B"
+      },
+      {
+        "name": "绿色青蛙大魔导师奥古尔",
+        "grade": "A"
+      },
+      {
+        "name": "愤怒的阿里拉·维农",
+        "grade": "A"
+      },
+      {
+        "name": "伟人杜克斯·阿尔克斯",
+        "grade": "A"
+      },
+      {
+        "name": "伊格纳西奥·吉甘特",
+        "grade": "A"
+      },
+      {
+        "name": "锈雾狂风呼啸者",
+        "grade": "A"
+      },
+      {
+        "name": "被吞噬的回响冒险家",
+        "grade": "A"
+      },
+      {
+        "name": "新月守护者佩尔守卫者",
+        "grade": "A"
+      },
+      {
+        "name": "哭泣的雾之女王",
+        "grade": "A"
+      },
+      {
+        "name": "被吞噬的回响花边衬衫",
+        "grade": "A"
+      },
+      {
+        "name": "百夫长食人魔巴欧帕",
+        "grade": "A"
+      },
+      {
+        "name": "安加塔军团长翁巴拉",
+        "grade": "A"
+      },
+      {
+        "name": "惩罚者梅鲁卡",
+        "grade": "A"
+      },
+      {
+        "name": "千夫长提塔尼安",
+        "grade": "A"
+      },
+      {
+        "name": "红龙佩达",
+        "grade": "无"
+      }
+    ],
+    "card_bonus_levels": {
+      "HP": 25,
+      "MP": 0,
+      "体质": 0,
+      "力量": 25,
+      "敏捷": 25,
+      "智力": 25,
+      "最终": 25,
+      "物攻": 20,
+      "致命": 25,
+      "致命伤害": 0,
+      "防御": 25,
+      "魔攻": 25,
+      "魔防": 25
+    }
+  },
+  "build2": {
+    "talismans": [
+      {"slot": "200%槽位1", "grade": "无", "name": "无", "extra": "无"},
+      {"slot": "200%槽位2", "grade": "无", "name": "无", "extra": "无"},
+      {"slot": "175%槽位1", "grade": "无", "name": "无", "extra": "无"},
+      {"slot": "175%槽位2", "grade": "无", "name": "无", "extra": "无"},
+      {"slot": "125%槽位1", "grade": "无", "name": "无", "extra": "无"},
+      {"slot": "125%槽位2", "grade": "无", "name": "无", "extra": "无"},
+      {"slot": "100%槽位1", "grade": "无", "name": "无", "extra": "无"},
+      {"slot": "100%槽位2", "grade": "无", "name": "无", "extra": "无"}
+    ],
+    "first_job": "元素",
+    "second_job": "冰灵",
+    "crit_resist_value": 19000,
+    "equipment": [
+      {
+        "slot": "头盔",
+        "name": "黑龙三重冠",
+        "suffix": "铁壁II",
+        "enhance": 11,
+        "enchants": [
+          "敏捷4.5%",
+          "智力3.5%",
+          "HP6.5%"
+        ]
+      },
+      {
+        "slot": "上装",
+        "name": "赞龙消灭者长袍",
+        "suffix": "铁壁II",
+        "enhance": 11,
+        "enchants": [
+          "敏捷4.5%",
+          "智力3.5%",
+          "HP6.5%"
+        ]
+      },
+      {
+        "slot": "下装",
+        "name": "赞龙消灭者紧身裤",
+        "suffix": "铁壁II",
+        "enhance": 11,
+        "enchants": [
+          "敏捷4.5%",
+          "智力3.5%",
+          "HP6.5%"
+        ]
+      },
+      {
+        "slot": "手套",
+        "name": "赞龙消灭者套袖",
+        "suffix": "铁壁II",
+        "enhance": 11,
+        "enchants": [
+          "敏捷4.5%",
+          "智力3.5%",
+          "HP6.5%"
+        ]
+      },
+      {
+        "slot": "鞋子",
+        "name": "赞龙消灭者高跟鞋",
+        "suffix": "铁壁II",
+        "enhance": 11,
+        "enchants": [
+          "敏捷4.5%",
+          "智力3.5%",
+          "HP6.5%"
+        ]
+      },
+      {
+        "slot": "主手",
+        "name": "赞龙消灭者宝珠",
+        "suffix": "智慧II",
+        "enhance": 13,
+        "enchants": [
+          "魔攻2.88%",
+          "敏捷4.5%",
+          "智力3.5%",
+          "水攻8%"
+        ]
+      },
+      {
+        "slot": "副手",
+        "name": "赞龙消灭者法杖",
+        "suffix": "智慧II",
+        "enhance": 13,
+        "enchants": [
+          "魔攻2.88%",
+          "敏捷4.5%",
+          "智力3.5%",
+          "水攻8%"
+        ]
+      }
+    ],
+    "jewelry": [
+      {
+        "slot": "项链",
+        "name": "赞龙猎人项链",
+        "variant": "敏智",
+        "enchants": [
+          "敏捷4.5%",
+          "智力3.5%",
+          "HP6.5%"
+        ]
+      },
+      {
+        "slot": "耳环",
+        "name": "赞龙猎人耳环",
+        "variant": "敏智",
+        "enchants": [
+          "敏捷4.5%",
+          "智力3.5%",
+          "HP6.5%"
+        ]
+      },
+      {
+        "slot": "戒指1",
+        "name": "赞龙猎人戒指",
+        "variant": "敏智",
+        "enchants": [
+          "魔攻2.88%",
+          "敏捷4.5%",
+          "智力3.5%",
+          "水攻8%"
+        ]
+      },
+      {
+        "slot": "戒指2",
+        "name": "赞龙猎人戒指",
+        "variant": "敏智",
+        "enchants": [
+          "魔攻2.88%",
+          "敏捷4.5%",
+          "智力3.5%",
+          "水攻8%"
+        ]
+      }
+    ],
+    "glyph_a": [
+      {
+        "level": "70A",
+        "name": "最高级健康的强化纹章",
+        "extra": "智力"
+      },
+      {
+        "level": "70A",
+        "name": "最高级帷幕的强化纹章",
+        "extra": "智力"
+      },
+      {
+        "level": "70A",
+        "name": "最高级智慧的强化纹章",
+        "extra": "最大魔攻"
+      },
+      {
+        "level": "70A",
+        "name": "最高级最终的强化纹章",
+        "extra": "智力"
+      },
+      {
+        "level": "70A",
+        "name": "最高级极限之强化纹章",
+        "extra": "智力"
+      },
+      {
+        "level": "70A",
+        "name": "最高级生命的强化纹章",
+        "extra": "智力"
+      },
+      {
+        "level": "70A",
+        "name": "最高级疾风的强化纹章",
+        "extra": "智力"
+      },
+      {
+        "level": "70A",
+        "name": "最高级致命的强化纹章",
+        "extra": "智力"
+      },
+      {
+        "level": "70A",
+        "name": "最高级铁壁的强化纹章",
+        "extra": "智力"
+      },
+      {
+        "level": "70A",
+        "name": "最高级魔力的强化纹章",
+        "extra": "智力"
+      },
+      {
+        "level": "70A",
+        "name": "最高级不屈的强化纹章",
+        "extra": "智力"
+      }
+    ],
+    "glyph_s": [
+      {
+        "level": "70S",
+        "name": "上升之远征队纹章",
+        "base_attr1": "智力",
+        "rank1": 9,
+        "base_attr2": null,
+        "rank2": null,
+        "extra": null
+      },
+      {
+        "level": "70S",
+        "name": "攻击之远征队纹章",
+        "base_attr1": "魔攻",
+        "rank1": 8,
+        "base_attr2": null,
+        "rank2": null,
+        "extra": null
+      },
+      {
+        "level": "70S",
+        "name": "根源之远征队纹章",
+        "base_attr1": null,
+        "rank1": null,
+        "base_attr2": null,
+        "rank2": null,
+        "extra": "智力"
+      },
+      {
+        "level": "70S",
+        "name": "抵抗之远征队纹章",
+        "base_attr1": null,
+        "rank1": null,
+        "base_attr2": null,
+        "rank2": null,
+        "extra": "智力"
+      }
+    ],
+    "normal_runes": [
+      {
+        "type": "攻击",
+        "level": "70",
+        "entries": [
+          {
+            "attr": "最终",
+            "rank": 5
+          },
+          {
+            "attr": "最终",
+            "rank": 5
+          },
+          {
+            "attr": "魔攻",
+            "rank": 5
+          },
+          {
+            "attr": "魔攻",
+            "rank": 5
+          },
+          {
+            "attr": null,
+            "rank": null
+          },
+          {
+            "attr": null,
+            "rank": null
+          }
+        ]
+      },
+      {
+        "type": "攻击",
+        "level": "70",
+        "entries": [
+          {
+            "attr": "最终",
+            "rank": 5
+          },
+          {
+            "attr": "最终",
+            "rank": 5
+          },
+          {
+            "attr": "魔攻",
+            "rank": 5
+          },
+          {
+            "attr": "魔攻",
+            "rank": 5
+          },
+          {
+            "attr": null,
+            "rank": null
+          },
+          {
+            "attr": null,
+            "rank": null
+          }
+        ]
+      },
+      {
+        "type": "防御",
+        "level": null,
+        "entries": [
+          {
+            "attr": null,
+            "rank": null
+          },
+          {
+            "attr": null,
+            "rank": null
+          },
+          {
+            "attr": null,
+            "rank": null
+          },
+          {
+            "attr": null,
+            "rank": null
+          },
+          {
+            "attr": null,
+            "rank": null
+          },
+          {
+            "attr": null,
+            "rank": null
+          }
+        ]
+      },
+      {
+        "type": "防御",
+        "level": null,
+        "entries": [
+          {
+            "attr": null,
+            "rank": null
+          },
+          {
+            "attr": null,
+            "rank": null
+          },
+          {
+            "attr": null,
+            "rank": null
+          },
+          {
+            "attr": null,
+            "rank": null
+          },
+          {
+            "attr": null,
+            "rank": null
+          },
+          {
+            "attr": null,
+            "rank": null
+          }
+        ]
+      }
+    ],
+    "core_rune": {
+      "level": "60",
+      "conversion": "魔防→魔攻",
+      "ratio_rank": 21,
+      "coeff_rank": 21,
+      "enhance": 10
+    },
+    "collection_level": 33,
+    "mastery": [
+      {
+        "name": "最大生命值",
+        "level": 10
+      },
+      {
+        "name": "最大魔法值",
+        "level": 10
+      },
+      {
+        "name": "物理攻击力",
+        "level": 10
+      },
+      {
+        "name": "魔法攻击力",
+        "level": 10
+      },
+      {
+        "name": "物理防御",
+        "level": 10
+      },
+      {
+        "name": "魔法防御",
+        "level": 10
+      },
+      {
+        "name": "致命一击",
+        "level": 10
+      },
+      {
+        "name": "最终伤害",
+        "level": 10
+      }
+    ],
+    "title": "焚沙◆煮海",
+    "fashion": [
+      {
+        "slot": "主手",
+        "name": "时装主手(70级)"
+      },
+      {
+        "slot": "副手",
+        "name": "时装副手（70级）"
+      },
+      {
+        "slot": "翅膀",
+        "name": "时装翅膀（70级）"
+      },
+      {
+        "slot": "尾巴",
+        "name": "时装尾巴(70级)"
+      },
+      {
+        "slot": "印花",
+        "name": "时装印花(70级)"
+      },
+      {
+        "slot": "精灵",
+        "name": "无"
+      },
+      {
+        "slot": "项链",
+        "name": "A项链"
+      },
+      {
+        "slot": "耳环",
+        "name": "A耳环"
+      },
+      {
+        "slot": "戒指1",
+        "name": "A戒指"
+      },
+      {
+        "slot": "戒指2",
+        "name": "A戒指"
+      }
+    ],
+    "buffs": [
+      {
+        "skill": null,
+        "level": null
+      },
+      {
+        "skill": null,
+        "level": null
+      },
+      {
+        "skill": null,
+        "level": null
+      },
+      {
+        "skill": null,
+        "level": null
+      },
+      {
+        "skill": null,
+        "level": null
+      },
+      {
+        "skill": null,
+        "level": null
+      },
+      {
+        "skill": null,
+        "level": null
+      },
+      {
+        "skill": null,
+        "level": null
+      },
+      {
+        "skill": null,
+        "level": null
+      },
+      {
+        "skill": null,
+        "level": null
+      }
+    ],
+    "card_grades": [
+      {
+        "name": "副官翁扎卡",
+        "grade": "L"
+      },
+      {
+        "name": "副官翁哈尔",
+        "grade": "L"
+      },
+      {
+        "name": "深红大将翁曼巴",
+        "grade": "L"
+      },
+      {
+        "name": "牛头怪骑士",
+        "grade": "L"
+      },
+      {
+        "name": "牛头怪指挥官",
+        "grade": "L"
+      },
+      {
+        "name": "利爪小精灵",
+        "grade": "L"
+      },
+      {
+        "name": "布洛怪萨满",
+        "grade": "L"
+      },
+      {
+        "name": "食人魔奴隶",
+        "grade": "L"
+      },
+      {
+        "name": "食人魔 指挥官",
+        "grade": "L"
+      },
+      {
+        "name": "地狱犬卡卡里",
+        "grade": "L"
+      },
+      {
+        "name": "恶臭石像鬼",
+        "grade": "L"
+      },
+      {
+        "name": "女妖袭击者",
+        "grade": "L"
+      },
+      {
+        "name": "巨大岩石半石人",
+        "grade": "L"
+      },
+      {
+        "name": "狮蝎领主克雷姆",
+        "grade": "L"
+      },
+      {
+        "name": "恐惧的戴斯莱伊",
+        "grade": "L"
+      },
+      {
+        "name": "深夜的消亡哭喊幽灵",
+        "grade": "L"
+      },
+      {
+        "name": "五兄弟的亡灵",
+        "grade": "L"
+      },
+      {
+        "name": "燃起心中复仇欲火的琳",
+        "grade": "L"
+      },
+      {
+        "name": "执着的格兰特",
+        "grade": "L"
+      },
+      {
+        "name": "偏执的赫伯特",
+        "grade": "L"
+      },
+      {
+        "name": "愤怒的翁哈玛",
+        "grade": "L"
+      },
+      {
+        "name": "骄傲的莱班特",
+        "grade": "L"
+      },
+      {
+        "name": "狂信的布兰",
+        "grade": "L"
+      },
+      {
+        "name": "审判者天启",
+        "grade": "L"
+      },
+      {
+        "name": "独眼巨人狂战士",
+        "grade": "L"
+      },
+      {
+        "name": "食人魔战士",
+        "grade": "L"
+      },
+      {
+        "name": "牛头怪",
+        "grade": "L"
+      },
+      {
+        "name": "腐烂的独眼巨人",
+        "grade": "L"
+      },
+      {
+        "name": "石人拉巴",
+        "grade": "L"
+      },
+      {
+        "name": "复活的卡卡里",
+        "grade": "L"
+      },
+      {
+        "name": "卷土重来的卡卡里",
+        "grade": "L"
+      },
+      {
+        "name": "蜥蜴人兄弟克罗",
+        "grade": "L"
+      },
+      {
+        "name": "蜥蜴人兄弟吐司",
+        "grade": "L"
+      },
+      {
+        "name": "蜥蜴人兄弟泰伊",
+        "grade": "L"
+      },
+      {
+        "name": "侦查队长诺巴尔克",
+        "grade": "L"
+      },
+      {
+        "name": "石人蒙塔",
+        "grade": "L"
+      },
+      {
+        "name": "海龙萨芬特拉",
+        "grade": "S"
+      },
+      {
+        "name": "萨满巫妖安达拉",
+        "grade": "L"
+      },
+      {
+        "name": "半石人毒菌",
+        "grade": "L"
+      },
+      {
+        "name": "背信弃义的传道者阿道夫",
+        "grade": "L"
+      },
+      {
+        "name": "复仇的暗杀者宝妮塔",
+        "grade": "L"
+      },
+      {
+        "name": "冷血无情的魔法师拉斯琴",
+        "grade": "L"
+      },
+      {
+        "name": "堕落的贤者巴里乌斯",
+        "grade": "L"
+      },
+      {
+        "name": "死而复生的惩戒者布拉斯",
+        "grade": "L"
+      },
+      {
+        "name": "大主教卡扎满",
+        "grade": "L"
+      },
+      {
+        "name": "石人胡知诺斯",
+        "grade": "L"
+      },
+      {
+        "name": "门卫麻栎子",
+        "grade": "L"
+      },
+      {
+        "name": "监视者布兰科04",
+        "grade": "L"
+      },
+      {
+        "name": "缺德者的亡灵",
+        "grade": "L"
+      },
+      {
+        "name": "奴隶队长昆斯坦",
+        "grade": "L"
+      },
+      {
+        "name": "巨人族马赫",
+        "grade": "L"
+      },
+      {
+        "name": "主教盖内乌斯",
+        "grade": "L"
+      },
+      {
+        "name": "石人莫尔干",
+        "grade": "L"
+      },
+      {
+        "name": "白眼克拉凯斯",
+        "grade": "L"
+      },
+      {
+        "name": "沼泽女王兹贝尔",
+        "grade": "L"
+      },
+      {
+        "name": "魔法师卡拉翰",
+        "grade": "L"
+      },
+      {
+        "name": "绿龙卡拉翰",
+        "grade": "S"
+      },
+      {
+        "name": "实验编号287泰勒那库伦改良型",
+        "grade": "L"
+      },
+      {
+        "name": "实验编号171卡拉马里帝埃努",
+        "grade": "L"
+      },
+      {
+        "name": "实验编号172卡拉马里艾鲁夫",
+        "grade": "L"
+      },
+      {
+        "name": "实验编号060原型欧米茄",
+        "grade": "L"
+      },
+      {
+        "name": "小仙女皇后蓝塔娜",
+        "grade": "L"
+      },
+      {
+        "name": "实验编号665巨型XXXX",
+        "grade": "L"
+      },
+      {
+        "name": "K博士",
+        "grade": "L"
+      },
+      {
+        "name": "被诅咒的灵魂勇士",
+        "grade": "L"
+      },
+      {
+        "name": "被诅咒的灵魂花边衬衫",
+        "grade": "L"
+      },
+      {
+        "name": "园丁卡兰德",
+        "grade": "L"
+      },
+      {
+        "name": "铁匠李特森",
+        "grade": "L"
+      },
+      {
+        "name": "兽人金",
+        "grade": "L"
+      },
+      {
+        "name": "鹰身人黑暗法师",
+        "grade": "L"
+      },
+      {
+        "name": "台风",
+        "grade": "L"
+      },
+      {
+        "name": "幽灵花伊克尼斯",
+        "grade": "L"
+      },
+      {
+        "name": "暴风的支配者朱武",
+        "grade": "L"
+      },
+      {
+        "name": "峡谷的监视者阿卜杜拉",
+        "grade": "L"
+      },
+      {
+        "name": "沙虫哈扎尔",
+        "grade": "L"
+      },
+      {
+        "name": "忠实的崇拜者卡基夫",
+        "grade": "L"
+      },
+      {
+        "name": "沙漠龙扎卡德",
+        "grade": "A"
+      },
+      {
+        "name": "绿色青蛙大魔导师奥古尔",
+        "grade": "A"
+      },
+      {
+        "name": "愤怒的阿里拉·维农",
+        "grade": "A"
+      },
+      {
+        "name": "伟人杜克斯·阿尔克斯",
+        "grade": "A"
+      },
+      {
+        "name": "伊格纳西奥·吉甘特",
+        "grade": "A"
+      },
+      {
+        "name": "锈雾狂风呼啸者",
+        "grade": "A"
+      },
+      {
+        "name": "被吞噬的回响冒险家",
+        "grade": "A"
+      },
+      {
+        "name": "新月守护者佩尔守卫者",
+        "grade": "A"
+      },
+      {
+        "name": "哭泣的雾之女王",
+        "grade": "A"
+      },
+      {
+        "name": "被吞噬的回响花边衬衫",
+        "grade": "A"
+      },
+      {
+        "name": "百夫长食人魔巴欧帕",
+        "grade": "A"
+      },
+      {
+        "name": "安加塔军团长翁巴拉",
+        "grade": "A"
+      },
+      {
+        "name": "惩罚者梅鲁卡",
+        "grade": "A"
+      },
+      {
+        "name": "千夫长提塔尼安",
+        "grade": "A"
+      },
+      {
+        "name": "红龙佩达",
+        "grade": "无"
+      }
+    ],
+    "card_bonus_levels": {
+      "HP": 25,
+      "MP": 0,
+      "体质": 0,
+      "力量": 25,
+      "敏捷": 25,
+      "智力": 25,
+      "最终": 25,
+      "物攻": 25,
+      "致命": 25,
+      "致命伤害": 0,
+      "防御": 25,
+      "魔攻": 25,
+      "魔防": 25
+    }
+  }
+}

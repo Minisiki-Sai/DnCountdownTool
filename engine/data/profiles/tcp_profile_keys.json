@@ -1,0 +1,173 @@
+{
+  "schema_version": 2,
+  "protocol_version": "v576",
+  "selection": {
+    "key_index": "body_size_mod_256",
+    "rounds": "body_size_mod_2_plus_1",
+    "candidate_order": "full_body_size_then_connection_flow_then_validated_plaintext"
+  },
+  "keys": {
+    "8": {
+      "words": ["0x136C8DDC", "0x00000000", "0x00000000", "0x49FD9981"],
+      "source": "tcp_udp_sample_6_inspect_requests"
+    },
+    "11": {
+      "candidates": [
+        {
+          "words": ["0xF8C04F4F", "0x78C5447D", "0xA3093680", "0xDCB283B1"],
+          "source": "black_dragon_1_2_3_server_map_identity_recovery",
+          "body_sizes": [11],
+          "directions": ["server_to_client"]
+        },
+        {
+          "words": ["0x1AC04F4F", "0xC2EB447D", "0x62C93680", "0xE0BA83B1"],
+          "source": "guardian_trial_mist_bull_server_map_identity_recovery",
+          "body_sizes": [11],
+          "directions": ["server_to_client"]
+        }
+      ]
+    },
+    "12": {
+      "words": ["0x4AEC318C", "0x00000000", "0x00000000", "0x3C199BB9"],
+      "source": "lobby_transition_short_packet_structural_recovery",
+      "body_sizes": [12],
+      "directions": ["server_to_client"]
+    },
+    "13": {
+      "candidates": [
+        {
+          "words": ["0x4ABA9272", "0x1FEB2BA6", "0x570809E4", "0x526E2372"],
+          "source": "character_name_0919_spawn_0303_known_identity_recovery",
+          "body_sizes": [1805],
+          "directions": ["server_to_client"]
+        }
+      ]
+    },
+    "29": {
+      "words": ["0x622C5FB4", "0x1F3D09E3", "0x09765819", "0x326EB5ED"],
+      "source": "tcp_udp_sample_6_identity_ack_29_pairs"
+    },
+    "33": {
+      "words": ["0x3BC7B2D6", "0x4D68CE27", "0x7748B328", "0x6AC92EDC"],
+      "source": "tcp_udp_sample_10_profile_4d6b2fc4_structural_recovery"
+    },
+    "35": {
+      "words": ["0x1D02CA19", "0x3FA6BD2F", "0x407F5456", "0x33E8A7C9"],
+      "source": "tcp_udp_sample_4"
+    },
+    "36": {
+      "words": ["0x61470C9F", "0x00000000", "0x00000000", "0x1243943A"],
+      "source": "tcp_udp_samples_1_2"
+    },
+    "37": {
+      "words": ["0x1F793EA7", "0x21307BDE", "0x6CCB32BA", "0x091F4F2A"],
+      "source": "tcp_udp_sample_7_profile_4f6a0a59_structural_recovery"
+    },
+    "39": {
+      "words": ["0x199A2DC3", "0x5882C933", "0x1BE5F4C6", "0x5A155328"],
+      "source": "tcp_udp_sample_5_recovered"
+    },
+    "41": {
+      "words": ["0x77D5F924", "0x0A1EEA90", "0x39720E97", "0x1DE53332"],
+      "source": "live_20260811_profile_11305"
+    },
+    "45": {
+      "words": ["0x4A96445C", "0x53326261", "0x631DABB1", "0x6DE5C807"],
+      "source": "live_20260811_profile_13357"
+    },
+    "63": {
+      "words": ["0x1EC768CC", "0x0F4CEBE5", "0x095363E9", "0x6997CB1B"],
+      "source": "black_dragon_scene_transition_322_sparse_recovery"
+    },
+    "64": {
+      "words": ["0x43946933", "0x00000000", "0x00000000", "0x5CBE8FD3"],
+      "source": "post_scene_message_67_sparse_recovery",
+      "body_sizes": [64],
+      "directions": ["server_to_client"]
+    },
+    "76": {
+      "words": ["0x544E4A20", "0x00000000", "0x00000000", "0x2360DB73"],
+      "source": "party_tests_1_5_create_request"
+    },
+    "93": {
+      "words": ["0x303E38C9", "0x242FB265", "0x610140F9", "0x078BDAC8"],
+      "source": "personal_data_5_card_update"
+    },
+    "98": {
+      "words": ["0x1C5DBCAE", "0x00000000", "0x00000000", "0x309F1DBF"],
+      "source": "personal_data_4_5_engraving_archive"
+    },
+    "111": {
+      "words": ["0x30BF7B9B", "0x47369360", "0x03BFDC5A", "0x17C950F2"],
+      "source": "title_test_profile_4f8a0f5c_structural_recovery"
+    },
+    "115": {
+      "words": ["0x3AE14C4B", "0x3A2BE9BC", "0x4DA966C3", "0x52BCAF32"],
+      "source": "tcp_udp_sample_5_recovered"
+    },
+    "117": {
+      "words": ["0x19269270", "0x7A6E13ED", "0x36875490", "0x5E695E47"],
+      "source": "tcp_udp_sample_6_structural_recovery"
+    },
+    "118": {
+      "words": ["0x435FAE06", "0x00000000", "0x00000000", "0x202BF14B"],
+      "source": "personal_data_4_compact_self_profile"
+    },
+    "119": {
+      "words": ["0x3FA41809", "0x38935306", "0x7B95E0D8", "0x15CAB61D"],
+      "source": "character_name_2_profile_50841d9a_structural_recovery"
+    },
+    "121": {
+      "words": ["0x483E899D", "0x1FC643A9", "0x54BCC06E", "0x50EA286E"],
+      "source": "tcp_udp_sample_5_recovered"
+    },
+    "123": {
+      "words": ["0x485357EF", "0x52AA5EAB", "0x22187476", "0x7A09A502"],
+      "source": "tcp_udp_sample_3"
+    },
+    "133": {
+      "words": ["0x5AB419A1", "0x177C1529", "0x678AE764", "0x006BF442"],
+      "source": "tcp_udp_sample_6_structural_recovery"
+    },
+    "199": {
+      "words": ["0x0B754080", "0x28383489", "0x6C4CB16C", "0x3BB8100F"],
+      "source": "character_name_2_profile_508458fa_structural_recovery"
+    },
+    "203": {
+      "words": ["0x3852FB91", "0x109A3EFE", "0x69618B69", "0x5C2DA409"],
+      "source": "tcp_udp_sample_2"
+    },
+    "204": {
+      "words": ["0x26C83422", "0x00000000", "0x00000000", "0x53EFE104"],
+      "source": "tcp_udp_sample_1"
+    },
+    "205": {
+      "words": ["0x1F43903A", "0x66CEADD7", "0x7CDC005B", "0x697F006E"],
+      "source": "live_20260811_profile_7885"
+    },
+    "207": {
+      "words": ["0x11EE360F", "0x1A52D04D", "0x2C2E2607", "0x6F4BC900"],
+      "source": "tcp_udp_sample_5_recovered"
+    },
+    "209": {
+      "words": ["0x089F7538", "0x4AD6C914", "0x4C0CB61B", "0x5E3905BC"],
+      "source": "tcp_udp_sample_5_recovered"
+    },
+    "211": {
+      "words": ["0x7CC12767", "0x39ECAF9E", "0x12C191D6", "0x77AE5030"],
+      "source": "tcp_udp_sample_10_profile_4d6b260a_structural_recovery"
+    },
+    "213": {
+      "words": ["0x634C0F21", "0x27D53DBC", "0x77E21FA4", "0x6B1CF85F"],
+      "source": "tcp_udp_sample_5_recovered"
+    },
+    "217": {
+      "words": ["0x7E227657", "0x121408A4", "0x3F7799D6", "0x7D519C10"],
+      "source": "tcp_udp_sample_6_structural_recovery"
+    },
+    "221": {
+      "words": ["0x5CDB0225", "0x38F95C34", "0x17D49DEA", "0x4B037A0E"],
+      "source": "character_name_2_spawn_0303_known_name_recovery"
+    }
+  }
+}

@@ -1,0 +1,1486 @@
+{
+  "schema_version": 1,
+  "description": "职业特殊机制的唯一可编辑数据源。runtime_handlers 只标识执行器，数值、技能关系和限制应优先写在本文件。",
+  "global": {
+    "cooldowns": {
+      "fixed": {
+        "雷电之手": 5.4,
+        "诅咒状态": 2,
+        "重磅鸭": 1.5,
+        "阿兹那之约": 20,
+        "神圣惩戒": 35,
+        "神圣惩戒EX": 35
+      },
+      "timeline_fixed_by_job": [
+        {
+          "job": "十字军",
+          "skill": "神圣之锤攻击",
+          "value": 0
+        },
+        {
+          "job": "雷神",
+          "skill": "雷电之手",
+          "value": 1.5
+        },
+        {
+          "job": "圣徒",
+          "skill": "雷电之手",
+          "value": 1.5
+        }
+      ]
+    },
+    "freeze_support": {
+      "gain_per_layer": 15,
+      "default_max_layers": 2,
+      "max_layers_by_job": {
+        "炼金圣士": 1,
+        "药剂师": 1
+      }
+    },
+    "periodic_damage": {
+      "refreshable_skills": [
+        "神圣惩戒",
+        "神圣惩戒EX"
+      ],
+      "refreshable_durations": {
+        "神圣惩戒": 20,
+        "神圣惩戒EX": 20
+      },
+      "total_damage_cycles": {
+        "神圣惩戒": 20,
+        "神圣惩戒EX": 20,
+        "阿兹那之约": 20,
+        "灵魂之门": 11,
+        "灵魂之门 EX": 11,
+        "瞒天过海": 13,
+        "雷电之手": 16.2,
+        "暗影召唤术": 15,
+        "炮塔": 60,
+        "寒冰喷射塔": 60,
+        "加特林机枪塔": 60,
+        "链锯之塔": 60,
+        "毒池": 11
+      },
+      "dynamic_attack_buff_summons": [
+        "阿兹那之约",
+        "暗影召唤术",
+        "灵魂之门",
+        "灵魂之门 EX",
+        "瞒天过海"
+      ],
+      "double_snapshot_buff_summons": [
+        "阿兹那之约"
+      ],
+      "refreshing_attack_buffs": [
+        "查克拉治愈术",
+        "怨恨之像",
+        "痊愈之手"
+      ],
+      "timeline_damage_multipliers": [
+        {
+          "job": "雷神",
+          "skill": "雷电之手",
+          "value": 1.8
+        },
+        {
+          "job": "圣徒",
+          "skill": "雷电之手",
+          "value": 1.8113207547169812
+        }
+      ]
+    },
+    "summons": {
+      "minimum_cooldowns": {
+        "暗影召唤术": 15,
+        "毒池": 11,
+        "瞒天过海": 13,
+        "灵魂之门": 11,
+        "灵魂之门 EX": 11
+      },
+      "passive_timeline_skills": [
+        "阿兹那之约",
+        "重磅汽笛",
+        "重磅轰击",
+        "摄魂怪光束"
+      ],
+      "limits": {
+        "雷电之手": {
+          "max": 3,
+          "duration": 16.2
+        },
+        "治愈之手": {
+          "max": 99,
+          "duration": 8.0
+        },
+        "痊愈之手": {
+          "max": 99,
+          "duration": 18.0
+        },
+        "掌握之手": {
+          "max": 99,
+          "duration": 27.0
+        },
+        "奇迹之手": {
+          "max": 99,
+          "duration": 13.0
+        },
+        "灵魂之门": {
+          "max": 1,
+          "duration": 11.0
+        },
+        "暗影召唤术": {
+          "max": 1,
+          "duration": 15.0
+        },
+        "瞒天过海": {
+          "max": 1,
+          "duration": 13.0
+        },
+        "链锯之塔": {
+          "max": 1,
+          "duration": 60.0
+        },
+        "炮塔": {
+          "max": 2,
+          "duration": 60.0
+        },
+        "加特林机枪塔": {
+          "max": 2,
+          "duration": 60.0
+        },
+        "寒冰喷射塔": {
+          "max": 1,
+          "duration": 60.0
+        }
+      },
+      "engineer_skills": [
+        "炮塔",
+        "加特林机枪塔",
+        "寒冰喷射塔",
+        "链锯之塔"
+      ],
+      "mechanic_mode_attacks": [
+        "机械炮塔",
+        "机械链锯"
+      ],
+      "shared_groups": [
+        {
+          "jobs": [
+            "重炮手",
+            "机械大师"
+          ],
+          "skills": [
+            "炮塔",
+            "加特林机枪塔"
+          ],
+          "max": 2
+        }
+      ],
+      "heavy_duck_target_count": 3
+    },
+    "selection": {
+      "exclusive_groups": [
+        [
+          "飞溅",
+          "脑电波投射",
+          "生化导弹"
+        ]
+      ]
+    },
+    "action_speed": {
+      "ring_strike_reference": {
+        "hits": 18,
+        "start_seconds": 0.8833333333333333,
+        "notes": "默认18Hit参考（2026-10-12用户暂确认应该是18Hit），不是已实测的地形无关上限。4.2秒仍来自旧时间表，未独立验证平地飞行总时长。按10%起、每Hit加5%、19Hit封顶100%计算，曜EX整体乘1.4。实战和理论均使用默认参考，不按地形落差或抓包Hit反推。启动相位取客户端53帧/60fps。"
+      },
+      "fixed_duration_output_skills": [
+        "旋风",
+        "台风",
+        "旋风EX",
+        "大漩涡怒吼",
+        "迅矢连射",
+        "箭雨风暴",
+        "箭雨风暴EX",
+        "火径",
+        "火焰风暴",
+        "暴风雪",
+        "火径EX",
+        "上升重力",
+        "流星雨",
+        "驱散",
+        "重力开关",
+        "上升重力EX",
+        "天堂审判",
+        "混沌阵",
+        "灵魂尖叫",
+        "烈风痴狂"
+      ],
+      "fixed_duration_cast_segments": {
+        "旋风": {
+          "start_seconds": 0.4
+        },
+        "台风": {
+          "start_seconds": 0.4
+        },
+        "大漩涡怒吼": {
+          "start_seconds": 1.25
+        },
+        "迅矢连射": {
+          "start_seconds": 0.95
+        },
+        "箭雨风暴": {
+          "start_seconds": 1.25,
+          "ex_base_duration_seconds": 4.802
+        },
+        "火径": {
+          "start_seconds": 1.0
+        },
+        "火焰风暴": {
+          "start_seconds": 1.3333
+        },
+        "暴风雪": {
+          "start_seconds": 1.3333
+        },
+        "上升重力": {
+          "start_seconds": 0.6667
+        },
+        "流星雨": {
+          "start_seconds": 1.3333
+        },
+        "驱散": {
+          "start_seconds": 1.3333
+        },
+        "重力开关": {
+          "start_seconds": 0.6
+        },
+        "天堂审判": {
+          "start_seconds": 1.5
+        },
+        "混沌阵": {
+          "start_seconds": 1.0
+        },
+        "灵魂尖叫": {
+          "start_seconds": 1.0
+        },
+        "烈风痴狂": {
+          "start_seconds": 0.6833
+        }
+      }
+    },
+    "team": {
+      "tank_jobs": [
+        "毁灭者",
+        "圣骑士"
+      ],
+      "healer_jobs": [
+        "圣徒",
+        "药剂师",
+        "曜"
+      ],
+      "yao_variants": [
+        "打坐曜",
+        "输出曜"
+      ],
+      "aura_jobs": [
+        "圣骑士",
+        "十字军"
+      ],
+      "aura_options": [
+        "元素光环",
+        "判定光环"
+      ],
+      "exclusive_physical_amp_skills": [
+        "捆绑射击",
+        "捆绑射击EX",
+        "爆裂踢",
+        "爆裂踢EX"
+      ],
+      "exclusive_attack_buff_skills": [
+        "无情打击",
+        "特制强化药剂"
+      ],
+      "exclusive_attack_buff_priority": [
+        "无情打击",
+        "特制强化药剂"
+      ],
+      "effect_proc_chances": {
+        "银色箭雨": 1.0
+      },
+      "effect_proc_basis": {
+        "银色箭雨": "单次命中50%；多Hit技能按每次施放稳定触发"
+      },
+      "variant_adds": {
+        "输出曜": [
+          "黑暗线条"
+        ]
+      },
+      "variant_excludes": {
+        "打坐曜": [
+          "黑暗线条"
+        ],
+        "输出曜": [
+          "查克拉治愈术"
+        ]
+      }
+    },
+    "handler_catalog": {
+      "strict_combo": "必须紧邻施放或依赖指定前置的连招",
+      "cooldown_link": "技能施放、充能或命中会修改其他技能冷却",
+      "resource": "怒气、弹药、幻影、烙印等离散资源",
+      "summon_snapshot": "召唤时快照、持续刷新Buff和召唤数量限制",
+      "stance_hits": "动作速度会改变姿态技能的攻击次数",
+      "personal_state": "个人强化状态影响指定技能集合",
+      "periodic_refresh": "持续伤害在面板更高时提前刷新",
+      "team_effect": "技能在时间轴上产生团队Buff或Debuff",
+      "aura_choice": "互斥光环由队伍收益自动选择",
+      "mixed_attack": "物理与魔法通道分别计算后汇总"
+    }
+  },
+  "jobs": {
+    "剑皇": {
+      "runtime_handlers": [
+        "strict_combo",
+        "cooldown_link",
+        "team_effect"
+      ],
+      "combos": {
+        "followups": {
+          "重锤": [
+            "直线冲击"
+          ]
+        },
+        "required_predecessors": {
+          "直线冲击": [
+            "重锤"
+          ]
+        }
+      },
+      "stance_skills": {
+        "挥砍姿态": {
+          "duration": 6.0,
+          "base_count": 13,
+          "per_hit_multiplier": 1.4,
+          "fixed_multiplier": 2.0,
+          "base_multiplier": 20.2,
+          "hit_label": "普通斩",
+          "fixed_label": "右键200%"
+        }
+      },
+      "team_effects": [
+        "重锤",
+        "切骨之刺EX"
+      ]
+    },
+    "月之领主": {
+      "runtime_handlers": [
+        "strict_combo",
+        "cooldown_link",
+        "stance_hits",
+        "team_effect"
+      ],
+      "combos": {
+        "followups": {
+          "重锤": [
+            "半月斩",
+            "旋风斩"
+          ],
+          "月光碎片": [
+            "致命劈砍",
+            "半月斩"
+          ],
+          "半月斩": [
+            "旋风斩",
+            "月光碎片"
+          ],
+          "旋风斩": [
+            "致命劈砍"
+          ],
+          "猛砍站姿": [
+            "致命劈砍",
+            "月光碎片"
+          ]
+        },
+        "priority": {
+          "重锤": [
+            "半月斩",
+            "旋风斩"
+          ],
+          "旋风斩": [
+            "致命劈砍"
+          ],
+          "半月斩": [
+            "旋风斩",
+            "月光碎片"
+          ],
+          "月光碎片": [
+            "致命劈砍",
+            "半月斩"
+          ],
+          "猛砍站姿": [
+            "月光碎片",
+            "致命劈砍"
+          ]
+        },
+        "quick_predecessors": {
+          "致命劈砍": [
+            "月光碎片",
+            "旋风斩",
+            "猛砍站姿"
+          ],
+          "月光碎片": [
+            "半月斩",
+            "猛砍站姿"
+          ],
+          "半月斩": [
+            "重锤",
+            "月光碎片"
+          ],
+          "旋风斩": [
+            "重锤",
+            "半月斩"
+          ]
+        }
+      },
+      "stance_skills": {
+        "挥砍姿态": {
+          "duration": 6.0,
+          "base_count": 12,
+          "per_hit_multiplier": 1.0,
+          "fixed_multiplier": 0.0,
+          "base_multiplier": 12.0,
+          "hit_label": "斩击",
+          "fixed_label": ""
+        },
+        "猛砍站姿": {
+          "duration": 4.0,
+          "base_count": 8,
+          "per_hit_multiplier": 1.0,
+          "fixed_multiplier": 4.8,
+          "base_multiplier": 12.8,
+          "hit_label": "普通剑气",
+          "fixed_label": "巨型剑气480%"
+        }
+      },
+      "team_effects": [
+        "重锤",
+        "旋风斩EX"
+      ]
+    },
+    "狂战士": {
+      "runtime_handlers": [
+        "resource",
+        "personal_state",
+        "team_effect"
+      ],
+      "opening": [
+        "致命一击掌握触发"
+      ],
+      "resources": {
+        "fury": {
+          "marker": "__怒气",
+          "max": 8,
+          "generators": {
+            "践踏": 2,
+            "屠戮盛宴": 2
+          },
+          "consumers": {
+            "旋转冲击": [
+              6,
+              3.3333333333333335
+            ],
+            "连骨撞击": [
+              2,
+              2.4
+            ]
+          }
+        },
+        "mastery_marker": "__致命一击掌握"
+      },
+      "team_effects": [
+        "战吼"
+      ]
+    },
+    "毁灭者": {
+      "runtime_handlers": [
+        "personal_state",
+        "team_effect"
+      ],
+      "opening": [
+        "力量掌握触发"
+      ],
+      "mastery": {
+        "marker": "__毁灭力量掌握",
+        "triggers": [
+          "战吼",
+          "反击怒吼",
+          "毁灭呐喊"
+        ]
+      },
+      "team_effects": [
+        "战吼",
+        "飞行冲击EX"
+      ]
+    },
+    "狙翎": {
+      "runtime_handlers": [
+        "stance_hits",
+        "cooldown_link",
+        "team_effect"
+      ],
+      "stance_skills": {
+        "包围": {
+          "duration": 4.0,
+          "startup_time": 0.5,
+          "base_count": 4,
+          "per_hit_multiplier": 1.5,
+          "fixed_multiplier": 0.0,
+          "base_multiplier": 6.0,
+          "hit_label": "箭矢",
+          "fixed_label": ""
+        }
+      },
+      "combos": {
+        "followups": {
+          "追踪箭": [
+            "集中射击"
+          ]
+        }
+      },
+      "team_effects": [
+        "鹰怒",
+        "瞄准"
+      ]
+    },
+    "魔羽": {
+      "runtime_handlers": [
+        "strict_combo",
+        "cooldown_link",
+        "team_effect"
+      ],
+      "auto_selection": {
+        "force_include": [
+          "爆炸箭矢"
+        ]
+      },
+      "combos": {
+        "followups": {
+          "追踪箭": [
+            "集中射击"
+          ],
+          "集中射击": [
+            "追踪箭"
+          ]
+        }
+      },
+      "team_effects": [
+        "鹰怒",
+        "瞄准"
+      ]
+    },
+    "影舞者": {
+      "runtime_handlers": [
+        "strict_combo",
+        "cooldown_link",
+        "team_effect"
+      ],
+      "auto_selection": {
+        "skip": [
+          "凌波微步"
+        ],
+        "force_include": [
+          "双飞腿"
+        ]
+      },
+      "combos": {
+        "required_predecessors": {
+          "双飞腿": [
+            "捆绑射击",
+            "飓风舞"
+          ]
+        }
+      },
+      "special_cooldown_sources": {
+        "双飞腿": [
+          {
+            "source": "捆绑射击",
+            "cooldown": 11
+          },
+          {
+            "source": "飓风舞",
+            "cooldown": 30
+          }
+        ]
+      },
+      "team_effects": [
+        "鹰怒",
+        "精神爆发",
+        "捆绑射击EX"
+      ]
+    },
+    "风行者": {
+      "runtime_handlers": [
+        "strict_combo",
+        "cooldown_link",
+        "team_effect"
+      ],
+      "auto_selection": {
+        "skip": [
+          "凌波微步"
+        ],
+        "force_include": [
+          "双飞腿"
+        ]
+      },
+      "combos": {
+        "followups": {
+          "爆裂踢": [
+            "鹰击长空"
+          ],
+          "鹰击长空": [
+            "双飞腿"
+          ]
+        },
+        "priority": {
+          "爆裂踢": [
+            "鹰击长空"
+          ],
+          "鹰击长空": [
+            "双飞腿"
+          ]
+        },
+        "required_predecessors": {
+          "鹰击长空": [
+            "爆裂踢"
+          ],
+          "双飞腿": [
+            "捆绑射击",
+            "鹰击长空"
+          ]
+        },
+        "required_followups": {
+          "爆裂踢": [
+            "鹰击长空"
+          ],
+          "鹰击长空": [
+            "双飞腿"
+          ]
+        }
+      },
+      "special_cooldown_sources": {
+        "双飞腿": [
+          {
+            "source": "捆绑射击",
+            "cooldown": 11
+          },
+          {
+            "source": "鹰击长空",
+            "cooldown": 11
+          }
+        ]
+      },
+      "team_effects": [
+        "鹰怒",
+        "精神爆发",
+        "爆裂踢EX"
+      ]
+    },
+    "银色猎人": {
+      "runtime_handlers": [
+        "strict_combo",
+        "cooldown_link",
+        "team_effect"
+      ],
+      "opening": [
+        "银色猎人"
+      ],
+      "team_effect_cooldown_multipliers": {
+        "银色箭雨": 0.5
+      },
+      "combos": {
+        "followups": {
+          "瞬步射击": [
+            "飓风狂射"
+          ]
+        },
+        "required_predecessors": {
+          "飓风狂射": [
+            "瞬步射击"
+          ]
+        },
+        "dpa_packages": {
+          "瞬步射击": [
+            "飓风狂射"
+          ]
+        }
+      },
+      "team_effects": [
+        "银色箭雨",
+        "飓风狂射",
+        "螺旋飓风"
+      ]
+    },
+    "火舞": {
+      "runtime_handlers": [
+        "cooldown_link",
+        "strict_combo",
+        "team_effect"
+      ],
+      "passive_cooldown_sources": {
+        "灼烧之手": {
+          "base_cooldown": 2.0,
+          "interval_multiplier": 1.0,
+          "cast_driven": true
+        }
+      },
+      "team_effect_cooldown_multipliers": {
+        "灼热火焰": 0.5
+      },
+      "combos": {
+        "followups": {
+          "地狱火海": [
+            "火球"
+          ]
+        },
+        "priority": {
+          "地狱火海": [
+            "火球"
+          ]
+        },
+        "required_followups": {
+          "地狱火海": [
+            "火球"
+          ]
+        },
+        "quick_predecessors": {
+          "火球": [
+            "地狱火海"
+          ]
+        }
+      },
+      "planning": {
+        "ready_deadlines": {
+          "火径": 2.0
+        }
+      },
+      "optional_support_effects": [
+        "冰河"
+      ],
+      "team_effects": [
+        "灼热火焰",
+        "火焰光环",
+        "霜冻",
+        "冰刃",
+        "冰雾",
+        "冰刺",
+        "弗罗斯特风",
+        "漫长熔浆",
+        "地狱火海EX",
+        "火墙EX"
+      ]
+    },
+    "冰灵": {
+      "runtime_handlers": [
+        "cooldown_link",
+        "team_effect"
+      ],
+      "auto_selection": {
+        "force_include": [
+          "冰尖柱",
+          "火径"
+        ]
+      },
+      "team_effects": [
+        "灼热火焰",
+        "寒冰光环",
+        "霜冻",
+        "冰刃",
+        "冰雾",
+        "冰刺",
+        "弗罗斯特风",
+        "冰刃EX",
+        "冰河",
+        "暴风雪",
+        "冰柱喷射",
+        "霜冻EX"
+      ]
+    },
+    "圣骑士": {
+      "runtime_handlers": [
+        "resource",
+        "periodic_refresh",
+        "summon_snapshot",
+        "aura_choice",
+        "mixed_attack",
+        "team_effect"
+      ],
+      "opening": [
+        "挑衅",
+        "神圣化身"
+      ],
+      "level_aliases": {
+        "神圣惩戒EX": "神圣惩戒"
+      },
+      "resources": {
+        "guardian_phantom": {
+          "marker": "__护卫者幻影",
+          "max": 2,
+          "generators": {
+            "挑衅": 1,
+            "虔诚": 1,
+            "正义撞击": 1
+          },
+          "costs": {
+            "护卫者姿势": 2
+          }
+        }
+      },
+      "team_effects": [
+        "元素光环",
+        "判定光环",
+        "破甲",
+        "连锁闪电",
+        "雷电冲击",
+        "重击"
+      ]
+    },
+    "十字军": {
+      "runtime_handlers": [
+        "periodic_refresh",
+        "aura_choice",
+        "mixed_attack",
+        "team_effect"
+      ],
+      "opening": [
+        "神圣化身",
+        "审判力量"
+      ],
+      "snapshot_buffs": {
+        "审判力量": {
+          "model": "attribute_average",
+          "attributes": [
+            "力量%",
+            "智力%"
+          ],
+          "refresh_markers": [
+            "__爆发buff__神圣化身"
+          ],
+          "defer_for_ready_boost": true
+        }
+      },
+      "team_effects": [
+        "元素光环",
+        "判定光环",
+        "破甲",
+        "连锁闪电",
+        "雷电冲击",
+        "重击"
+      ]
+    },
+    "圣徒": {
+      "runtime_handlers": [
+        "summon_snapshot",
+        "team_effect"
+      ],
+      "holy_relic_skills": [
+        "雷电之手",
+        "治愈之手",
+        "痊愈之手",
+        "掌握之手",
+        "奇迹之手"
+      ],
+      "team_effects": [
+        "无情打击",
+        "光明之呼吸",
+        "痊愈之手",
+        "连锁闪电",
+        "电光箭",
+        "闪电风暴",
+        "雷电之手",
+        "天堂审判",
+        "冲击之手",
+        "掌握之手EX"
+      ]
+    },
+    "雷神": {
+      "runtime_handlers": [
+        "strict_combo",
+        "summon_snapshot",
+        "team_effect"
+      ],
+      "auto_selection": {
+        "idle_only": [
+          "雷暴"
+        ]
+      },
+      "combos": {
+        "followups": {
+          "精神爆破": [
+            "圣光十字",
+            "神圣暴风",
+            "神圣风暴"
+          ],
+          "神圣大地": [
+            "圣光十字",
+            "神圣暴风",
+            "神圣风暴"
+          ],
+          "圣光十字": [
+            "神圣暴风",
+            "神圣风暴"
+          ],
+          "神圣暴风": [
+            "圣光十字"
+          ],
+          "神圣风暴": [
+            "圣光十字"
+          ]
+        },
+        "priority": {
+          "精神爆破": [
+            "圣光十字",
+            "神圣暴风",
+            "神圣风暴"
+          ],
+          "神圣大地": [
+            "圣光十字",
+            "神圣暴风",
+            "神圣风暴"
+          ],
+          "圣光十字": [
+            "神圣暴风",
+            "神圣风暴"
+          ],
+          "神圣暴风": [
+            "圣光十字"
+          ],
+          "神圣风暴": [
+            "圣光十字"
+          ]
+        },
+        "required_predecessors": {
+          "圣光十字": [
+            "精神爆破",
+            "神圣大地",
+            "神圣暴风",
+            "神圣风暴"
+          ],
+          "神圣暴风": [
+            "精神爆破",
+            "神圣大地",
+            "圣光十字"
+          ],
+          "神圣风暴": [
+            "精神爆破",
+            "神圣大地",
+            "圣光十字"
+          ]
+        }
+      },
+      "team_effects": [
+        "无情打击",
+        "光明之呼吸",
+        "痊愈之手",
+        "连锁闪电",
+        "电光箭",
+        "精神爆破EX",
+        "闪电风暴",
+        "雷电之手",
+        "天堂审判",
+        "神圣大地"
+      ]
+    },
+    "重炮手": {
+      "runtime_handlers": [
+        "resource",
+        "summon_snapshot",
+        "team_effect"
+      ],
+      "auto_selection": {
+        "skip": [
+          "寒冰喷射塔"
+        ],
+        "duplicate_limit": {
+          "skills": [
+            "炮塔",
+            "加特林机枪塔"
+          ],
+          "max": 2
+        }
+      },
+      "resources": {
+        "ammo": {
+          "reload": "实弹装填",
+          "gain": 2,
+          "max": 6,
+          "consumers": {
+            "飞溅": 1,
+            "生化导弹": 2,
+            "脑电波投射": 2
+          }
+        }
+      },
+      "summons": {
+        "重磅鸭": {
+          "max": 3,
+          "duration": 45.0
+        }
+      },
+      "team_effects": [
+        "重磅鸭",
+        "重磅轰击"
+      ]
+    },
+    "机械大师": {
+      "runtime_handlers": [
+        "summon_snapshot",
+        "personal_state",
+        "team_effect"
+      ],
+      "auto_selection": {
+        "skip": [
+          "脑电波投射",
+          "生化导弹",
+          "寒冰喷射塔",
+          "重磅轰击"
+        ],
+        "force_include": [
+          "机械链锯",
+          "机械炮塔"
+        ],
+        "duplicate_limit": {
+          "skills": [
+            "炮塔",
+            "加特林机枪塔"
+          ],
+          "max": 2
+        }
+      },
+      "level_aliases": {
+        "机械链锯": "链锯之塔",
+        "机械炮塔": "炮塔"
+      },
+      "state_markers": {
+        "mechanic_mode": "__机械模式",
+        "mechanic_moment": "__机械时刻",
+        "engineering_field": "__工程领域"
+      },
+      "summons": {
+        "重磅鸭": {
+          "max": 3,
+          "duration": 60.0
+        }
+      },
+      "team_effects": [
+        "重磅鸭"
+      ]
+    },
+    "炼金圣士": {
+      "runtime_handlers": [
+        "strict_combo",
+        "team_effect"
+      ],
+      "opening": [
+        "C2H5OH"
+      ],
+      "combos": {
+        "followups": {
+          "岩浆戳刺": [
+            "寒冰戳刺"
+          ]
+        },
+        "optional_followups": {
+          "岩浆戳刺": [
+            "寒冰戳刺"
+          ]
+        },
+        "required_predecessors": {
+          "寒冰戳刺": [
+            "岩浆戳刺"
+          ]
+        }
+      },
+      "team_effects": [
+        "鸡尾酒",
+        "冰雪连天",
+        "岩浆墙",
+        "毒气聚能",
+        "疾病",
+        "混合感染",
+        "毒池",
+        "C2H5OH",
+        "冰光束",
+        "寒冰戳刺EX"
+      ]
+    },
+    "药剂师": {
+      "runtime_handlers": [
+        "strict_combo",
+        "team_effect"
+      ],
+      "opening": [
+        "特制强化药剂"
+      ],
+      "combos": {
+        "followups": {
+          "岩浆戳刺": [
+            "寒冰戳刺"
+          ],
+          "毒气聚能": [
+            "混合感染"
+          ]
+        },
+        "optional_followups": {
+          "岩浆戳刺": [
+            "寒冰戳刺"
+          ]
+        },
+        "required_predecessors": {
+          "寒冰戳刺": [
+            "岩浆戳刺"
+          ],
+          "混合感染": [
+            "毒气聚能"
+          ]
+        },
+        "quick_predecessors": {
+          "混合感染": [
+            "毒气聚能"
+          ]
+        },
+        "strict_quick_predecessors": true
+      },
+      "team_effects": [
+        "鸡尾酒",
+        "冰雪连天",
+        "岩浆墙",
+        "毒气聚能",
+        "疾病",
+        "混合感染",
+        "爱情病毒",
+        "疾病EX",
+        "特制强化药剂"
+      ]
+    },
+    "时空领主": {
+      "runtime_handlers": [
+        "strict_combo",
+        "cooldown_link",
+        "team_effect"
+      ],
+      "combos": {
+        "followups": {
+          "能量反射": [
+            "光雨",
+            "九尾激光"
+          ],
+          "激光破碎": [
+            "九尾激光"
+          ],
+          "聚能激光": [
+            "九尾激光"
+          ],
+          "九尾激光": [
+            "光雨"
+          ]
+        },
+        "priority": {
+          "能量反射": [
+            "九尾激光",
+            "光雨"
+          ],
+          "激光破碎": [
+            "九尾激光"
+          ],
+          "聚能激光": [
+            "九尾激光"
+          ],
+          "九尾激光": [
+            "光雨"
+          ]
+        },
+        "dpa_packages": {
+          "光雨": [
+            "聚能激光"
+          ]
+        },
+        "quick_predecessors": {
+          "聚能激光": [
+            "光雨"
+          ]
+        }
+      },
+      "team_effects": [
+        "能量反射",
+        "时间加速"
+      ]
+    },
+    "黑暗女王": {
+      "runtime_handlers": [
+        "strict_combo",
+        "cooldown_link",
+        "team_effect"
+      ],
+      "auto_selection": {
+        "exclude_from_timeline": [
+          "九尾激光"
+        ]
+      },
+      "combos": {
+        "followups": {
+          "能量反射": [
+            "光雨"
+          ],
+          "上升重力": [
+            "召唤黑洞"
+          ]
+        },
+        "required_predecessors": {
+          "召唤黑洞": [
+            "上升重力"
+          ]
+        }
+      },
+      "team_effects": [
+        "能量反射",
+        "时间加速"
+      ]
+    },
+    "黑暗萨满": {
+      "runtime_handlers": [
+        "resource",
+        "team_effect"
+      ],
+      "opening": [
+        "幽灵之魂",
+        "怨恨之像",
+        "科兹污点"
+      ],
+      "resources": {
+        "brand_marker": "__烙印"
+      },
+      "team_effects": [
+        "幽灵之魂",
+        "怨恨之像",
+        "狂虐之乐",
+        "召唤傀儡",
+        "狂暴之爪",
+        "混沌阵",
+        "复仇之手EX"
+      ]
+    },
+    "噬魂者": {
+      "runtime_handlers": [
+        "resource",
+        "summon_snapshot",
+        "team_effect"
+      ],
+      "opening": [
+        "科兹污点",
+        "幽灵之魂",
+        "怨恨之像",
+        "召唤傀儡"
+      ],
+      "auto_selection": {
+        "forced_last": "诅咒状态"
+      },
+      "resources": {
+        "brand_marker": "__烙印"
+      },
+      "team_effects": [
+        "幽灵之魂",
+        "怨恨之像",
+        "召唤傀儡",
+        "狂暴之爪",
+        "灵魂之门 EX",
+        "灵魂尖叫"
+      ]
+    },
+    "刀锋舞者": {
+      "runtime_handlers": [
+        "strict_combo",
+        "personal_state",
+        "team_effect"
+      ],
+      "opening": [
+        "弗里兹科之舞",
+        "幽灵之魂",
+        "九天之舞",
+        "九天之舞2阶"
+      ],
+      "resources": {
+        "dance_stage_marker": "__九天之舞1阶"
+      },
+      "enhanced_skill_scope": [
+        "草原之舞",
+        "小甜甜圆周",
+        "璀璨星光",
+        "螺旋冲击",
+        "傲慢狂风",
+        "热情似火",
+        "暴风雪制造机",
+        "烈风痴狂"
+      ],
+      "combos": {
+        "followups": {
+          "九天之舞": [
+            "九天之舞2阶"
+          ]
+        },
+        "required_predecessors": {
+          "九天之舞2阶": [
+            "九天之舞"
+          ]
+        },
+        "required_followups": {
+          "九天之舞": [
+            "九天之舞2阶"
+          ]
+        }
+      },
+      "team_effects": [
+        "幽灵之魂",
+        "九天之舞2阶"
+      ]
+    },
+    "灵魂舞者": {
+      "runtime_handlers": [
+        "strict_combo",
+        "personal_state",
+        "team_effect"
+      ],
+      "opening": [
+        "幻影之舞",
+        "幽灵之魂",
+        "九天之舞",
+        "九天之舞2阶"
+      ],
+      "resources": {
+        "dance_stage_marker": "__九天之舞1阶"
+      },
+      "enhanced_skill_scope": [
+        "追踪者",
+        "黄昏猎人",
+        "废除者",
+        "风车公主",
+        "唐·弗莱德将军",
+        "艾云尼风暴"
+      ],
+      "combos": {
+        "followups": {
+          "九天之舞": [
+            "九天之舞2阶"
+          ]
+        },
+        "required_predecessors": {
+          "九天之舞2阶": [
+            "九天之舞"
+          ]
+        },
+        "required_followups": {
+          "九天之舞": [
+            "九天之舞2阶"
+          ]
+        }
+      },
+      "team_effects": [
+        "幽灵之魂",
+        "九天之舞2阶"
+      ]
+    },
+    "烈": {
+      "runtime_handlers": [
+        "team_effect"
+      ],
+      "team_effects": [
+        "突袭",
+        "奉献乌鸦",
+        "天降雨点",
+        "灵巧猎手",
+        "致命狂镰",
+        "惩罚"
+      ]
+    },
+    "影": {
+      "runtime_handlers": [
+        "team_effect"
+      ],
+      "team_effects": [
+        "突袭",
+        "奉献乌鸦",
+        "天降雨点",
+        "致命狂镰EX",
+        "惩罚EX"
+      ]
+    },
+    "曜": {
+      "runtime_handlers": [
+        "summon_snapshot",
+        "team_effect"
+      ],
+      "auto_selection": {
+        "skip": [
+          "黑暗线条"
+        ]
+      },
+      "team_effects": [
+        "突袭",
+        "查克拉治愈术",
+        "阿兹那之息",
+        "日光焰"
+      ],
+      "team_effect_excludes": [
+        "黑暗线条"
+      ]
+    },
+    "暗": {
+      "runtime_handlers": [
+        "summon_snapshot",
+        "team_effect"
+      ],
+      "opening": [
+        "黑暗化身",
+        "黑暗线条",
+        "黄昏之光"
+      ],
+      "team_effects": [
+        "突袭",
+        "阿兹那之息",
+        "黑暗化身",
+        "黑暗线条",
+        "黄昏之光"
+      ],
+      "team_effect_excludes": [
+        "查克拉治愈术"
+      ]
+    },
+    "黑暗复仇者": {
+      "runtime_handlers": [
+        "strict_combo",
+        "personal_state",
+        "team_effect"
+      ],
+      "combos": {
+        "followups": {
+          "新月之刃": [
+            "黑暗撞击"
+          ]
+        },
+        "required_predecessors": {
+          "黑暗撞击": [
+            "新月之刃"
+          ]
+        },
+        "required_followups": {
+          "新月之刃": [
+            "黑暗撞击"
+          ]
+        }
+      },
+      "team_effects": [
+        "火焰之力",
+        "灵魂之刃",
+        "火焰冲刺"
+      ]
+    }
+  }
+}

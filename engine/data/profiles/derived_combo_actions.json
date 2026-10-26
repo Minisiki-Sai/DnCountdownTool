@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "schema": "derived-combo-actions-v1",
+  "rules": [
+    {
+      "trigger_skill_id": 1411,
+      "trigger_skill_name": "双飞腿",
+      "trigger_alias_skill_ids": [1505],
+      "intermediate_skill_id": 1018,
+      "intermediate_skill_name": "踢飞",
+      "anchor_before_trigger_ms": 200,
+      "predecessors": [
+        {
+          "skill_id": 1402,
+          "skill_name": "捆绑射击",
+          "alias_skill_ids": [1504],
+          "max_gap_ms": 2200,
+          "damage_owner": "predecessor_packet_skill_id",
+          "basis": "动作链与0822实战样本"
+        },
+        {
+          "skill_id": 1503,
+          "skill_name": "飓风舞",
+          "max_gap_ms": 3900,
+          "damage_owner": "intermediate_packet_basic_attack_key",
+          "basis": "拆包输入窗F220+踢飞至双飞腿确认延迟；0822实测最大3860ms"
+        }
+      ]
+    }
+  ]
+}

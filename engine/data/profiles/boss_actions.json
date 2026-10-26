@@ -1,0 +1,59 @@
+{
+  "version": "v576",
+  "source": "runtime_action_calibration",
+  "description": "Boss action codes observed in packet captures. Unmapped entries retain their protocol code until a skill name is independently verified.",
+  "templates": {
+    "4150054": {
+      "name": "女妖皇后伊泰拉",
+      "actions": {
+        "8": {"name": "", "mapped": false},
+        "52": {"name": "", "mapped": false},
+        "53": {"name": "", "mapped": false},
+        "54": {"name": "", "mapped": false}
+      }
+    },
+    "4150055": {
+      "name": "消亡领主阿赫玛德",
+      "actions": {
+        "2": {"name": "", "mapped": false},
+        "34": {"name": "", "mapped": false},
+        "71": {"name": "", "mapped": false}
+      }
+    },
+    "4150056": {
+      "name": "幽灵花伊克尼斯",
+      "actions": {
+        "12": {"name": "", "mapped": false},
+        "30": {"name": "", "mapped": false},
+        "42": {"name": "", "mapped": false},
+        "84": {"name": "", "mapped": false}
+      }
+    },
+    "4150057": {
+      "name": "峡谷的监视者阿卜杜拉",
+      "actions": {
+        "2": {"name": "", "mapped": false},
+        "3": {"name": "", "mapped": false},
+        "99": {"name": "", "mapped": false},
+        "100": {"name": "", "mapped": false}
+      }
+    },
+    "4150058": {
+      "name": "暴风支配者朱武",
+      "actions": {
+        "0": {"name": "", "mapped": false},
+        "3": {"name": "", "mapped": false},
+        "30": {"name": "", "mapped": false},
+        "70": {"name": "", "mapped": false},
+        "76": {"name": "", "mapped": false}
+      }
+    },
+    "4150059": {
+      "name": "忠实的崇拜者卡基夫",
+      "actions": {
+        "77": {"name": "", "mapped": false},
+        "78": {"name": "", "mapped": false}
+      }
+    }
+  }
+}

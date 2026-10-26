@@ -1,0 +1,1763 @@
+{
+  "source": "Resource_unpacked_all_20260916_update",
+  "note": "capture_checked validates weight scale, not every template or phase damage budget",
+  "profiles": [
+    {
+      "label": "黑龙硬核",
+      "hints": [
+        "黑龙硬核",
+        "黑硬",
+        "硬核bluemoon"
+      ],
+      "capture_checked": true,
+      "entities": {
+        "4180002": {
+          "name": "翁巴拉的火焰战锤",
+          "full_hp": 561599892,
+          "source_table": "monstertable_nest70.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable_nest.dnt",
+              "row": 44180002,
+              "difficulty": 3,
+              "multiplier": 31.5,
+              "ai": "BlackDragon_HC_Weapon_Fire.lua",
+              "hp": 561599892
+            }
+          ]
+        },
+        "4180003": {
+          "name": "提塔尼安的霜冻魔眼",
+          "full_hp": 561599892,
+          "source_table": "monstertable_nest70.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable_nest.dnt",
+              "row": 44180003,
+              "difficulty": 3,
+              "multiplier": 31.5,
+              "ai": "BlackDragon_HC_Weapon_Ice.lua",
+              "hp": 561599892
+            }
+          ]
+        },
+        "4180004": {
+          "name": "梅鲁卡的黑暗长刀",
+          "full_hp": 561599892,
+          "source_table": "monstertable_nest70.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable_nest.dnt",
+              "row": 44180004,
+              "difficulty": 3,
+              "multiplier": 31.5,
+              "ai": "BlackDragon_HC_Weapon_Dark.lua",
+              "hp": 561599892
+            }
+          ]
+        },
+        "4180005": {
+          "name": "台风金的雷电巨镰",
+          "full_hp": 561599892,
+          "source_table": "monstertable_nest70.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable_nest.dnt",
+              "row": 44180005,
+              "difficulty": 3,
+              "multiplier": 31.5,
+              "ai": "BlackDragon_HC_Weapon_Light.lua",
+              "hp": 561599892
+            }
+          ]
+        },
+        "4181001": {
+          "name": "天堂龙灾·佩达",
+          "full_hp": 2413241271,
+          "source_table": "monstertable_nest70.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable_nest.dnt",
+              "row": 44181001,
+              "difficulty": 3,
+              "multiplier": 31.5,
+              "ai": "BlackDragon_HC_Pather_P1.lua",
+              "hp": 2413241271
+            }
+          ]
+        },
+        "4181005": {
+          "name": "炎之使徒的幻影",
+          "full_hp": 288498042,
+          "source_table": "monstertable_nest70.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable_nest.dnt",
+              "row": 44181005,
+              "difficulty": 3,
+              "multiplier": 31.5,
+              "ai": "BlackDragonNest_Minotauros_Boss_hc.lua",
+              "hp": 288498042
+            }
+          ]
+        },
+        "4181006": {
+          "name": "霜之使徒的幻影",
+          "full_hp": 288498042,
+          "source_table": "monstertable_nest70.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable_nest.dnt",
+              "row": 44181006,
+              "difficulty": 3,
+              "multiplier": 31.5,
+              "ai": "BlackDragonNest_LotusGolem_hc.lua",
+              "hp": 288498042
+            }
+          ]
+        },
+        "4181007": {
+          "name": "黯之使徒的幻影",
+          "full_hp": 288498042,
+          "source_table": "monstertable_nest70.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable_nest.dnt",
+              "row": 44181007,
+              "difficulty": 3,
+              "multiplier": 31.5,
+              "ai": "BlackDragonNest_DragonSycophantPuni_hc.lua",
+              "hp": 288498042
+            }
+          ]
+        },
+        "4181008": {
+          "name": "雷之使徒的幻影",
+          "full_hp": 288498042,
+          "source_table": "monstertable_nest70.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable_nest.dnt",
+              "row": 44181008,
+              "difficulty": 3,
+              "multiplier": 31.5,
+              "ai": "BlackDragonNest_TyphoonKim_hc.lua",
+              "hp": 288498042
+            }
+          ]
+        },
+        "4181009": {
+          "name": "天堂龙灾·佩达",
+          "full_hp": 2413241271,
+          "source_table": "monstertable_nest70.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable_nest.dnt",
+              "row": 44181009,
+              "difficulty": 3,
+              "multiplier": 31.5,
+              "ai": "BlackDragon_HC_Pather_P2.lua",
+              "hp": 2413241271
+            }
+          ]
+        },
+        "4182001": {
+          "name": "翁巴拉的火焰战锤",
+          "full_hp": 2352776422,
+          "source_table": "monstertable_nest70.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable_nest.dnt",
+              "row": 44182001,
+              "difficulty": 3,
+              "multiplier": 31.5,
+              "ai": "BlackDragon_HC_Weapon_Fire_P2.lua",
+              "hp": 2352776422
+            }
+          ]
+        },
+        "4182002": {
+          "name": "提塔尼安的霜冻魔眼",
+          "full_hp": 2352776422,
+          "source_table": "monstertable_nest70.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable_nest.dnt",
+              "row": 44182002,
+              "difficulty": 3,
+              "multiplier": 31.5,
+              "ai": "BlackDragon_HC_Weapon_Ice_P2.lua",
+              "hp": 2352776422
+            }
+          ]
+        },
+        "4182003": {
+          "name": "梅鲁卡的黑暗长刀",
+          "full_hp": 2352776422,
+          "source_table": "monstertable_nest70.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable_nest.dnt",
+              "row": 44182003,
+              "difficulty": 3,
+              "multiplier": 31.5,
+              "ai": "BlackDragon_HC_Weapon_Dark_P2.lua",
+              "hp": 2352776422
+            }
+          ]
+        },
+        "4182004": {
+          "name": "台风金的雷电巨镰",
+          "full_hp": 2352776422,
+          "source_table": "monstertable_nest70.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable_nest.dnt",
+              "row": 44182004,
+              "difficulty": 3,
+              "multiplier": 31.5,
+              "ai": "BlackDragon_HC_Weapon_Light_P2.lua",
+              "hp": 2352776422
+            }
+          ]
+        },
+        "4182005": {
+          "name": "翁巴拉的火焰战锤",
+          "full_hp": 2352776422,
+          "source_table": "monstertable_nest70.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable_nest.dnt",
+              "row": 44182005,
+              "difficulty": 3,
+              "multiplier": 31.5,
+              "ai": "BlackDragon_HC_Weapon_Fire.lua",
+              "hp": 2352776422
+            }
+          ]
+        },
+        "4182006": {
+          "name": "提塔尼安的霜冻魔眼",
+          "full_hp": 2352776422,
+          "source_table": "monstertable_nest70.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable_nest.dnt",
+              "row": 44182006,
+              "difficulty": 3,
+              "multiplier": 31.5,
+              "ai": "BlackDragon_HC_Weapon_Ice.lua",
+              "hp": 2352776422
+            }
+          ]
+        },
+        "4182007": {
+          "name": "梅鲁卡的黑暗长刀",
+          "full_hp": 2352776422,
+          "source_table": "monstertable_nest70.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable_nest.dnt",
+              "row": 44182007,
+              "difficulty": 3,
+              "multiplier": 31.5,
+              "ai": "BlackDragon_HC_Weapon_Dark.lua",
+              "hp": 2352776422
+            }
+          ]
+        },
+        "4182008": {
+          "name": "台风金的雷电巨镰",
+          "full_hp": 2352776422,
+          "source_table": "monstertable_nest70.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable_nest.dnt",
+              "row": 44182008,
+              "difficulty": 3,
+              "multiplier": 31.5,
+              "ai": "BlackDragon_HC_Weapon_Light.lua",
+              "hp": 2352776422
+            }
+          ]
+        }
+      },
+      "source": "Resource_unpacked_all_20260916_update"
+    },
+    {
+      "label": "沙龙硬核",
+      "hints": [
+        "沙龙硬核",
+        "沙硬"
+      ],
+      "capture_checked": true,
+      "entities": {
+        "4150050": {
+          "name": "沙漠龙扎卡德",
+          "full_hp": 1675550898,
+          "source_table": "monstertable_nest.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable.dnt",
+              "row": 44150050,
+              "difficulty": 3,
+              "multiplier": 3994.0,
+              "ai": "DesertDragon_Gate7_DesertDragon_hc_1P2P.lua",
+              "hp": 1675550898
+            }
+          ]
+        },
+        "4150051": {
+          "name": "流沙之下的沙虫",
+          "full_hp": 74506221,
+          "source_table": "monstertable_nest.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable.dnt",
+              "row": 44150051,
+              "difficulty": 3,
+              "multiplier": 177.60000610351562,
+              "ai": "DesertDragon_Gate7_Sandworm_Trap_hc.lua",
+              "hp": 74506221
+            }
+          ]
+        },
+        "4150054": {
+          "name": "女妖皇后伊泰拉",
+          "full_hp": 381886319,
+          "source_table": "monstertable_nest.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable.dnt",
+              "row": 44150054,
+              "difficulty": 3,
+              "multiplier": 910.2999877929688,
+              "ai": "DesertDragon_Lamia_hc.lua",
+              "hp": 381886319
+            }
+          ]
+        },
+        "4150055": {
+          "name": "消亡领主阿赫玛德",
+          "full_hp": 572850463,
+          "source_table": "monstertable_nest.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable.dnt",
+              "row": 44150055,
+              "difficulty": 3,
+              "multiplier": 1365.5,
+              "ai": "DesertDragon_DeathKnight_hc.lua",
+              "hp": 572850463
+            }
+          ]
+        },
+        "4150056": {
+          "name": "幽灵花伊克尼斯",
+          "full_hp": 128330247,
+          "source_table": "monstertable_nest.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable.dnt",
+              "row": 44150056,
+              "difficulty": 3,
+              "multiplier": 305.8999938964844,
+              "ai": "DesertDragon_Spittler_hc.lua",
+              "hp": 128330247
+            }
+          ]
+        },
+        "4150057": {
+          "name": "峡谷的监视者阿卜杜拉",
+          "full_hp": 119604299,
+          "source_table": "monstertable_nest.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable.dnt",
+              "row": 44150057,
+              "difficulty": 3,
+              "multiplier": 285.1000061035156,
+              "ai": "DesertDragon_Scorpion_hc.lua",
+              "hp": 119604299
+            }
+          ]
+        },
+        "4150058": {
+          "name": "暴风支配者朱武",
+          "full_hp": 169359018,
+          "source_table": "monstertable_nest.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable.dnt",
+              "row": 44150058,
+              "difficulty": 3,
+              "multiplier": 403.70001220703125,
+              "ai": "DesertDragon_ManticoreDesert_hc.lua",
+              "hp": 169359018
+            }
+          ]
+        },
+        "4150059": {
+          "name": "忠实的崇拜者卡基夫",
+          "full_hp": 169359018,
+          "source_table": "monstertable_nest.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable.dnt",
+              "row": 44150059,
+              "difficulty": 3,
+              "multiplier": 403.70001220703125,
+              "ai": "DesertDragon_LotusGolem_hc.lua",
+              "hp": 169359018
+            }
+          ]
+        },
+        "4150064": {
+          "name": "陌生的少女",
+          "full_hp": 628016949,
+          "source_table": "monstertable_nest.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable.dnt",
+              "row": 44150064,
+              "difficulty": 3,
+              "multiplier": 1497.0,
+              "ai": "DesertDragon_Human_hc.lua",
+              "hp": 628016949
+            }
+          ]
+        },
+        "4160001": {
+          "name": "沙漠龙扎卡德",
+          "full_hp": 2094228864,
+          "source_table": "monstertable_nest.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable.dnt",
+              "row": 44160001,
+              "difficulty": 3,
+              "multiplier": 4992.0,
+              "ai": "DesertDragon_Gate7_DesertDragon_hc_4P.lua",
+              "hp": 2094228864
+            }
+          ]
+        }
+      },
+      "source": "Resource_unpacked_all_20260916_update"
+    },
+    {
+      "label": "黑龙经典",
+      "hints": [
+        "黑龙经典",
+        "黑典",
+        "黑经"
+      ],
+      "capture_checked": true,
+      "entities": {
+        "503611": {
+          "name": "百夫长食人魔巴欧帕",
+          "full_hp": 1372452913,
+          "source_table": "monstertable_nest70.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable_nest.dnt",
+              "row": 1503611,
+              "difficulty": 0,
+              "multiplier": 18.375,
+              "ai": "BlackDragonNest_Gate1_Orge_Boss.lua",
+              "hp": 1372452913
+            }
+          ]
+        },
+        "503621": {
+          "name": "安加塔军团长翁巴拉",
+          "full_hp": 1764582316,
+          "source_table": "monstertable_nest70.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable_nest.dnt",
+              "row": 1503621,
+              "difficulty": 0,
+              "multiplier": 23.625,
+              "ai": "BlackDragonNest_Gate2_Minotauros_Boss.lua",
+              "hp": 1764582316
+            }
+          ]
+        },
+        "503639": {
+          "name": "黑色戒指惩罚者梅鲁卡",
+          "full_hp": 2117498808,
+          "source_table": "monstertable_nest70.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable_nest.dnt",
+              "row": 1503639,
+              "difficulty": 0,
+              "multiplier": 28.350000381469727,
+              "ai": "BlackDragonNest_Gate3_DragonSycophantPuni_Boss.lua",
+              "hp": 2117498808
+            }
+          ]
+        },
+        "503652": {
+          "name": "黑色戒指惩罚者梅鲁卡",
+          "full_hp": 2117498808,
+          "source_table": "monstertable_nest70.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable_nest.dnt",
+              "row": 1503652,
+              "difficulty": 0,
+              "multiplier": 28.350000381469727,
+              "ai": "BlackDragonNest_Gate3_DragonSycophantPuni_2ZoneBoss_Fix122396V2.lua",
+              "hp": 2117498808
+            }
+          ]
+        },
+        "503661": {
+          "name": "千夫长提塔尼安",
+          "full_hp": 2258665348,
+          "source_table": "monstertable_nest70.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable_nest.dnt",
+              "row": 1503661,
+              "difficulty": 0,
+              "multiplier": 30.239999771118164,
+              "ai": "BlackDragonNest_Gate4_LotusGolem_Boss_Fix122570.lua",
+              "hp": 2258665348
+            }
+          ]
+        },
+        "503681": {
+          "name": "红龙佩达",
+          "full_hp": 3529164633,
+          "source_table": "monstertable_nest70.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable_nest.dnt",
+              "row": 1503681,
+              "difficulty": 0,
+              "multiplier": 47.25,
+              "ai": "BlackDragonNest_Gate5_BlackDragonPather_1Phase.lua",
+              "hp": 3529164633
+            }
+          ]
+        },
+        "503682": {
+          "name": "红龙佩达",
+          "full_hp": 3529164633,
+          "source_table": "monstertable_nest70.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable_nest.dnt",
+              "row": 1503682,
+              "difficulty": 0,
+              "multiplier": 47.25,
+              "ai": "BlackDragonNest_Gate5_BlackDragonPather_2and3Phase.lua",
+              "hp": 3529164633
+            }
+          ]
+        },
+        "503683": {
+          "name": "红龙佩达",
+          "full_hp": 392129403,
+          "source_table": "monstertable_nest70.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable_nest.dnt",
+              "row": 1503683,
+              "difficulty": 0,
+              "multiplier": 5.25,
+              "ai": "BlackDragonNest_Gate5_BlackDragonPather_Arm.lua",
+              "hp": 392129403
+            }
+          ]
+        },
+        "503696": {
+          "name": "红龙佩达",
+          "full_hp": 3529164633,
+          "source_table": "monstertable_nest70.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable_nest.dnt",
+              "row": 1503696,
+              "difficulty": 0,
+              "multiplier": 47.25,
+              "ai": "BlackDragonNest_Gate5_BlackDragonPather_4Phase.lua",
+              "hp": 3529164633
+            }
+          ]
+        }
+      },
+      "source": "Resource_unpacked_all_20260916_update"
+    },
+    {
+      "label": "黑龙123",
+      "hints": [
+        "黑龙1",
+        "黑龙2",
+        "黑龙3",
+        "黑龙123"
+      ],
+      "capture_checked": true,
+      "entities": {
+        "503611": {
+          "name": "百夫长食人魔巴欧帕",
+          "full_hp": 182993725,
+          "source_table": "monstertable_nest70.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable_nest.dnt",
+              "row": 3503611,
+              "difficulty": 2,
+              "multiplier": 2.450000047683716,
+              "ai": "BlackDragonNest_Gate1_Orge_Boss.lua",
+              "hp": 182993725
+            }
+          ]
+        },
+        "503621": {
+          "name": "安加塔军团长翁巴拉",
+          "full_hp": 235277649,
+          "source_table": "monstertable_nest70.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable_nest.dnt",
+              "row": 3503621,
+              "difficulty": 2,
+              "multiplier": 3.1500000953674316,
+              "ai": "BlackDragonNest_Gate2_Minotauros_Boss.lua",
+              "hp": 235277649
+            }
+          ]
+        },
+        "503639": {
+          "name": "黑色戒指惩罚者梅鲁卡",
+          "full_hp": 282333168,
+          "source_table": "monstertable_nest70.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable_nest.dnt",
+              "row": 3503639,
+              "difficulty": 2,
+              "multiplier": 3.7799999713897705,
+              "ai": "BlackDragonNest_Gate3_DragonSycophantPuni_Boss.lua",
+              "hp": 282333168
+            }
+          ]
+        },
+        "503652": {
+          "name": "黑色戒指惩罚者梅鲁卡",
+          "full_hp": 282333168,
+          "source_table": "monstertable_nest70.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable_nest.dnt",
+              "row": 3503652,
+              "difficulty": 2,
+              "multiplier": 3.7799999713897705,
+              "ai": "BlackDragonNest_Gate3_DragonSycophantPuni_2ZoneBoss_Fix122396V2.lua",
+              "hp": 282333168
+            }
+          ]
+        },
+        "503661": {
+          "name": "千夫长提塔尼安",
+          "full_hp": 301155386,
+          "source_table": "monstertable_nest70.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable_nest.dnt",
+              "row": 3503661,
+              "difficulty": 2,
+              "multiplier": 4.0320000648498535,
+              "ai": "BlackDragonNest_Gate4_LotusGolem_Boss_Fix122570.lua",
+              "hp": 301155386
+            }
+          ]
+        },
+        "503681": {
+          "name": "红龙佩达",
+          "full_hp": 470555298,
+          "source_table": "monstertable_nest70.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable_nest.dnt",
+              "row": 3503681,
+              "difficulty": 2,
+              "multiplier": 6.300000190734863,
+              "ai": "BlackDragonNest_Gate5_BlackDragonPather_1Phase.lua",
+              "hp": 470555298
+            }
+          ]
+        },
+        "503682": {
+          "name": "红龙佩达",
+          "full_hp": 470555298,
+          "source_table": "monstertable_nest70.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable_nest.dnt",
+              "row": 3503682,
+              "difficulty": 2,
+              "multiplier": 6.300000190734863,
+              "ai": "BlackDragonNest_Gate5_BlackDragonPather_2and3Phase.lua",
+              "hp": 470555298
+            }
+          ]
+        },
+        "503683": {
+          "name": "红龙佩达",
+          "full_hp": 52283919,
+          "source_table": "monstertable_nest70.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable_nest.dnt",
+              "row": 3503683,
+              "difficulty": 2,
+              "multiplier": 0.699999988079071,
+              "ai": "BlackDragonNest_Gate5_BlackDragonPather_Arm.lua",
+              "hp": 52283919
+            }
+          ]
+        },
+        "503696": {
+          "name": "红龙佩达",
+          "full_hp": 470555298,
+          "source_table": "monstertable_nest70.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable_nest.dnt",
+              "row": 3503696,
+              "difficulty": 2,
+              "multiplier": 6.300000190734863,
+              "ai": "BlackDragonNest_Gate5_BlackDragonPather_4Phase.lua",
+              "hp": 470555298
+            }
+          ]
+        }
+      },
+      "source": "Resource_unpacked_all_20260916_update"
+    },
+    {
+      "label": "沙龙经典",
+      "hints": [
+        "沙龙经典",
+        "沙典",
+        "沙经"
+      ],
+      "capture_checked": true,
+      "entities": {
+        "503001": {
+          "name": "女妖皇后伊泰拉",
+          "full_hp": 276377794,
+          "source_table": "monstertable_nest.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable.dnt",
+              "row": 1503001,
+              "difficulty": 0,
+              "multiplier": 658.7999877929688,
+              "ai": "DesertDragon_Gate1_Lamia.lua",
+              "hp": 276377794
+            }
+          ]
+        },
+        "503002": {
+          "name": "消亡领主阿赫玛德",
+          "full_hp": 276377794,
+          "source_table": "monstertable_nest.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable.dnt",
+              "row": 1503002,
+              "difficulty": 0,
+              "multiplier": 658.7999877929688,
+              "ai": "DesertDragon_Gate1_DeathKnight.lua",
+              "hp": 276377794
+            }
+          ]
+        },
+        "503015": {
+          "name": "幽灵花伊克尼斯",
+          "full_hp": 437808463,
+          "source_table": "monstertable_nest.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable.dnt",
+              "row": 1503015,
+              "difficulty": 0,
+              "multiplier": 1304.5,
+              "ai": "DesertDragon_Gate2_Spittler_Boss.lua",
+              "hp": 437808463
+            }
+          ]
+        },
+        "503021": {
+          "name": "峡谷的监视者阿卜杜拉",
+          "full_hp": 621859188,
+          "source_table": "monstertable_nest.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable.dnt",
+              "row": 1503021,
+              "difficulty": 0,
+              "multiplier": 1852.9000244140625,
+              "ai": "DesertDragon_Gate3_Scorpion.lua",
+              "hp": 621859188
+            }
+          ]
+        },
+        "503031": {
+          "name": "忠实的崇拜者卡基夫",
+          "full_hp": 431163289,
+          "source_table": "monstertable_nest.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable.dnt",
+              "row": 1503031,
+              "difficulty": 0,
+              "multiplier": 1284.699951171875,
+              "ai": "DesertDragon_Gate4_LotusGolem.lua",
+              "hp": 431163289
+            }
+          ]
+        },
+        "503041": {
+          "name": "暴风支配者朱武",
+          "full_hp": 464321436,
+          "source_table": "monstertable_nest.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable.dnt",
+              "row": 1503041,
+              "difficulty": 0,
+              "multiplier": 1106.800048828125,
+              "ai": "DesertDragon_Gate5_ManticoreDesert.lua",
+              "hp": 464321436
+            }
+          ]
+        },
+        "503051": {
+          "name": "沙虫哈扎尔",
+          "full_hp": 129588798,
+          "source_table": "monstertable_nest.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable.dnt",
+              "row": 1503051,
+              "difficulty": 0,
+              "multiplier": 308.8999938964844,
+              "ai": "DesertDragon_Gate6_Sandworm1.lua",
+              "hp": 129588798
+            }
+          ]
+        },
+        "503054": {
+          "name": "沙虫哈扎尔",
+          "full_hp": 42497073,
+          "source_table": "monstertable_nest.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable.dnt",
+              "row": 1503054,
+              "difficulty": 0,
+              "multiplier": 101.30000305175781,
+              "ai": "DesertDragon_Gate6_Sandworm2.lua",
+              "hp": 42497073
+            }
+          ]
+        },
+        "503055": {
+          "name": "沙虫哈扎尔",
+          "full_hp": 42497073,
+          "source_table": "monstertable_nest.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable.dnt",
+              "row": 1503055,
+              "difficulty": 0,
+              "multiplier": 101.30000305175781,
+              "ai": "DesertDragon_Gate6_Sandworm3.lua",
+              "hp": 42497073
+            }
+          ]
+        },
+        "503061": {
+          "name": "沙漠龙扎卡德",
+          "full_hp": 959854896,
+          "source_table": "monstertable_nest.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable.dnt",
+              "row": 1503061,
+              "difficulty": 0,
+              "multiplier": 2288.0,
+              "ai": "DesertDragon_Gate7_DesertDragon_1and2Phase.lua",
+              "hp": 959854896
+            }
+          ]
+        },
+        "503062": {
+          "name": "沙漠龙扎卡德",
+          "full_hp": 959854896,
+          "source_table": "monstertable_nest.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable.dnt",
+              "row": 1503062,
+              "difficulty": 0,
+              "multiplier": 2288.0,
+              "ai": "DesertDragon_Gate7_DesertDragon_1and2Phase.lua",
+              "hp": 959854896
+            }
+          ]
+        },
+        "503063": {
+          "name": "沙漠龙扎卡德",
+          "full_hp": 959854896,
+          "source_table": "monstertable_nest.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable.dnt",
+              "row": 1503063,
+              "difficulty": 0,
+              "multiplier": 2288.0,
+              "ai": "DesertDragon_Gate7_DesertDragon_3Phase.lua",
+              "hp": 959854896
+            }
+          ]
+        },
+        "503064": {
+          "name": "沙漠龙扎卡德",
+          "full_hp": 1919709792,
+          "source_table": "monstertable_nest.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable.dnt",
+              "row": 1503064,
+              "difficulty": 0,
+              "multiplier": 4576.0,
+              "ai": "DesertDragon_Gate7_DesertDragon_4Phase_classical.lua",
+              "hp": 1919709792
+            }
+          ]
+        }
+      },
+      "source": "Resource_unpacked_all_20260916_update"
+    },
+    {
+      "label": "沙龙123",
+      "hints": [
+        "沙龙1",
+        "沙龙2",
+        "沙龙3",
+        "沙龙123"
+      ],
+      "capture_checked": false,
+      "entities": {
+        "503001": {
+          "name": "女妖皇后伊泰拉",
+          "full_hp": 100684080,
+          "source_table": "monstertable_nest.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable.dnt",
+              "row": 3503001,
+              "difficulty": 2,
+              "multiplier": 240.0,
+              "ai": "DesertDragon_Gate1_Lamia.lua",
+              "hp": 100684080
+            }
+          ]
+        },
+        "503002": {
+          "name": "消亡领主阿赫玛德",
+          "full_hp": 100684080,
+          "source_table": "monstertable_nest.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable.dnt",
+              "row": 3503002,
+              "difficulty": 2,
+              "multiplier": 240.0,
+              "ai": "DesertDragon_Gate1_DeathKnight.lua",
+              "hp": 100684080
+            }
+          ]
+        },
+        "503015": {
+          "name": "幽灵花伊克尼斯",
+          "full_hp": 159752264,
+          "source_table": "monstertable_nest.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable.dnt",
+              "row": 3503015,
+              "difficulty": 2,
+              "multiplier": 476.0,
+              "ai": "DesertDragon_Gate2_Spittler_Boss.lua",
+              "hp": 159752264
+            }
+          ]
+        },
+        "503021": {
+          "name": "峡谷的监视者阿卜杜拉",
+          "full_hp": 181231560,
+          "source_table": "monstertable_nest.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable.dnt",
+              "row": 3503021,
+              "difficulty": 2,
+              "multiplier": 540.0,
+              "ai": "DesertDragon_Gate3_Scorpion.lua",
+              "hp": 181231560
+            }
+          ]
+        },
+        "503031": {
+          "name": "忠实的崇拜者卡基夫",
+          "full_hp": 104711568,
+          "source_table": "monstertable_nest.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable.dnt",
+              "row": 3503031,
+              "difficulty": 2,
+              "multiplier": 312.0,
+              "ai": "DesertDragon_Gate4_LotusGolem.lua",
+              "hp": 104711568
+            }
+          ]
+        },
+        "503041": {
+          "name": "暴风支配者朱武",
+          "full_hp": 169484868,
+          "source_table": "monstertable_nest.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable.dnt",
+              "row": 3503041,
+              "difficulty": 2,
+              "multiplier": 404.0,
+              "ai": "DesertDragon_Gate5_ManticoreDesert.lua",
+              "hp": 169484868
+            }
+          ]
+        },
+        "503051": {
+          "name": "沙虫哈扎尔",
+          "full_hp": 31463775,
+          "source_table": "monstertable_nest.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable.dnt",
+              "row": 3503051,
+              "difficulty": 2,
+              "multiplier": 75.0,
+              "ai": "DesertDragon_Gate6_Sandworm1.lua",
+              "hp": 31463775
+            }
+          ]
+        },
+        "503054": {
+          "name": "沙虫哈扎尔",
+          "full_hp": 10320118,
+          "source_table": "monstertable_nest.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable.dnt",
+              "row": 3503054,
+              "difficulty": 2,
+              "multiplier": 24.600000381469727,
+              "ai": "DesertDragon_Gate6_Sandworm2.lua",
+              "hp": 10320118
+            }
+          ]
+        },
+        "503055": {
+          "name": "沙虫哈扎尔",
+          "full_hp": 10320118,
+          "source_table": "monstertable_nest.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable.dnt",
+              "row": 3503055,
+              "difficulty": 2,
+              "multiplier": 24.600000381469727,
+              "ai": "DesertDragon_Gate6_Sandworm3.lua",
+              "hp": 10320118
+            }
+          ]
+        },
+        "503061": {
+          "name": "沙漠龙扎卡德",
+          "full_hp": 120820896,
+          "source_table": "monstertable_nest.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable.dnt",
+              "row": 3503061,
+              "difficulty": 2,
+              "multiplier": 288.0,
+              "ai": "DesertDragon_Gate7_DesertDragon_1and2Phase_Memoria.lua",
+              "hp": 120820896
+            }
+          ]
+        },
+        "503062": {
+          "name": "沙漠龙扎卡德",
+          "full_hp": 120820896,
+          "source_table": "monstertable_nest.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable.dnt",
+              "row": 3503062,
+              "difficulty": 2,
+              "multiplier": 288.0,
+              "ai": "DesertDragon_Gate7_DesertDragon_1and2Phase_Memoria.lua",
+              "hp": 120820896
+            }
+          ]
+        },
+        "503063": {
+          "name": "沙漠龙扎卡德",
+          "full_hp": 120820896,
+          "source_table": "monstertable_nest.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable.dnt",
+              "row": 3503063,
+              "difficulty": 2,
+              "multiplier": 288.0,
+              "ai": "DesertDragon_Gate7_DesertDragon_3Phase.lua",
+              "hp": 120820896
+            }
+          ]
+        },
+        "503064": {
+          "name": "沙漠龙扎卡德",
+          "full_hp": 241641792,
+          "source_table": "monstertable_nest.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable.dnt",
+              "row": 3503064,
+              "difficulty": 2,
+              "multiplier": 576.0,
+              "ai": "DesertDragon_Gate7_DesertDragon_4Phase.lua",
+              "hp": 241641792
+            }
+          ]
+        }
+      },
+      "source": "Resource_unpacked_all_20260916_update"
+    },
+    {
+      "label": "守卫者巢穴",
+      "hints": [
+        "守卫"
+      ],
+      "capture_checked": true,
+      "entities": {
+        "503101": {
+          "name": "绿色青蛙大魔导师奥古尔",
+          "full_hp": 65897833,
+          "source_table": "monstertable_nest.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable_nest.dnt",
+              "row": 2503101,
+              "difficulty": 1,
+              "multiplier": 2.352717399597168,
+              "ai": "GuardianNest_Gate1_FrogMagician_Boss.lua",
+              "hp": 65897833
+            }
+          ]
+        },
+        "503121": {
+          "name": "愤怒的阿里拉·维农",
+          "full_hp": 40552511,
+          "source_table": "monstertable_nest.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable_nest.dnt",
+              "row": 2503121,
+              "difficulty": 1,
+              "multiplier": 1.4478260278701782,
+              "ai": "GuardianNest_Gate2_SpiritPoision.lua",
+              "hp": 40552511
+            }
+          ]
+        },
+        "503131": {
+          "name": "伟人杜克斯·阿尔克斯",
+          "full_hp": 39538695,
+          "source_table": "monstertable_nest.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable_nest.dnt",
+              "row": 2503131,
+              "difficulty": 1,
+              "multiplier": 1.4116302728652954,
+              "ai": "GuardianNest_Gate3_Grizzly.lua",
+              "hp": 39538695
+            }
+          ]
+        },
+        "503141": {
+          "name": "伊格纳西奥·吉甘特",
+          "full_hp": 94139755,
+          "source_table": "monstertable_nest.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable_nest.dnt",
+              "row": 2503141,
+              "difficulty": 1,
+              "multiplier": 3.3610246181488037,
+              "ai": "GuardianNest_Gate4_Ignacio.lua",
+              "hp": 94139755
+            }
+          ]
+        },
+        "503151": {
+          "name": "新月守护者佩尔守卫者",
+          "full_hp": 103634201,
+          "source_table": "monstertable_nest.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable_nest.dnt",
+              "row": 2503151,
+              "difficulty": 1,
+              "multiplier": 2.7750000953674316,
+              "ai": "GuardianNest_Gate5_Guardian.lua",
+              "hp": 103634201
+            }
+          ]
+        }
+      },
+      "source": "Resource_unpacked_all_20260916_update"
+    },
+    {
+      "label": "试炼巢穴",
+      "hints": [
+        "试炼"
+      ],
+      "capture_checked": true,
+      "entities": {
+        "503510": {
+          "name": "绿色青蛙大魔导师奥古尔",
+          "full_hp": 134724457,
+          "source_table": "monstertable_nest.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable_nest.dnt",
+              "row": 5503510,
+              "difficulty": 4,
+              "multiplier": 4.809999942779541,
+              "ai": "Trial_Anu_Gate1_FrogMagician_Boss.lua",
+              "hp": 134724457
+            }
+          ]
+        },
+        "503511": {
+          "name": "锈雾狂风呼啸者",
+          "full_hp": 134724457,
+          "source_table": "monstertable_nest.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable_nest.dnt",
+              "row": 5503511,
+              "difficulty": 4,
+              "multiplier": 4.809999942779541,
+              "ai": "Trial_Anu_Gate1_Wraith_Combo.lua",
+              "hp": 134724457
+            }
+          ]
+        },
+        "503512": {
+          "name": "锈雾狂风呼啸者",
+          "full_hp": 134724457,
+          "source_table": "monstertable_nest.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable_nest.dnt",
+              "row": 5503512,
+              "difficulty": 4,
+              "multiplier": 4.809999942779541,
+              "ai": "Trial_Anu_Gate1_Wraith_SummonGhoul.lua",
+              "hp": 134724457
+            }
+          ]
+        },
+        "503513": {
+          "name": "锈雾狂风呼啸者",
+          "full_hp": 134724457,
+          "source_table": "monstertable_nest.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable_nest.dnt",
+              "row": 5503513,
+              "difficulty": 4,
+              "multiplier": 4.809999942779541,
+              "ai": "Trial_Anu_Gate1_Wraith_Verticalshot.lua",
+              "hp": 134724457
+            }
+          ]
+        },
+        "503521": {
+          "name": "愤怒的阿里拉·维农",
+          "full_hp": 155451303,
+          "source_table": "monstertable_nest.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable_nest.dnt",
+              "row": 5503521,
+              "difficulty": 4,
+              "multiplier": 5.550000190734863,
+              "ai": "Trial_Anu_Gate2_SpiritPoison.lua",
+              "hp": 155451303
+            }
+          ]
+        },
+        "503531": {
+          "name": "隐遁者拉伊坎·夏连",
+          "full_hp": 93270777,
+          "source_table": "monstertable_nest.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable_nest.dnt",
+              "row": 5503531,
+              "difficulty": 4,
+              "multiplier": 3.3299999237060547,
+              "ai": "Trial_Anu_Gate3_Clawwolf.lua",
+              "hp": 93270777
+            }
+          ]
+        },
+        "503532": {
+          "name": "伟人杜克斯·阿尔克斯",
+          "full_hp": 93270777,
+          "source_table": "monstertable_nest.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable_nest.dnt",
+              "row": 5503532,
+              "difficulty": 4,
+              "multiplier": 3.3299999237060547,
+              "ai": "Trial_Anu_Gate3_Grizzly.lua",
+              "hp": 93270777
+            }
+          ]
+        },
+        "503551": {
+          "name": "伊格纳西奥·吉甘特",
+          "full_hp": 207268400,
+          "source_table": "monstertable_nest.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable_nest.dnt",
+              "row": 5503551,
+              "difficulty": 4,
+              "multiplier": 7.400000095367432,
+              "ai": "Trial_Anu_Gate4_Ignacio.lua",
+              "hp": 207268400
+            }
+          ]
+        },
+        "503561": {
+          "name": "新月守护者佩尔守卫者",
+          "full_hp": 207268403,
+          "source_table": "monstertable_nest.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable_nest.dnt",
+              "row": 5503561,
+              "difficulty": 4,
+              "multiplier": 5.550000190734863,
+              "ai": "Trial_Anu_Gate5_Guardian.lua",
+              "hp": 207268403
+            }
+          ]
+        }
+      },
+      "source": "Resource_unpacked_all_20260916_update"
+    },
+    {
+      "label": "迷雾巢穴",
+      "hints": [
+        "迷雾"
+      ],
+      "capture_checked": true,
+      "entities": {
+        "503500": {
+          "name": "咆哮的守卫奥尼德",
+          "full_hp": 201946640,
+          "source_table": "monstertable_nest.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable_nest.dnt",
+              "row": 5503500,
+              "difficulty": 4,
+              "multiplier": 3.5,
+              "ai": "MistNest_Gate4_Ent_Boss.lua",
+              "hp": 201946640
+            }
+          ]
+        },
+        "503501": {
+          "name": "锈雾狂风呼啸者",
+          "full_hp": 201946640,
+          "source_table": "monstertable_nest.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable_nest.dnt",
+              "row": 5503501,
+              "difficulty": 4,
+              "multiplier": 3.5,
+              "ai": "MistNest_Gate4_Wraith_Boss.lua",
+              "hp": 201946640
+            }
+          ]
+        },
+        "503502": {
+          "name": "隐遁者拉伊坎·夏连",
+          "full_hp": 201946640,
+          "source_table": "monstertable_nest.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable_nest.dnt",
+              "row": 5503502,
+              "difficulty": 4,
+              "multiplier": 3.5,
+              "ai": "MistNest_Gate4_Clawwolf_Boss.lua",
+              "hp": 201946640
+            }
+          ]
+        },
+        "503496": {
+          "name": "哭泣的雾之女王",
+          "full_hp": 346194238,
+          "source_table": "monstertable_nest.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable_nest.dnt",
+              "row": 5503496,
+              "difficulty": 4,
+              "multiplier": 4.5,
+              "ai": "MistNest_Gate4_Segyesu_Boss.lua",
+              "hp": 346194238
+            }
+          ]
+        }
+      },
+      "source": "Resource_unpacked_all_20260916_update"
+    },
+    {
+      "label": "绿龙经典",
+      "hints": [
+        "绿龙经典",
+        "绿典"
+      ],
+      "capture_checked": true,
+      "entities": {
+        "236028": {
+          "name": "主教盖内乌斯",
+          "full_hp": 43276156,
+          "source_table": "monstertable_nest.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable.dnt",
+              "row": 1236028,
+              "difficulty": 0,
+              "multiplier": 322.0,
+              "ai": "GreenDragonNest_Gate2_DragonSycophantBishop_Gold_Named.lua",
+              "hp": 43276156
+            }
+          ]
+        },
+        "236001": {
+          "name": "石人莫尔干",
+          "full_hp": 172829514,
+          "source_table": "monstertable_nest.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable.dnt",
+              "row": 1236001,
+              "difficulty": 0,
+              "multiplier": 286.0,
+              "ai": "GreenDragonNest_Gate1_Golem_Blue.lua",
+              "hp": 172829514
+            }
+          ]
+        },
+        "236010": {
+          "name": "白眼克拉凯斯",
+          "full_hp": 211801018,
+          "source_table": "monstertable_nest.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable.dnt",
+              "row": 1236010,
+              "difficulty": 0,
+              "multiplier": 286.0,
+              "ai": "GreenDragonNest_Gate3_Apocalypse_Green_Boss.lua",
+              "hp": 211801018
+            }
+          ]
+        },
+        "236040": {
+          "name": "沼泽女王兹贝尔",
+          "full_hp": 84109161,
+          "source_table": "monstertable_nest.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable.dnt",
+              "row": 1236040,
+              "difficulty": 0,
+              "multiplier": 129.0,
+              "ai": "GreenDragonNest_Gate4_QueenSpider_Green_Boss.lua",
+              "hp": 84109161
+            }
+          ]
+        },
+        "236015": {
+          "name": "魔法师卡拉翰",
+          "full_hp": 199580752,
+          "source_table": "monstertable_nest.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable.dnt",
+              "row": 1236015,
+              "difficulty": 0,
+              "multiplier": 322.0,
+              "ai": "GreenDragonNest_Gate5_Karahan_Dark.lua",
+              "hp": 199580752
+            }
+          ]
+        },
+        "236018": {
+          "name": "绿龙卡拉翰",
+          "full_hp": 381537800,
+          "source_table": "monstertable_nest.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable.dnt",
+              "row": 1236018,
+              "difficulty": 0,
+              "multiplier": 322.0,
+              "ai": "GreenDragonNest_FinalBoss_GreenDragon_1Phase.lua",
+              "hp": 381537800
+            }
+          ]
+        },
+        "236048": {
+          "name": "绿龙卡拉翰",
+          "full_hp": 381537800,
+          "source_table": "monstertable_nest.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable.dnt",
+              "row": 1236048,
+              "difficulty": 0,
+              "multiplier": 322.0,
+              "ai": "GreenDragonNest_GreenDragon_3Phase_classical.lua",
+              "hp": 381537800
+            }
+          ]
+        }
+      },
+      "source": "Resource_unpacked_all_20260916_update"
+    },
+    {
+      "label": "绿龙硬核",
+      "hints": [
+        "绿龙硬核",
+        "绿硬"
+      ],
+      "capture_checked": true,
+      "entities": {
+        "237051": {
+          "name": "无与伦比的卡拉翰",
+          "full_hp": 257600000,
+          "source_table": "monstertable_nest.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable.dnt",
+              "row": 5235513,
+              "difficulty": 3,
+              "multiplier": 322.0,
+              "ai": "GreenDragonNest_Gate5_Karahan_Dark_hc.lua",
+              "hp": 257600000
+            }
+          ]
+        },
+        "237056": {
+          "name": "绿龙卡拉翰",
+          "full_hp": 515200000,
+          "source_table": "monstertable_nest.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable.dnt",
+              "row": 5235518,
+              "difficulty": 3,
+              "multiplier": 322.0,
+              "ai": "GreenDragonNest_FinalBoss_GreenDragon_1Phase_hc.lua",
+              "hp": 515200000
+            }
+          ]
+        },
+        "237057": {
+          "name": "绿龙卡拉翰",
+          "full_hp": 515200000,
+          "source_table": "monstertable_nest.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable.dnt",
+              "row": 5235519,
+              "difficulty": 3,
+              "multiplier": 322.0,
+              "ai": "GreenDragonNest_FinalBoss_GreenDragon_3Phase_hc.lua",
+              "hp": 515200000
+            }
+          ]
+        }
+      },
+      "source": "Resource_unpacked_all_20260916_update"
+    },
+    {
+      "label": "梦魇海龙",
+      "hints": [
+        "梦魇海龙"
+      ],
+      "capture_checked": false,
+      "entities": {
+        "4235447": {
+          "name": "梦魇·审判者天启",
+          "full_hp": 900000000,
+          "source_table": "monstertable_nest70.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable_nest.dnt",
+              "row": 44235447,
+              "difficulty": 3,
+              "multiplier": 100.0,
+              "hp": 900000000
+            }
+          ]
+        },
+        "4235448": {
+          "name": "梦魇·狮蝎领主克雷姆",
+          "full_hp": 1080000000,
+          "source_table": "monstertable_nest70.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable_nest.dnt",
+              "row": 44235448,
+              "difficulty": 3,
+              "multiplier": 100.0,
+              "hp": 1080000000
+            }
+          ]
+        },
+        "4237003": {
+          "name": "梦魇·海龙萨芬特拉",
+          "full_hp": 7120000000,
+          "source_table": "monstertable_nest70.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable_nest.dnt",
+              "row": 44237003,
+              "difficulty": 3,
+              "multiplier": 100.0,
+              "hp": 7120000000
+            }
+          ]
+        },
+        "4237011": {
+          "name": "梦魇·海龙萨芬特拉",
+          "full_hp": 7120000000,
+          "source_table": "monstertable_nest70.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable_nest.dnt",
+              "row": 44237011,
+              "difficulty": 3,
+              "multiplier": 100.0,
+              "hp": 7120000000
+            }
+          ]
+        },
+        "4237023": {
+          "name": "梦魇·海龙萨芬特拉",
+          "full_hp": 9820000000,
+          "source_table": "monstertable_nest70.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable_nest.dnt",
+              "row": 44237023,
+              "difficulty": 3,
+              "multiplier": 100.0,
+              "hp": 9820000000
+            }
+          ]
+        },
+        "4237034": {
+          "name": "梦魇·海龙萨芬特拉",
+          "full_hp": 7120000000,
+          "source_table": "monstertable_nest70.dnt",
+          "weight_rows": [
+            {
+              "hp": 7120000000,
+              "source": "nightmare_sea_dragon.PHASES",
+              "inherited": true
+            }
+          ]
+        },
+        "4237035": {
+          "name": "梦魇·海龙萨芬特拉",
+          "full_hp": 7120000000,
+          "source_table": "monstertable_nest70.dnt",
+          "weight_rows": [
+            {
+              "hp": 7120000000,
+              "source": "nightmare_sea_dragon.PHASES",
+              "inherited": true
+            }
+          ]
+        },
+        "4237012": {
+          "name": "梦魇·地狱犬卡卡里",
+          "full_hp": 700000000,
+          "source_table": "monstertable_nest70.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable_nest.dnt",
+              "row": 44237012,
+              "difficulty": 3,
+              "multiplier": 100.0,
+              "hp": 700000000
+            }
+          ]
+        },
+        "4235453": {
+          "name": "纵火恶魔福根的亡灵",
+          "full_hp": 80000000,
+          "source_table": "monstertable_nest70.dnt",
+          "weight_rows": [
+            {
+              "table": "monsterweighttable_nest.dnt",
+              "row": 44235453,
+              "difficulty": 3,
+              "multiplier": 100.0,
+              "hp": 80000000
+            }
+          ]
+        }
+      },
+      "source": "D:\\DragonNest\\Reborn\\Resource_unpacked_all"
+    }
+  ]
+}

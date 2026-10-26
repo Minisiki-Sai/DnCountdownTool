@@ -1,0 +1,1133 @@
+{
+  "schema_version": 2,
+  "protocol_version": 576,
+  "effect": "攻击力应用比例增加",
+  "skill_ids": [
+    207,
+    353,
+    1220,
+    7504
+  ],
+  "rows": {
+    "106357": {
+      "skill_id": 7504,
+      "skill_level": 1,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 0.4760000000000002
+    },
+    "106358": {
+      "skill_id": 7504,
+      "skill_level": 2,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 0.7190000000000001
+    },
+    "106359": {
+      "skill_id": 7504,
+      "skill_level": 3,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 0.8495000000000001
+    },
+    "106360": {
+      "skill_id": 7504,
+      "skill_level": 4,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 1.322
+    },
+    "106361": {
+      "skill_id": 7504,
+      "skill_level": 5,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 1.3827500000000001
+    },
+    "106362": {
+      "skill_id": 7504,
+      "skill_level": 6,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 1.646
+    },
+    "106363": {
+      "skill_id": 7504,
+      "skill_level": 7,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 1.80476
+    },
+    "106364": {
+      "skill_id": 7504,
+      "skill_level": 8,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 1.88774
+    },
+    "106365": {
+      "skill_id": 7504,
+      "skill_level": 9,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 1.97315
+    },
+    "106366": {
+      "skill_id": 7504,
+      "skill_level": 10,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 2.06099
+    },
+    "106367": {
+      "skill_id": 7504,
+      "skill_level": 11,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 2.15144
+    },
+    "106368": {
+      "skill_id": 7504,
+      "skill_level": 12,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 2.24459
+    },
+    "106369": {
+      "skill_id": 7504,
+      "skill_level": 13,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 2.34044
+    },
+    "107227": {
+      "skill_id": 7504,
+      "skill_level": 1,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": -0.2
+    },
+    "107228": {
+      "skill_id": 7504,
+      "skill_level": 2,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": -0.17
+    },
+    "107229": {
+      "skill_id": 7504,
+      "skill_level": 3,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": -0.15
+    },
+    "107230": {
+      "skill_id": 7504,
+      "skill_level": 4,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": -0.04
+    },
+    "107231": {
+      "skill_id": 7504,
+      "skill_level": 5,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": -0.02
+    },
+    "107232": {
+      "skill_id": 7504,
+      "skill_level": 6,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 0.09
+    },
+    "107233": {
+      "skill_id": 7504,
+      "skill_level": 7,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 0.1
+    },
+    "107234": {
+      "skill_id": 7504,
+      "skill_level": 8,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 0.12
+    },
+    "107235": {
+      "skill_id": 7504,
+      "skill_level": 9,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 0.14
+    },
+    "107236": {
+      "skill_id": 7504,
+      "skill_level": 10,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": -1.0
+    },
+    "107237": {
+      "skill_id": 7504,
+      "skill_level": 11,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": -1.0
+    },
+    "107238": {
+      "skill_id": 7504,
+      "skill_level": 12,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": -1.0
+    },
+    "107239": {
+      "skill_id": 7504,
+      "skill_level": 13,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": -1.0
+    },
+    "1073755073": {
+      "skill_id": 207,
+      "skill_level": 1,
+      "ratio_slot": 2,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 0.07525000000000004
+    },
+    "1073755074": {
+      "skill_id": 207,
+      "skill_level": 2,
+      "ratio_slot": 2,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 0.12585000000000002
+    },
+    "1073755075": {
+      "skill_id": 207,
+      "skill_level": 3,
+      "ratio_slot": 2,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 0.16380000000000017
+    },
+    "1073755076": {
+      "skill_id": 207,
+      "skill_level": 4,
+      "ratio_slot": 2,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 0.21440000000000015
+    },
+    "1073755077": {
+      "skill_id": 207,
+      "skill_level": 5,
+      "ratio_slot": 2,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 0.2523500000000001
+    },
+    "1073755078": {
+      "skill_id": 207,
+      "skill_level": 6,
+      "ratio_slot": 2,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 0.46740000000000026
+    },
+    "1073755079": {
+      "skill_id": 207,
+      "skill_level": 7,
+      "ratio_slot": 2,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 0.518
+    },
+    "1073755080": {
+      "skill_id": 207,
+      "skill_level": 8,
+      "ratio_slot": 2,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 0.5559499999999999
+    },
+    "1073755081": {
+      "skill_id": 207,
+      "skill_level": 9,
+      "ratio_slot": 2,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 0.6065500000000004
+    },
+    "1073755082": {
+      "skill_id": 207,
+      "skill_level": 10,
+      "ratio_slot": 2,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 0.6571500000000001
+    },
+    "1073755083": {
+      "skill_id": 207,
+      "skill_level": 11,
+      "ratio_slot": 2,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 1.1942690000000002
+    },
+    "1073755084": {
+      "skill_id": 207,
+      "skill_level": 12,
+      "ratio_slot": 2,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 1.253977
+    },
+    "1073755085": {
+      "skill_id": 207,
+      "skill_level": 13,
+      "ratio_slot": 2,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 1.2988
+    },
+    "1073755086": {
+      "skill_id": 207,
+      "skill_level": 14,
+      "ratio_slot": 2,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 1.3668
+    },
+    "1073755087": {
+      "skill_id": 207,
+      "skill_level": 15,
+      "ratio_slot": 2,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 1.4368
+    },
+    "1073755088": {
+      "skill_id": 207,
+      "skill_level": 16,
+      "ratio_slot": 2,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 1.4725
+    },
+    "1073755089": {
+      "skill_id": 207,
+      "skill_level": 17,
+      "ratio_slot": 2,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 1.5088
+    },
+    "1073755090": {
+      "skill_id": 207,
+      "skill_level": 18,
+      "ratio_slot": 2,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 1.5456
+    },
+    "1073755091": {
+      "skill_id": 207,
+      "skill_level": 19,
+      "ratio_slot": 2,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 1.5829
+    },
+    "1073755092": {
+      "skill_id": 207,
+      "skill_level": 20,
+      "ratio_slot": 2,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 1.6336
+    },
+    "1073755093": {
+      "skill_id": 207,
+      "skill_level": 21,
+      "ratio_slot": 2,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 1.6853
+    },
+    "1073755094": {
+      "skill_id": 207,
+      "skill_level": 22,
+      "ratio_slot": 2,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 1.738
+    },
+    "1073755095": {
+      "skill_id": 207,
+      "skill_level": 23,
+      "ratio_slot": 2,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 1.7916
+    },
+    "1073755096": {
+      "skill_id": 207,
+      "skill_level": 24,
+      "ratio_slot": 2,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 1.8463
+    },
+    "1073755097": {
+      "skill_id": 207,
+      "skill_level": 25,
+      "ratio_slot": 2,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 1.9021
+    },
+    "1073764417": {
+      "skill_id": 353,
+      "skill_level": 1,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 29,
+      "ratio_value": 2.1211
+    },
+    "1073764418": {
+      "skill_id": 353,
+      "skill_level": 2,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 29,
+      "ratio_value": 2.2269
+    },
+    "1073764419": {
+      "skill_id": 353,
+      "skill_level": 3,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 29,
+      "ratio_value": 2.6369
+    },
+    "1073764420": {
+      "skill_id": 353,
+      "skill_level": 4,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 29,
+      "ratio_value": 2.7678
+    },
+    "1073764421": {
+      "skill_id": 353,
+      "skill_level": 5,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 29,
+      "ratio_value": 2.8842
+    },
+    "1073764422": {
+      "skill_id": 353,
+      "skill_level": 6,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 29,
+      "ratio_value": 2.9991
+    },
+    "1073764423": {
+      "skill_id": 353,
+      "skill_level": 7,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 29,
+      "ratio_value": 3.1174
+    },
+    "1073764424": {
+      "skill_id": 353,
+      "skill_level": 8,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 29,
+      "ratio_value": 3.1778
+    },
+    "1073764425": {
+      "skill_id": 353,
+      "skill_level": 9,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 29,
+      "ratio_value": 3.2391
+    },
+    "1073764426": {
+      "skill_id": 353,
+      "skill_level": 10,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 29,
+      "ratio_value": 3.3013
+    },
+    "1073764427": {
+      "skill_id": 353,
+      "skill_level": 11,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 29,
+      "ratio_value": 3.3644
+    },
+    "1073764428": {
+      "skill_id": 353,
+      "skill_level": 12,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 29,
+      "ratio_value": 3.45
+    },
+    "1073764429": {
+      "skill_id": 353,
+      "skill_level": 13,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 29,
+      "ratio_value": 3.5373
+    },
+    "1073764430": {
+      "skill_id": 353,
+      "skill_level": 14,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 29,
+      "ratio_value": 3.6263
+    },
+    "1073764431": {
+      "skill_id": 353,
+      "skill_level": 15,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 29,
+      "ratio_value": 3.717
+    },
+    "1073764432": {
+      "skill_id": 353,
+      "skill_level": 16,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 29,
+      "ratio_value": 3.8095
+    },
+    "1073764433": {
+      "skill_id": 353,
+      "skill_level": 17,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 29,
+      "ratio_value": 3.9037
+    },
+    "1073819905": {
+      "skill_id": 1220,
+      "skill_level": 1,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 3.974375
+    },
+    "1073819906": {
+      "skill_id": 1220,
+      "skill_level": 2,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 4.04
+    },
+    "1073819907": {
+      "skill_id": 1220,
+      "skill_level": 3,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 4.11875
+    },
+    "1073819908": {
+      "skill_id": 1220,
+      "skill_level": 4,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 4.184375
+    },
+    "1073819909": {
+      "skill_id": 1220,
+      "skill_level": 5,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 4.263125
+    },
+    "1073819910": {
+      "skill_id": 1220,
+      "skill_level": 6,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 4.85375
+    },
+    "1073819911": {
+      "skill_id": 1220,
+      "skill_level": 7,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 4.9193750000000005
+    },
+    "1073819912": {
+      "skill_id": 1220,
+      "skill_level": 8,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 4.998125000000001
+    },
+    "1073819913": {
+      "skill_id": 1220,
+      "skill_level": 9,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 5.990375
+    },
+    "1073819914": {
+      "skill_id": 1220,
+      "skill_level": 10,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 6.0785
+    },
+    "1073819915": {
+      "skill_id": 1220,
+      "skill_level": 11,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 6.759125
+    },
+    "1073819916": {
+      "skill_id": 1220,
+      "skill_level": 12,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 7.629875
+    },
+    "1073819917": {
+      "skill_id": 1220,
+      "skill_level": 13,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 7.725875
+    },
+    "1073819918": {
+      "skill_id": 1220,
+      "skill_level": 14,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 7.984
+    },
+    "1073819919": {
+      "skill_id": 1220,
+      "skill_level": 15,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 8.2497
+    },
+    "1073819920": {
+      "skill_id": 1220,
+      "skill_level": 16,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 8.3854
+    },
+    "1073819921": {
+      "skill_id": 1220,
+      "skill_level": 17,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 8.5231
+    },
+    "1073819922": {
+      "skill_id": 1220,
+      "skill_level": 18,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 8.6628
+    },
+    "1073819923": {
+      "skill_id": 1220,
+      "skill_level": 19,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 8.8046
+    },
+    "1073819924": {
+      "skill_id": 1220,
+      "skill_level": 20,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 8.9967
+    },
+    "1073819925": {
+      "skill_id": 1220,
+      "skill_level": 21,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 9.1927
+    },
+    "1073819926": {
+      "skill_id": 1220,
+      "skill_level": 22,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 9.3924
+    },
+    "1073819927": {
+      "skill_id": 1220,
+      "skill_level": 23,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 9.5963
+    },
+    "1073819928": {
+      "skill_id": 1220,
+      "skill_level": 24,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 9.8043
+    },
+    "1073819929": {
+      "skill_id": 1220,
+      "skill_level": 25,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 10.0162
+    },
+    "1090532289": {
+      "skill_id": 207,
+      "skill_level": 1,
+      "ratio_slot": 2,
+      "ratio_effect_class_id": 2,
+      "ratio_value": -0.7025
+    },
+    "1090532290": {
+      "skill_id": 207,
+      "skill_level": 2,
+      "ratio_slot": 2,
+      "ratio_effect_class_id": 2,
+      "ratio_value": -0.6885
+    },
+    "1090532291": {
+      "skill_id": 207,
+      "skill_level": 3,
+      "ratio_slot": 2,
+      "ratio_effect_class_id": 2,
+      "ratio_value": -0.678
+    },
+    "1090532292": {
+      "skill_id": 207,
+      "skill_level": 4,
+      "ratio_slot": 2,
+      "ratio_effect_class_id": 2,
+      "ratio_value": -0.664
+    },
+    "1090532293": {
+      "skill_id": 207,
+      "skill_level": 5,
+      "ratio_slot": 2,
+      "ratio_effect_class_id": 2,
+      "ratio_value": -0.6535
+    },
+    "1090532294": {
+      "skill_id": 207,
+      "skill_level": 6,
+      "ratio_slot": 2,
+      "ratio_effect_class_id": 2,
+      "ratio_value": -0.594
+    },
+    "1090532295": {
+      "skill_id": 207,
+      "skill_level": 7,
+      "ratio_slot": 2,
+      "ratio_effect_class_id": 2,
+      "ratio_value": -0.58
+    },
+    "1090532296": {
+      "skill_id": 207,
+      "skill_level": 8,
+      "ratio_slot": 2,
+      "ratio_effect_class_id": 2,
+      "ratio_value": -0.5695
+    },
+    "1090532297": {
+      "skill_id": 207,
+      "skill_level": 9,
+      "ratio_slot": 2,
+      "ratio_effect_class_id": 2,
+      "ratio_value": -0.5555
+    },
+    "1090532298": {
+      "skill_id": 207,
+      "skill_level": 10,
+      "ratio_slot": 2,
+      "ratio_effect_class_id": 2,
+      "ratio_value": -0.5415
+    },
+    "1090532299": {
+      "skill_id": 207,
+      "skill_level": 11,
+      "ratio_slot": 2,
+      "ratio_effect_class_id": 2,
+      "ratio_value": -0.4855
+    },
+    "1090532300": {
+      "skill_id": 207,
+      "skill_level": 12,
+      "ratio_slot": 2,
+      "ratio_effect_class_id": 2,
+      "ratio_value": -0.4715
+    },
+    "1090532301": {
+      "skill_id": 207,
+      "skill_level": 13,
+      "ratio_slot": 2,
+      "ratio_effect_class_id": 2,
+      "ratio_value": -0.461
+    },
+    "1090532302": {
+      "skill_id": 207,
+      "skill_level": 14,
+      "ratio_slot": 2,
+      "ratio_effect_class_id": 2,
+      "ratio_value": -0.447
+    },
+    "1090532303": {
+      "skill_id": 207,
+      "skill_level": 15,
+      "ratio_slot": 2,
+      "ratio_effect_class_id": 2,
+      "ratio_value": -0.433
+    },
+    "1090532304": {
+      "skill_id": 207,
+      "skill_level": 16,
+      "ratio_slot": 2,
+      "ratio_effect_class_id": 2,
+      "ratio_value": -0.377
+    },
+    "1090532305": {
+      "skill_id": 207,
+      "skill_level": 17,
+      "ratio_slot": 2,
+      "ratio_effect_class_id": 2,
+      "ratio_value": -0.363
+    },
+    "1090532306": {
+      "skill_id": 207,
+      "skill_level": 18,
+      "ratio_slot": 2,
+      "ratio_effect_class_id": 2,
+      "ratio_value": -0.3525
+    },
+    "1090532307": {
+      "skill_id": 207,
+      "skill_level": 19,
+      "ratio_slot": 2,
+      "ratio_effect_class_id": 2,
+      "ratio_value": -0.3385
+    },
+    "1090532308": {
+      "skill_id": 207,
+      "skill_level": 20,
+      "ratio_slot": 2,
+      "ratio_effect_class_id": 2,
+      "ratio_value": -0.3245
+    },
+    "1090532309": {
+      "skill_id": 207,
+      "skill_level": 21,
+      "ratio_slot": 2,
+      "ratio_effect_class_id": 2,
+      "ratio_value": -0.2685
+    },
+    "1090532310": {
+      "skill_id": 207,
+      "skill_level": 22,
+      "ratio_slot": 2,
+      "ratio_effect_class_id": 2,
+      "ratio_value": -0.2545
+    },
+    "1090532311": {
+      "skill_id": 207,
+      "skill_level": 23,
+      "ratio_slot": 2,
+      "ratio_effect_class_id": 2,
+      "ratio_value": -0.244
+    },
+    "1090532312": {
+      "skill_id": 207,
+      "skill_level": 24,
+      "ratio_slot": 2,
+      "ratio_effect_class_id": 2,
+      "ratio_value": -0.23
+    },
+    "1090532313": {
+      "skill_id": 207,
+      "skill_level": 25,
+      "ratio_slot": 2,
+      "ratio_effect_class_id": 2,
+      "ratio_value": -0.216
+    },
+    "1090541633": {
+      "skill_id": 353,
+      "skill_level": 1,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 29,
+      "ratio_value": -0.521875
+    },
+    "1090541634": {
+      "skill_id": 353,
+      "skill_level": 2,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 29,
+      "ratio_value": -0.503125
+    },
+    "1090541635": {
+      "skill_id": 353,
+      "skill_level": 3,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 29,
+      "ratio_value": -0.49375
+    },
+    "1090541636": {
+      "skill_id": 353,
+      "skill_level": 4,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 29,
+      "ratio_value": -0.475
+    },
+    "1090541637": {
+      "skill_id": 353,
+      "skill_level": 5,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 29,
+      "ratio_value": -0.45625
+    },
+    "1090541638": {
+      "skill_id": 353,
+      "skill_level": 6,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 29,
+      "ratio_value": -0.390625
+    },
+    "1090541639": {
+      "skill_id": 353,
+      "skill_level": 7,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 29,
+      "ratio_value": -0.371875
+    },
+    "1090541640": {
+      "skill_id": 353,
+      "skill_level": 8,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 29,
+      "ratio_value": -0.353125
+    },
+    "1090541641": {
+      "skill_id": 353,
+      "skill_level": 9,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 29,
+      "ratio_value": -0.34375
+    },
+    "1090541642": {
+      "skill_id": 353,
+      "skill_level": 10,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 29,
+      "ratio_value": -0.325
+    },
+    "1090541643": {
+      "skill_id": 353,
+      "skill_level": 11,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 29,
+      "ratio_value": -1.0
+    },
+    "1090541644": {
+      "skill_id": 353,
+      "skill_level": 12,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 29,
+      "ratio_value": -1.0
+    },
+    "1090541645": {
+      "skill_id": 353,
+      "skill_level": 13,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 29,
+      "ratio_value": -1.0
+    },
+    "1090541646": {
+      "skill_id": 353,
+      "skill_level": 14,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 29,
+      "ratio_value": -1.0
+    },
+    "1090541647": {
+      "skill_id": 353,
+      "skill_level": 15,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 29,
+      "ratio_value": -1.0
+    },
+    "1090541648": {
+      "skill_id": 353,
+      "skill_level": 16,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 29,
+      "ratio_value": -1.0
+    },
+    "1090541649": {
+      "skill_id": 353,
+      "skill_level": 17,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 29,
+      "ratio_value": -1.0
+    },
+    "1090597121": {
+      "skill_id": 1220,
+      "skill_level": 1,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": -0.58034
+    },
+    "1090597122": {
+      "skill_id": 1220,
+      "skill_level": 2,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": -0.55955
+    },
+    "1090597123": {
+      "skill_id": 1220,
+      "skill_level": 3,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": -0.53876
+    },
+    "1090597124": {
+      "skill_id": 1220,
+      "skill_level": 4,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": -0.51797
+    },
+    "1090597125": {
+      "skill_id": 1220,
+      "skill_level": 5,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": -0.49718
+    },
+    "1090597126": {
+      "skill_id": 1220,
+      "skill_level": 6,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": -0.32789
+    },
+    "1090597127": {
+      "skill_id": 1220,
+      "skill_level": 7,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": -0.3071
+    },
+    "1090597128": {
+      "skill_id": 1220,
+      "skill_level": 8,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": -0.28631
+    },
+    "1090597129": {
+      "skill_id": 1220,
+      "skill_level": 9,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": -0.26552
+    },
+    "1090597130": {
+      "skill_id": 1220,
+      "skill_level": 10,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": -0.24473
+    },
+    "1090597131": {
+      "skill_id": 1220,
+      "skill_level": 11,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": -0.0754400000000004
+    },
+    "1090597132": {
+      "skill_id": 1220,
+      "skill_level": 12,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": -0.0546499999999996
+    },
+    "1090597133": {
+      "skill_id": 1220,
+      "skill_level": 13,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": -0.0338600000000004
+    },
+    "1090597134": {
+      "skill_id": 1220,
+      "skill_level": 14,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": -0.0130700000000004
+    },
+    "1090597135": {
+      "skill_id": 1220,
+      "skill_level": 15,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 0.00771999999999995
+    },
+    "1090597136": {
+      "skill_id": 1220,
+      "skill_level": 16,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 0.17701
+    },
+    "1090597137": {
+      "skill_id": 1220,
+      "skill_level": 17,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 0.1978
+    },
+    "1090597138": {
+      "skill_id": 1220,
+      "skill_level": 18,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 0.218589999999999
+    },
+    "1090597139": {
+      "skill_id": 1220,
+      "skill_level": 19,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 0.23938
+    },
+    "1090597140": {
+      "skill_id": 1220,
+      "skill_level": 20,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 0.26017
+    },
+    "1090597141": {
+      "skill_id": 1220,
+      "skill_level": 21,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 0.42946
+    },
+    "1090597142": {
+      "skill_id": 1220,
+      "skill_level": 22,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 0.45025
+    },
+    "1090597143": {
+      "skill_id": 1220,
+      "skill_level": 23,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 0.471039999999999
+    },
+    "1090597144": {
+      "skill_id": 1220,
+      "skill_level": 24,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 0.491829999999999
+    },
+    "1090597145": {
+      "skill_id": 1220,
+      "skill_level": 25,
+      "ratio_slot": 1,
+      "ratio_effect_class_id": 2,
+      "ratio_value": 0.51262
+    }
+  }
+}

@@ -1,0 +1,187 @@
+{
+  "profile_id": "dn-reborn-v576-x64-20260725",
+  "client": {
+    "process_name": "dragonnest_reborn.exe",
+    "executable_path": "Z:/DragonNest/Reborn/dragonnest_reborn.exe",
+    "sha256": "301D265075B1EB2B4C550A59DAE6BFA273E1F6EC210D848BD8788DA4B909BBC2",
+    "file_version": "1.0.0.1",
+    "product_version": "1.0.0.10",
+    "architecture": "x64",
+    "pe_timestamp": 1784622703
+  },
+  "known_players": {
+    "幻丶冰灵": {
+      "job": "元素师"
+    },
+    "幸运小游侠": {
+      "job": "影舞者",
+      "actor_id": "0x50DC5C6C"
+    }
+  },
+  "locators": {},
+  "network_protocol": {
+    "status": "partially_calibrated",
+    "capture_format": "pcapng",
+    "packet_transport": "UDP",
+    "body_xor": {
+      "payload_offset": 9,
+      "key_hex": "c8bfcda4943f2642fd8a723474"
+    },
+    "confirmed_layouts": {
+      "player_identity_114": {
+        "direction": "client_to_server",
+        "payload_length": 114,
+        "header_signature_hex": "f7a66f00",
+        "xor_phase": 11,
+        "utf8_name_offset": 14,
+        "utf8_name_end": 73
+      },
+      "skill_cast_45": {
+        "direction": "client_to_server",
+        "payload_length": 45,
+        "header_signature_hex": "87062a00",
+        "xor_phase": 6,
+        "source_actor_id_offset": 10,
+        "skill_id_offset": 14
+      },
+      "skill_cast_73": {
+        "direction": "client_to_server",
+        "payload_length": 73,
+        "header_signature_hex": "fe5c4600",
+        "xor_phase": 4,
+        "source_actor_id_offset": 10,
+        "skill_id_offset": 21
+      },
+      "skill_cast_80": {
+        "direction": "client_to_server",
+        "payload_length": 80,
+        "header_signature_hex": "288a4d00",
+        "xor_phase": 10,
+        "source_actor_id_offset": 10,
+        "skill_id_offset": 21
+      },
+      "damage_hit_140": {
+        "direction": "server_to_client",
+        "payload_length": 140,
+        "header_signature_hex": "65678900",
+        "xor_phase": 1,
+        "observer_actor_id_offset": 10,
+        "source_actor_id_offset": 26,
+        "damage_offset": 41,
+        "damage_size": 8,
+        "skill_id_offset": 124,
+        "critical_flag_offset": 110,
+        "critical_flag_mask": 1
+      },
+      "damage_hit_229": {
+        "direction": "server_to_client",
+        "payload_length": 229,
+        "header_signature_hex": "fe5ce200",
+        "xor_phase": 4,
+        "observer_actor_id_offset": 10,
+        "source_actor_id_offset": 26,
+        "damage_offset": 41,
+        "damage_size": 8,
+        "skill_id_offset": 124,
+        "critical_flag_offset": 110,
+        "critical_flag_mask": 1
+      },
+      "skill_action_211": {
+        "direction": "server_to_client",
+        "payload_length": 211,
+        "header_signature_hex": "6e2cd000",
+        "xor_phase": 5,
+        "observer_actor_id_offset": 10,
+        "source_actor_id_offset": 14,
+        "skill_id_offset": 64
+      },
+      "skill_action_214": {
+        "direction": "server_to_client",
+        "payload_length": 214,
+        "header_signature_hex": "e5a7d300",
+        "xor_phase": 3,
+        "observer_actor_id_offset": 10,
+        "source_actor_id_offset": 14,
+        "skill_id_offset": 64
+      },
+      "damage_hit_136": {
+        "direction": "server_to_client",
+        "payload_length": 136,
+        "header_signature_hex": "e5e78500",
+        "xor_phase": 3,
+        "observer_actor_id_offset": 10,
+        "source_actor_id_offset": 26,
+        "damage_offset": 37,
+        "damage_size": 8,
+        "skill_id_offset": 132,
+        "skill_id_fallback": "latest_actor_action"
+      },
+      "damage_hit_148": {
+        "direction": "server_to_client",
+        "payload_length": 148,
+        "header_signature_hex": "92309100",
+        "xor_phase": 8,
+        "observer_actor_id_offset": 10,
+        "source_actor_id_offset": 14,
+        "damage_offset": 49,
+        "damage_size": 8,
+        "skill_id_offset": 144,
+        "skill_id_fallback": "latest_actor_action"
+      },
+      "damage_hit_164": {
+        "direction": "server_to_client",
+        "payload_length": 164,
+        "header_signature_hex": "febca100",
+        "xor_phase": 4,
+        "observer_actor_id_offset": 10,
+        "source_actor_id_offset": 14,
+        "damage_offset": 53,
+        "damage_size": 8,
+        "skill_id_offset": 136,
+        "critical_flag_offset": 122,
+        "critical_flag_mask": 1
+      },
+      "damage_hit_152": {
+        "direction": "server_to_client",
+        "payload_length": 152,
+        "header_signature_hex": "ce6c9500",
+        "xor_phase": 0,
+        "observer_actor_id_offset": 10,
+        "source_actor_id_offset": 26,
+        "damage_offset": 41,
+        "damage_size": 8,
+        "skill_id_offset": 124,
+        "critical_flag_offset": 110,
+        "critical_flag_mask": 1
+      },
+      "damage_hit_218": {
+        "direction": "server_to_client",
+        "payload_length": 218,
+        "header_signature_hex": "65c7d700",
+        "xor_phase": 1,
+        "observer_actor_id_offset": 10,
+        "source_actor_id_offset": 104,
+        "damage_offset": 119,
+        "damage_size": 8,
+        "skill_id_offset": 202,
+        "critical_flag_offset": 188,
+        "critical_flag_mask": 1
+      },
+      "damage_hit_effect_219": {
+        "direction": "server_to_client",
+        "payload_length": 219,
+        "header_signature_hex": "7cded800",
+        "xor_phase": 4,
+        "observer_actor_id_offset": 10,
+        "source_actor_id_offset": 26,
+        "damage_offset": 37,
+        "damage_size": 8,
+        "skill_id_offset": 152
+      }
+    },
+    "pending_fields": [
+      "target_actor_id",
+      "party_actor_name_mapping"
+    ]
+  }
+}

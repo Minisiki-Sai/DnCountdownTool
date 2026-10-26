@@ -1,0 +1,2372 @@
+{
+  "剑皇": {
+    "切骨之刺": {
+      "multiplier": 1.5
+    },
+    "挥砍姿态": {
+      "multiplier": 20.2
+    },
+    "三连斩": {
+      "multiplier": 1.4
+    },
+    "半月斩": {
+      "multiplier": 1
+    },
+    "惩罚攻击": {
+      "multiplier": 1,
+      "level_multipliers": {
+        "1": 1.54,
+        "2": 1.63,
+        "3": 1.72,
+        "4": 1.81,
+        "5": 1.9,
+        "6": 1.99,
+        "7": 2.08,
+        "8": 2.08,
+        "9": 2.08,
+        "10": 2.08
+      }
+    },
+    "冲锋连击": {
+      "multiplier": 1
+    },
+    "冲锋斩": {
+      "multiplier": 1
+    },
+    "冲击波": {
+      "multiplier": 1
+    },
+    "回避斩": {
+      "multiplier": 1
+    },
+    "凌空暴击": {
+      "multiplier": 1
+    },
+    "日食": {
+      "multiplier": 1
+    },
+    "升龙斩": {
+      "multiplier": 1
+    },
+    "无限之刃": {
+      "multiplier": 2.2
+    },
+    "旋风斩": {
+      "multiplier": 1
+    },
+    "勇敢": {
+      "multiplier": 1
+    },
+    "月光碎片": {
+      "multiplier": 3
+    },
+    "真空连爆": {
+      "multiplier": 11
+    },
+    "直线冲击": {
+      "multiplier": 1.725
+    },
+    "直线冲击EX": {
+      "multiplier": 1
+    },
+    "致命劈砍": {
+      "multiplier": 5.32
+    },
+    "重锤": {
+      "multiplier": 1
+    },
+    "重钩拳": {
+      "multiplier": 1
+    },
+    "重斩": {
+      "multiplier": 1
+    }
+  },
+  "月之领主": {
+    "旋风斩": {
+      "multiplier": 1.5
+    },
+    "致命劈砍": {
+      "multiplier": 11.76
+    },
+    "半月斩": {
+      "multiplier": 1.4
+    },
+    "冲锋连击": {
+      "multiplier": 1
+    },
+    "冲锋斩": {
+      "multiplier": 1
+    },
+    "冲击波": {
+      "multiplier": 1
+    },
+    "挥砍姿态": {
+      "multiplier": 13
+    },
+    "凌空暴击": {
+      "multiplier": 1
+    },
+    "猛砍站姿": {
+      "multiplier": 14.72
+    },
+    "切骨之刺": {
+      "multiplier": 1
+    },
+    "日食": {
+      "multiplier": 1
+    },
+    "三连斩": {
+      "multiplier": 1
+    },
+    "升龙斩": {
+      "multiplier": 1
+    },
+    "水月神舞": {
+      "multiplier": 17.16
+    },
+    "无限之刃": {
+      "multiplier": 2.2
+    },
+    "勇敢": {
+      "multiplier": 1
+    },
+    "月光碎片": {
+      "multiplier": 4.83
+    },
+    "真空连爆": {
+      "multiplier": 11
+    },
+    "直线冲击": {
+      "multiplier": 1
+    },
+    "重锤": {
+      "multiplier": 1
+    },
+    "重钩拳": {
+      "multiplier": 1
+    },
+    "重斩": {
+      "multiplier": 1
+    }
+  },
+  "狂战士": {
+    "旋风": {
+      "multiplier": 1.5
+    },
+    "旋转冲击": {
+      "multiplier": 5
+    },
+    "惩戒波": {
+      "multiplier": 1
+    },
+    "冲击波": {
+      "multiplier": 1
+    },
+    "冲击拳": {
+      "multiplier": 1
+    },
+    "斗气护体": {
+      "multiplier": 1
+    },
+    "反击怒吼": {
+      "multiplier": 1
+    },
+    "范围炸弹": {
+      "multiplier": 1.2
+    },
+    "飞行冲击": {
+      "multiplier": 1
+    },
+    "滚动攻击": {
+      "multiplier": 1
+    },
+    "毁灭呐喊": {
+      "multiplier": 1
+    },
+    "践踏": {
+      "multiplier": 1.6
+    },
+    "巨型炸弹": {
+      "multiplier": 1
+    },
+    "连骨撞击": {
+      "multiplier": 2.4
+    },
+    "凌空暴击": {
+      "multiplier": 1
+    },
+    "清醒呐喊": {
+      "multiplier": 1
+    },
+    "升龙斩": {
+      "multiplier": 1
+    },
+    "台风": {
+      "multiplier": 1.06
+    },
+    "屠戮盛宴": {
+      "multiplier": 1.5
+    },
+    "旋转冲击EX": {
+      "multiplier": 1
+    },
+    "重钩拳": {
+      "multiplier": 1
+    },
+    "重斩": {
+      "multiplier": 1
+    }
+  },
+  "毁灭者": {
+    "惩戒波": {
+      "multiplier": 1.5
+    },
+    "滚动攻击": {
+      "multiplier": 1.725
+    },
+    "飞行冲击": {
+      "multiplier": 1.75
+    },
+    "惩戒波 EX": {
+      "multiplier": 1
+    },
+    "冲击波": {
+      "multiplier": 1
+    },
+    "冲击拳": {
+      "multiplier": 1
+    },
+    "大漩涡怒吼": {
+      "multiplier": 1
+    },
+    "斗气护体": {
+      "multiplier": 1
+    },
+    "反击怒吼": {
+      "multiplier": 1
+    },
+    "范围炸弹": {
+      "multiplier": 1.7
+    },
+    "毁灭呐喊": {
+      "multiplier": 1
+    },
+    "践踏": {
+      "multiplier": 1
+    },
+    "巨型炸弹": {
+      "multiplier": 1
+    },
+    "凌空暴击": {
+      "multiplier": 1
+    },
+    "清醒呐喊": {
+      "multiplier": 1
+    },
+    "升龙斩": {
+      "multiplier": 1
+    },
+    "台风": {
+      "multiplier": 1.06
+    },
+    "屠戮盛宴": {
+      "multiplier": 1
+    },
+    "旋风": {
+      "multiplier": 1
+    },
+    "旋转冲击": {
+      "multiplier": 1
+    },
+    "重钩拳": {
+      "multiplier": 1
+    },
+    "重斩": {
+      "multiplier": 1
+    }
+  },
+  "狙翎": {
+    "起身踢": {
+      "multiplier": 1.05
+    },
+    "包围": {
+      "multiplier": 6
+    },
+    "聚能射击": {
+      "multiplier": 1.5
+    },
+    "穿刺射击": {
+      "multiplier": 1
+    },
+    "多段射击": {
+      "multiplier": 7
+    },
+    "二连射": {
+      "multiplier": 2
+    },
+    "飞空连射": {
+      "multiplier": 16
+    },
+    "集中射击": {
+      "multiplier": 3.5
+    },
+    "箭术革命": {
+      "multiplier": 1.11
+    },
+    "箭雨风暴": {
+      "multiplier": 63
+    },
+    "箭雨风暴EX": {
+      "multiplier": 63
+    },
+    "瞄准": {
+      "multiplier": 1
+    },
+    "魔法箭矢": {
+      "multiplier": 1
+    },
+    "怒气爆射": {
+      "multiplier": 3
+    },
+    "强旋风腿": {
+      "multiplier": 1
+    },
+    "三角攻击": {
+      "multiplier": 1
+    },
+    "偷袭点": {
+      "multiplier": 1
+    },
+    "虚晃一枪": {
+      "multiplier": 1
+    },
+    "迅捷箭": {
+      "multiplier": 6
+    },
+    "迅矢连射": {
+      "multiplier": 25
+    },
+    "震裂箭": {
+      "multiplier": 1
+    },
+    "追风箭": {
+      "multiplier": 5
+    },
+    "追踪箭": {
+      "multiplier": 8
+    }
+  },
+  "魔羽": {
+    "起身踢": {
+      "multiplier": 1.05
+    },
+    "集中射击": {
+      "multiplier": 5.1
+    },
+    "追踪箭": {
+      "multiplier": 11.2
+    },
+    "包围": {
+      "multiplier": 1
+    },
+    "爆炸箭矢": {
+      "multiplier": 1.15
+    },
+    "穿刺射击": {
+      "multiplier": 1
+    },
+    "多段射击": {
+      "multiplier": 7
+    },
+    "二连射": {
+      "multiplier": 2
+    },
+    "飞空连射": {
+      "multiplier": 12
+    },
+    "箭术革命": {
+      "multiplier": 1.11
+    },
+    "箭雨风暴": {
+      "multiplier": 46
+    },
+    "聚能射击": {
+      "multiplier": 1
+    },
+    "瞄准": {
+      "multiplier": 1
+    },
+    "魔法箭矢": {
+      "multiplier": 1
+    },
+    "怒气爆射": {
+      "multiplier": 3
+    },
+    "强旋风腿": {
+      "multiplier": 1
+    },
+    "三角攻击": {
+      "multiplier": 1
+    },
+    "虚晃一枪": {
+      "multiplier": 1
+    },
+    "迅捷箭": {
+      "multiplier": 8.5
+    },
+    "迅矢连射": {
+      "multiplier": 25
+    },
+    "震裂箭": {
+      "multiplier": 1
+    },
+    "追风箭": {
+      "multiplier": 8.1
+    }
+  },
+  "影舞者": {
+    "起身踢": {
+      "multiplier": 1.05
+    },
+    "捆绑射击": {
+      "multiplier": 2.1
+    },
+    "捆绑射击EX": {
+      "multiplier": 2.1
+    },
+    "踢射": {
+      "multiplier": 2
+    },
+    "螺旋风暴": {
+      "multiplier": 1.5
+    },
+    "双飞腿": {
+      "multiplier": 1.5,
+      "cooldown": 8
+    },
+    "爆裂踢": {
+      "multiplier": 1
+    },
+    "穿刺射击": {
+      "multiplier": 1
+    },
+    "多段射击": {
+      "multiplier": 7
+    },
+    "二连射": {
+      "multiplier": 2
+    },
+    "箭雨": {
+      "multiplier": 1
+    },
+    "精神火焰": {
+      "multiplier": 1
+    },
+    "飓风舞": {
+      "multiplier": 1
+    },
+    "凌波微步": {
+      "multiplier": 1
+    },
+    "螺旋刀刃": {
+      "multiplier": 1
+    },
+    "螺旋踢": {
+      "multiplier": 1
+    },
+    "迷幻新星": {
+      "multiplier": 1
+    },
+    "魔法箭矢": {
+      "multiplier": 1
+    },
+    "强旋风腿": {
+      "multiplier": 1
+    },
+    "消能旋转箭": {
+      "multiplier": 1
+    },
+    "旋风飞腿": {
+      "multiplier": 1
+    },
+    "鹰击长空": {
+      "multiplier": 1
+    }
+  },
+  "风行者": {
+    "起身踢": {
+      "multiplier": 1.05
+    },
+    "爆裂踢": {
+      "multiplier": 1.7
+    },
+    "螺旋踢": {
+      "multiplier": 1.7
+    },
+    "旋风飞腿": {
+      "multiplier": 1.5
+    },
+    "鹰击长空": {
+      "multiplier": 1.9
+    },
+    "穿刺射击": {
+      "multiplier": 1
+    },
+    "多段射击": {
+      "multiplier": 7
+    },
+    "二连射": {
+      "multiplier": 2
+    },
+    "箭雨": {
+      "multiplier": 1
+    },
+    "精神火焰": {
+      "multiplier": 1
+    },
+    "捆绑射击": {
+      "multiplier": 1.5
+    },
+    "凌波微步": {
+      "multiplier": 1
+    },
+    "螺旋刀刃": {
+      "multiplier": 1
+    },
+    "螺旋风暴": {
+      "multiplier": 1
+    },
+    "迷幻新星": {
+      "multiplier": 1
+    },
+    "魔法箭矢": {
+      "multiplier": 1
+    },
+    "强旋风腿": {
+      "multiplier": 1
+    },
+    "嗜血狂潮": {
+      "multiplier": 1
+    },
+    "双飞腿": {
+      "multiplier": 1,
+      "cooldown": 8
+    },
+    "踢射": {
+      "multiplier": 1
+    },
+    "消能旋转箭": {
+      "multiplier": 1
+    },
+    "鹰击长空EX": {
+      "multiplier": 1.9
+    }
+  },
+  "火舞": {
+    "火墙": {
+      "multiplier": 1.6,
+      "burning_hand_triggers": {
+        "base": 0.5,
+        "cocktail": 0.5,
+        "burst": 0.5,
+        "both": 0.5,
+        "accel": 0.5
+      }
+    },
+    "地狱火海": {
+      "multiplier": 1.84,
+      "burning_hand_triggers": {
+        "base": 2,
+        "cocktail": 2,
+        "burst": 3,
+        "both": 3,
+        "accel": 5
+      }
+    },
+    "暴风雪": {
+      "multiplier": 1
+    },
+    "冰刺": {
+      "multiplier": 1.8
+    },
+    "冰河": {
+      "multiplier": 1
+    },
+    "冰尖柱": {
+      "multiplier": 1
+    },
+    "冰刃": {
+      "multiplier": 1
+    },
+    "冰雾": {
+      "multiplier": 1
+    },
+    "充能飞弹": {
+      "multiplier": 1
+    },
+    "地狱火海EX": {
+      "multiplier": 1.84
+    },
+    "毒云": {
+      "multiplier": 1.775
+    },
+    "弗罗斯特风": {
+      "multiplier": 1
+    },
+    "寒冰飞沙": {
+      "multiplier": 1
+    },
+    "火径": {
+      "multiplier": 5.6925,
+      "burning_hand_triggers": {
+        "base": 3,
+        "cocktail": 3,
+        "burst": 5,
+        "both": 6,
+        "accel": 9
+      }
+    },
+    "火径EX": {
+      "multiplier": 1
+    },
+    "火鸟": {
+      "multiplier": 3,
+      "burning_hand_triggers": {
+        "base": 0.875,
+        "cocktail": 0.875,
+        "burst": 0.875,
+        "both": 0.875,
+        "accel": 0.875
+      }
+    },
+    "火墙EX": {
+      "multiplier": 1
+    },
+    "火球": {
+      "multiplier": 2.25,
+      "burning_hand_triggers": {
+        "base": 0.875,
+        "cocktail": 0.875,
+        "burst": 0.875,
+        "both": 0.875,
+        "accel": 0.875
+      }
+    },
+    "火焰虫": {
+      "multiplier": 1,
+      "burning_hand_triggers": {
+        "base": 0.5,
+        "cocktail": 0.5,
+        "burst": 0.5,
+        "both": 0.5,
+        "accel": 0.5
+      }
+    },
+    "火焰风暴": {
+      "multiplier": 1,
+      "burning_hand_triggers": {
+        "base": 2.277099609375,
+        "cocktail": 2.277099609375,
+        "burst": 3.188232421875,
+        "both": 3.188232421875,
+        "accel": 4.111083984375
+      }
+    },
+    "火焰闪耀": {
+      "multiplier": 1,
+      "burning_hand_triggers": {
+        "base": 0.5,
+        "cocktail": 0.5,
+        "burst": 0.5,
+        "both": 0.5,
+        "accel": 0.5
+      }
+    },
+    "轮转之杖": {
+      "multiplier": 1
+    },
+    "漫长熔浆": {
+      "multiplier": 1,
+      "burning_hand_triggers": {
+        "base": 1.24609375,
+        "cocktail": 1.49609375,
+        "burst": 1.80859375,
+        "both": 1.80859375,
+        "accel": 2.77734375
+      }
+    },
+    "能量爆发": {
+      "multiplier": 1
+    },
+    "霜冻": {
+      "multiplier": 1
+    },
+    "震荡波": {
+      "multiplier": 1
+    },
+    "灼热火焰": {
+      "multiplier": 1,
+      "burning_hand_triggers": {
+        "base": 0.5,
+        "cocktail": 0.5,
+        "burst": 0.5,
+        "both": 0.5,
+        "accel": 0.5
+      }
+    },
+    "灼烧之手": {
+      "multiplier": 1
+    }
+  },
+  "冰灵": {
+    "冰刃": {
+      "multiplier": 1.54990006
+    },
+    "冰雾": {
+      "multiplier": 1.725
+    },
+    "霜冻": {
+      "multiplier": 1.5
+    },
+    "暴风雪": {
+      "multiplier": 1
+    },
+    "冰刺": {
+      "multiplier": 4.475
+    },
+    "冰河": {
+      "multiplier": 1
+    },
+    "冰尖柱": {
+      "multiplier": 1
+    },
+    "冰柱喷射": {
+      "multiplier": 64
+    },
+    "充能飞弹": {
+      "multiplier": 1
+    },
+    "地狱火海": {
+      "multiplier": 1
+    },
+    "毒云": {
+      "multiplier": 1.775
+    },
+    "弗罗斯特风": {
+      "multiplier": 1
+    },
+    "寒冰飞沙": {
+      "multiplier": 1
+    },
+    "火径": {
+      "multiplier": 2.750055
+    },
+    "火鸟": {
+      "multiplier": 3
+    },
+    "火墙": {
+      "multiplier": 1
+    },
+    "火球": {
+      "multiplier": 1
+    },
+    "火焰虫": {
+      "multiplier": 1
+    },
+    "火焰风暴": {
+      "multiplier": 1
+    },
+    "火焰闪耀": {
+      "multiplier": 1
+    },
+    "轮转之杖": {
+      "multiplier": 1
+    },
+    "能量爆发": {
+      "multiplier": 1
+    },
+    "震荡波": {
+      "multiplier": 1
+    },
+    "灼热火焰": {
+      "multiplier": 1
+    }
+  },
+  "时空领主": {
+    "光雨": {
+      "multiplier": 2.185
+    },
+    "九尾激光": {
+      "multiplier": 1.49997
+    },
+    "冰尖柱": {
+      "multiplier": 1
+    },
+    "充能飞弹": {
+      "multiplier": 1
+    },
+    "毒云": {
+      "multiplier": 1.775
+    },
+    "黑暗神殿": {
+      "multiplier": 3
+    },
+    "火焰虫": {
+      "multiplier": 1
+    },
+    "激光破碎": {
+      "multiplier": 1.33332
+    },
+    "减速地带": {
+      "multiplier": 1
+    },
+    "聚能激光": {
+      "multiplier": 2
+    },
+    "流星雨": {
+      "multiplier": 1
+    },
+    "轮转之杖": {
+      "multiplier": 1
+    },
+    "能量爆发": {
+      "multiplier": 1
+    },
+    "能量反射EX": {
+      "multiplier": 1
+    },
+    "强力波": {
+      "multiplier": 1
+    },
+    "强力盾": {
+      "multiplier": 1
+    },
+    "驱散": {
+      "multiplier": 1.00395
+    },
+    "上升重力": {
+      "multiplier": 1
+    },
+    "召唤黑洞": {
+      "multiplier": 1.8
+    },
+    "召唤彗星": {
+      "multiplier": 1
+    },
+    "震荡波": {
+      "multiplier": 1
+    },
+    "重力标枪": {
+      "multiplier": 1
+    },
+    "重力球": {
+      "multiplier": 1
+    },
+    "能量爆炸": {
+      "multiplier": 1.725
+    },
+    "能量反射": {
+      "multiplier": 6
+    },
+    "光雨EX": {
+      "multiplier": 2.185
+    },
+    "光雨 EX": {
+      "multiplier": 2.185
+    }
+  },
+  "黑暗女王": {
+    "上升重力": {
+      "multiplier": 1.95
+    },
+    "召唤黑洞": {
+      "multiplier": 2.7
+    },
+    "重力球": {
+      "multiplier": 1.4
+    },
+    "黑暗神殿": {
+      "multiplier": 3.8997
+    },
+    "冰尖柱": {
+      "multiplier": 1
+    },
+    "充能飞弹": {
+      "multiplier": 1
+    },
+    "毒云": {
+      "multiplier": 1.775
+    },
+    "光雨": {
+      "multiplier": 1.61
+    },
+    "火焰虫": {
+      "multiplier": 1
+    },
+    "减速地带": {
+      "multiplier": 1
+    },
+    "九尾激光": {
+      "multiplier": 1
+    },
+    "聚能激光": {
+      "multiplier": 1
+    },
+    "流星雨": {
+      "multiplier": 1
+    },
+    "轮转之杖": {
+      "multiplier": 1
+    },
+    "能量爆发": {
+      "multiplier": 1
+    },
+    "强力波": {
+      "multiplier": 1
+    },
+    "强力盾": {
+      "multiplier": 1
+    },
+    "驱散": {
+      "multiplier": 1.00395
+    },
+    "召唤彗星": {
+      "multiplier": 1
+    },
+    "震荡波": {
+      "multiplier": 1
+    },
+    "重力标枪": {
+      "multiplier": 1
+    },
+    "重力开关": {
+      "multiplier": 1.625
+    },
+    "能量反射": {
+      "multiplier": 6
+    }
+  },
+  "圣骑士": {
+    "盾冲": {
+      "multiplier": 1
+    },
+    "盾击": {
+      "multiplier": 1
+    },
+    "护卫者姿势": {
+      "multiplier": 1
+    },
+    "滑步挥破": {
+      "multiplier": 1
+    },
+    "滑步旋落": {
+      "multiplier": 1
+    },
+    "践踏": {
+      "multiplier": 1
+    },
+    "雷电冲击": {
+      "multiplier": 1,
+      "channel_multipliers": {
+        "M": 1.3,
+        "P": 1.2
+      },
+      "channel_formula": "1.3M + 1.2P",
+      "channel_source": "2026-10-14：本体＋完整4轮触电；按各通道技能百分比及固定值分别计算。"
+    },
+    "雷神之锤": {
+      "multiplier": 1,
+      "channel_multipliers": {
+        "P": 1.3,
+        "M": 1.0
+      },
+      "channel_formula": "1.3P + 1.0M",
+      "channel_source": "用户确认：分物魔通道，不把2.3乘在合并面板上"
+    },
+    "连锁闪电": {
+      "multiplier": 5
+    },
+    "落雷": {
+      "multiplier": 1
+    },
+    "破甲": {
+      "multiplier": 1
+    },
+    "虔诚": {
+      "multiplier": 1,
+      "channel_formula": "1.0P + 1.0M"
+    },
+    "神圣冲击波": {
+      "multiplier": 1
+    },
+    "神圣断言": {
+      "multiplier": 1.8
+    },
+    "神圣复仇": {
+      "multiplier": 1
+    },
+    "神圣连击": {
+      "multiplier": 1
+    },
+    "神圣十字": {
+      "multiplier": 1
+    },
+    "神圣之锤": {
+      "multiplier": 1
+    },
+    "神圣之锤攻击": {
+      "multiplier": 1
+    },
+    "正义撞击": {
+      "multiplier": 1
+    },
+    "重击": {
+      "multiplier": 1
+    },
+    "神圣惩戒EX": {
+      "multiplier": 40,
+      "element": "光",
+      "description": "光属性物理持续伤害；每1击为物理攻击力60%，冷却35秒，按完整20秒维持折算40次。20秒内再次释放只延长持续时间，不叠加伤害。"
+    }
+  },
+  "十字军": {
+    "神圣之锤": {
+      "multiplier": 1.3
+    },
+    "神圣之锤攻击": {
+      "multiplier": 1.3
+    },
+    "神圣十字": {
+      "multiplier": 1.4
+    },
+    "盾冲": {
+      "multiplier": 1
+    },
+    "盾击": {
+      "multiplier": 1
+    },
+    "滑步挥破": {
+      "multiplier": 1
+    },
+    "滑步旋落": {
+      "multiplier": 1
+    },
+    "践踏": {
+      "multiplier": 1
+    },
+    "雷电冲击": {
+      "multiplier": 1,
+      "channel_multipliers": {
+        "M": 1.59,
+        "P": 1.2
+      },
+      "channel_formula": "1.59M + 1.2P",
+      "channel_source": "2026-10-14：本体＋完整4轮触电；按各通道技能百分比及固定值分别计算。"
+    },
+    "雷神之锤": {
+      "multiplier": 1,
+      "channel_multipliers": {
+        "P": 1.3,
+        "M": 1.0
+      },
+      "channel_formula": "1.3P + 1.0M",
+      "channel_source": "用户确认：分物魔通道，不把2.3乘在合并面板上"
+    },
+    "连锁闪电": {
+      "multiplier": 5
+    },
+    "落雷": {
+      "multiplier": 1
+    },
+    "破甲": {
+      "multiplier": 1
+    },
+    "虔诚": {
+      "multiplier": 1,
+      "channel_formula": "1.0P + 1.0M"
+    },
+    "神圣冲击波": {
+      "multiplier": 1
+    },
+    "神圣断言": {
+      "multiplier": 1
+    },
+    "神圣复仇": {
+      "multiplier": 1
+    },
+    "神圣连击": {
+      "multiplier": 1
+    },
+    "审判锤": {
+      "multiplier": 1
+    },
+    "重击": {
+      "multiplier": 1.4
+    }
+  },
+  "圣徒": {
+    "电光箭": {
+      "multiplier": 1
+    },
+    "盾击": {
+      "multiplier": 1
+    },
+    "滑步挥破": {
+      "multiplier": 1
+    },
+    "践踏": {
+      "multiplier": 1
+    },
+    "精神爆破": {
+      "multiplier": 1.3
+    },
+    "雷暴": {
+      "multiplier": 1.0
+    },
+    "雷电之手": {
+      "multiplier": 5.3
+    },
+    "连锁闪电": {
+      "multiplier": 5
+    },
+    "落雷": {
+      "multiplier": 1
+    },
+    "奇迹之手": {
+      "multiplier": 1.25
+    },
+    "闪电风暴": {
+      "multiplier": 3
+    },
+    "神圣暴风": {
+      "multiplier": 1
+    },
+    "神圣冲击波": {
+      "multiplier": 1
+    },
+    "神圣连击": {
+      "multiplier": 1
+    },
+    "神圣之光": {
+      "multiplier": 1
+    },
+    "圣光十字": {
+      "multiplier": 3
+    },
+    "天堂审判": {
+      "multiplier": 1
+    },
+    "无私救援": {
+      "multiplier": 1
+    },
+    "冲击之手": {
+      "multiplier": 3
+    },
+    "痊愈之手": {
+      "multiplier": 1.5
+    },
+    "痊愈之手EX": {
+      "multiplier": 1.5
+    },
+    "痊愈之手 EX": {
+      "multiplier": 1.5
+    },
+    "治愈之手": {
+      "multiplier": 1.5
+    }
+  },
+  "雷神": {
+    "电光箭": {
+      "multiplier": 1.5
+    },
+    "精神爆破": {
+      "multiplier": 2.1
+    },
+    "闪电风暴": {
+      "multiplier": 4.2
+    },
+    "雷暴": {
+      "multiplier": 2.2
+    },
+    "雷暴EX": {
+      "multiplier": 2.2
+    },
+    "冲击流": {
+      "multiplier": 1
+    },
+    "盾击": {
+      "multiplier": 1
+    },
+    "滑步挥破": {
+      "multiplier": 1
+    },
+    "践踏": {
+      "multiplier": 1
+    },
+    "雷电之手": {
+      "multiplier": 5
+    },
+    "连锁闪电": {
+      "multiplier": 5
+    },
+    "落雷": {
+      "multiplier": 1
+    },
+    "奇迹之手": {
+      "multiplier": 1.25
+    },
+    "神圣暴风": {
+      "multiplier": 2
+    },
+    "神圣冲击波": {
+      "multiplier": 1
+    },
+    "神圣连击": {
+      "multiplier": 1
+    },
+    "神圣之光": {
+      "multiplier": 1
+    },
+    "圣光十字": {
+      "multiplier": 5.2
+    },
+    "天堂审判": {
+      "multiplier": 1
+    },
+    "无私救援": {
+      "multiplier": 1
+    },
+    "治愈之手": {
+      "multiplier": 1.5
+    }
+  },
+  "重炮手": {
+    "脑电波投射": {
+      "multiplier": 30,
+      "cooldown": 10
+    },
+    "生化导弹": {
+      "multiplier": 1.5,
+      "cooldown": 10
+    },
+    "摄魂怪践踏": {
+      "multiplier": 1.4
+    },
+    "乒乓爆栗": {
+      "multiplier": 3.36
+    },
+    "摧毁": {
+      "multiplier": 1.99931
+    },
+    "电光手榴弹": {
+      "multiplier": 1
+    },
+    "飞溅": {
+      "multiplier": 5,
+      "cooldown": 5
+    },
+    "寒冰喷射塔": {
+      "multiplier": 4,
+      "cooldown": 30
+    },
+    "轰击": {
+      "multiplier": 1
+    },
+    "火箭跳跃": {
+      "multiplier": 1
+    },
+    "加特林机枪塔": {
+      "multiplier": 9,
+      "cooldown": 30
+    },
+    "空隙爆破": {
+      "multiplier": 1
+    },
+    "迷惑爆栗": {
+      "multiplier": 1
+    },
+    "凝固汽油弹": {
+      "multiplier": 1
+    },
+    "泡泡弹": {
+      "multiplier": 1
+    },
+    "炮塔": {
+      "multiplier": 10,
+      "cooldown": 30
+    },
+    "三连射": {
+      "multiplier": 3
+    },
+    "摄魂怪光束": {
+      "multiplier": 1
+    },
+    "摄魂怪旋风": {
+      "multiplier": 1
+    },
+    "实弹装填": {
+      "multiplier": 1
+    },
+    "天际": {
+      "multiplier": 1
+    },
+    "旋转爆栗": {
+      "multiplier": 1
+    },
+    "眩晕手榴弹": {
+      "multiplier": 1
+    },
+    "重磅轰击": {
+      "multiplier": 3
+    },
+    "重磅汽笛": {
+      "multiplier": 3
+    },
+    "重磅鸭": {
+      "multiplier": 1
+    },
+    "重磅炸弹": {
+      "multiplier": 3
+    },
+    "重力手榴弹": {
+      "multiplier": 1
+    }
+  },
+  "机械大师": {
+    "重磅轰击": {
+      "multiplier": 5.4
+    },
+    "重磅炸弹": {
+      "multiplier": 4.5
+    },
+    "重磅汽笛": {
+      "multiplier": 4.2
+    },
+    "重磅鸭": {
+      "multiplier": 1.35
+    },
+    "超大重磅炸弹": {
+      "multiplier": 1.7
+    },
+    "摧毁": {
+      "multiplier": 1.99931
+    },
+    "电光手榴弹": {
+      "multiplier": 1
+    },
+    "寒冰喷射塔": {
+      "multiplier": 4,
+      "cooldown": 30
+    },
+    "轰击": {
+      "multiplier": 1
+    },
+    "火箭跳跃": {
+      "multiplier": 1
+    },
+    "加特林机枪塔": {
+      "multiplier": 9,
+      "cooldown": 30
+    },
+    "空隙爆破": {
+      "multiplier": 1
+    },
+    "链锯之塔": {
+      "multiplier": 16.8,
+      "cooldown": 30
+    },
+    "迷惑爆栗": {
+      "multiplier": 1
+    },
+    "脑电波投射": {
+      "multiplier": 20,
+      "cooldown": 10
+    },
+    "凝固汽油弹": {
+      "multiplier": 1
+    },
+    "泡泡弹": {
+      "multiplier": 1
+    },
+    "炮塔": {
+      "multiplier": 10,
+      "cooldown": 30
+    },
+    "乒乓爆栗": {
+      "multiplier": 2.33
+    },
+    "三连射": {
+      "multiplier": 3
+    },
+    "摄魂怪践踏": {
+      "multiplier": 1
+    },
+    "摄魂怪旋风": {
+      "multiplier": 1
+    },
+    "生化导弹": {
+      "multiplier": 1,
+      "cooldown": 10
+    },
+    "实弹装填": {
+      "multiplier": 1
+    },
+    "天际": {
+      "multiplier": 1
+    },
+    "旋转爆栗": {
+      "multiplier": 1
+    },
+    "眩晕手榴弹": {
+      "multiplier": 1
+    },
+    "重力手榴弹": {
+      "multiplier": 1
+    },
+    "机械链锯": {
+      "multiplier": 1.6,
+      "cooldown": 10,
+      "description_source": {
+        "job": "机械大师",
+        "skill": "链锯之塔"
+      }
+    },
+    "机械炮塔": {
+      "multiplier": 1,
+      "cooldown": 0.583,
+      "description_source": {
+        "job": "机械大师",
+        "skill": "炮塔"
+      }
+    }
+  },
+  "炼金圣士": {
+    "寒冰戳刺": {
+      "multiplier": 1.6
+    },
+    "岩浆波流": {
+      "multiplier": 2.8
+    },
+    "岩浆戳刺": {
+      "multiplier": 1.4
+    },
+    "C2H5OH": {
+      "multiplier": 1
+    },
+    "冰光束": {
+      "multiplier": 2.0
+    },
+    "冰雪连天": {
+      "multiplier": 1
+    },
+    "冰柱释放": {
+      "multiplier": 2
+    },
+    "催眠": {
+      "multiplier": 1
+    },
+    "毒池": {
+      "multiplier": 2
+    },
+    "毒气暴击": {
+      "multiplier": 2.0
+    },
+    "毒气聚能": {
+      "multiplier": 1
+    },
+    "轰击": {
+      "multiplier": 1
+    },
+    "混合感染": {
+      "multiplier": 1
+    },
+    "疾病": {
+      "multiplier": 1
+    },
+    "空隙爆破": {
+      "multiplier": 1
+    },
+    "瞒天过海": {
+      "multiplier": 7
+    },
+    "凝固汽油弹": {
+      "multiplier": 1
+    },
+    "泡泡弹": {
+      "multiplier": 1
+    },
+    "喷射": {
+      "multiplier": 1
+    },
+    "三连射": {
+      "multiplier": 3
+    },
+    "旋转爆栗": {
+      "multiplier": 1
+    },
+    "眩晕手榴弹": {
+      "multiplier": 1
+    },
+    "岩浆墙": {
+      "multiplier": 4
+    },
+    "召唤魔法草": {
+      "multiplier": 1
+    }
+  },
+  "药剂师": {
+    "疾病": {
+      "multiplier": 1.5
+    },
+    "毒气暴击": {
+      "multiplier": 2.7
+    },
+    "毒气聚能": {
+      "multiplier": 1.7
+    },
+    "爱情病毒": {
+      "multiplier": 1
+    },
+    "冰雪连天": {
+      "multiplier": 1
+    },
+    "冰柱释放": {
+      "multiplier": 2
+    },
+    "催眠": {
+      "multiplier": 1
+    },
+    "毒池": {
+      "multiplier": 2
+    },
+    "毒气聚能EX": {
+      "multiplier": 1
+    },
+    "寒冰戳刺": {
+      "multiplier": 1
+    },
+    "轰击": {
+      "multiplier": 1
+    },
+    "混合感染": {
+      "multiplier": 1
+    },
+    "空隙爆破": {
+      "multiplier": 1
+    },
+    "瞒天过海": {
+      "multiplier": 7
+    },
+    "凝固汽油弹": {
+      "multiplier": 1
+    },
+    "泡泡弹": {
+      "multiplier": 1
+    },
+    "喷射": {
+      "multiplier": 1.4
+    },
+    "三连射": {
+      "multiplier": 3
+    },
+    "旋转爆栗": {
+      "multiplier": 1
+    },
+    "眩晕手榴弹": {
+      "multiplier": 1
+    },
+    "岩浆波流": {
+      "multiplier": 2.0
+    },
+    "岩浆戳刺": {
+      "multiplier": 1
+    },
+    "岩浆墙": {
+      "multiplier": 3
+    },
+    "召唤魔法草": {
+      "multiplier": 1
+    }
+  },
+  "黑暗萨满": {
+    "束缚之爪": {
+      "multiplier": 1.725
+    },
+    "复仇之手": {
+      "multiplier": 1.4
+    },
+    "狂暴之爪": {
+      "multiplier": 1.4
+    },
+    "幽灵之爪": {
+      "multiplier": 1.495
+    },
+    "鬼魂尖叫": {
+      "multiplier": 9
+    },
+    "混沌阵": {
+      "multiplier": 1
+    },
+    "精神打击": {
+      "multiplier": 1
+    },
+    "精神蔓草": {
+      "multiplier": 1
+    },
+    "绝望针": {
+      "multiplier": 1
+    },
+    "科兹污点": {
+      "multiplier": 1
+    },
+    "傀儡之魂": {
+      "multiplier": 1
+    },
+    "灵魂之风": {
+      "multiplier": 2
+    },
+    "灵魂之门": {
+      "multiplier": 8
+    },
+    "灵魂之纸": {
+      "multiplier": 5
+    },
+    "龙魂": {
+      "multiplier": 1.15
+    },
+    "盘蛇": {
+      "multiplier": 1
+    },
+    "闪电之爪": {
+      "multiplier": 1.3
+    },
+    "完美旋转": {
+      "multiplier": 1
+    },
+    "野兽之灵": {
+      "multiplier": 1
+    },
+    "阴暗之魂": {
+      "multiplier": 1
+    },
+    "幽灵复仇者": {
+      "multiplier": 1.3
+    },
+    "幽灵之怒": {
+      "multiplier": 4
+    },
+    "怨恨之像": {
+      "multiplier": 1
+    },
+    "憎恶之境": {
+      "multiplier": 8
+    },
+    "针刺之风": {
+      "multiplier": 1
+    }
+  },
+  "噬魂者": {
+    "野兽之灵": {
+      "multiplier": 1.5
+    },
+    "盘蛇": {
+      "multiplier": 4.6
+    },
+    "灵魂之门": {
+      "multiplier": 33.6
+    },
+    "复仇之手": {
+      "multiplier": 1
+    },
+    "鬼魂尖叫": {
+      "multiplier": 9
+    },
+    "精神打击": {
+      "multiplier": 1
+    },
+    "精神蔓草": {
+      "multiplier": 1
+    },
+    "绝望针": {
+      "multiplier": 1
+    },
+    "科兹污点": {
+      "multiplier": 1
+    },
+    "苦痛之灵": {
+      "multiplier": 1.333333
+    },
+    "狂暴之爪": {
+      "multiplier": 1
+    },
+    "傀儡之魂": {
+      "multiplier": 1
+    },
+    "灵魂尖叫": {
+      "multiplier": 1
+    },
+    "灵魂之风": {
+      "multiplier": 2
+    },
+    "灵魂之纸": {
+      "multiplier": 8
+    },
+    "龙魂": {
+      "multiplier": 1.15
+    },
+    "闪电之爪": {
+      "multiplier": 1.3
+    },
+    "束缚之爪": {
+      "multiplier": 1
+    },
+    "完美旋转": {
+      "multiplier": 1
+    },
+    "阴暗之魂": {
+      "multiplier": 1
+    },
+    "幽灵复仇者": {
+      "multiplier": 1.3
+    },
+    "幽灵之怒": {
+      "multiplier": 4
+    },
+    "幽灵之爪": {
+      "multiplier": 1
+    },
+    "怨恨之像": {
+      "multiplier": 1
+    },
+    "憎恶之境": {
+      "multiplier": 8
+    },
+    "诅咒状态": {
+      "multiplier": 1,
+      "cooldown": 2,
+      "description": "诅咒伤害魔法攻击力100%，冷却时间2秒。",
+      "element": "暗"
+    },
+    "针刺之风": {
+      "multiplier": 1
+    }
+  },
+  "刀锋舞者": {
+    "草原之舞": {
+      "multiplier": 1.5
+    },
+    "璀璨星光": {
+      "multiplier": 1.5
+    },
+    "小甜甜圆周": {
+      "multiplier": 1.5
+    },
+    "傲慢狂风": {
+      "multiplier": 1.4
+    },
+    "艾云尼风暴": {
+      "multiplier": 1
+    },
+    "暴风雪制造机": {
+      "multiplier": 1
+    },
+    "废除者": {
+      "multiplier": 1
+    },
+    "风车公主": {
+      "multiplier": 3
+    },
+    "弗里兹科之舞": {
+      "multiplier": 1
+    },
+    "幻影之舞": {
+      "multiplier": 1
+    },
+    "黄昏猎人": {
+      "multiplier": 1
+    },
+    "精神打击": {
+      "multiplier": 1
+    },
+    "绝望针": {
+      "multiplier": 1
+    },
+    "傀儡之魂": {
+      "multiplier": 1
+    },
+    "烈风痴狂": {
+      "multiplier": 1.2075
+    },
+    "灵魂之风": {
+      "multiplier": 2
+    },
+    "螺旋冲击": {
+      "multiplier": 1
+    },
+    "迷雾之舞": {
+      "multiplier": 1
+    },
+    "热情似火": {
+      "multiplier": 1
+    },
+    "唐·弗莱德将军": {
+      "multiplier": 1
+    },
+    "完美旋转": {
+      "multiplier": 1
+    },
+    "希尼亚回旋": {
+      "multiplier": 1
+    },
+    "阴暗之魂": {
+      "multiplier": 1
+    },
+    "针刺之风": {
+      "multiplier": 1
+    },
+    "追踪者": {
+      "multiplier": 1
+    }
+  },
+  "灵魂舞者": {
+    "黄昏猎人": {
+      "multiplier": 1.5
+    },
+    "废除者": {
+      "multiplier": 1.8
+    },
+    "唐·弗莱德将军": {
+      "multiplier": 1.4
+    },
+    "追踪者": {
+      "multiplier": 1.4
+    },
+    "艾云尼风暴": {
+      "multiplier": 1
+    },
+    "傲慢狂风": {
+      "multiplier": 1
+    },
+    "草原之舞": {
+      "multiplier": 1
+    },
+    "璀璨星光": {
+      "multiplier": 1
+    },
+    "风车公主": {
+      "multiplier": 3
+    },
+    "弗里兹科之舞": {
+      "multiplier": 1
+    },
+    "广域螫刺": {
+      "multiplier": 1
+    },
+    "幻影之舞": {
+      "multiplier": 1
+    },
+    "精神打击": {
+      "multiplier": 1
+    },
+    "绝望针": {
+      "multiplier": 1
+    },
+    "傀儡之魂": {
+      "multiplier": 1
+    },
+    "灵魂之风": {
+      "multiplier": 2
+    },
+    "螺旋冲击": {
+      "multiplier": 1
+    },
+    "迷雾之舞": {
+      "multiplier": 1
+    },
+    "热情似火": {
+      "multiplier": 1
+    },
+    "完美旋转": {
+      "multiplier": 1
+    },
+    "希尼亚回旋": {
+      "multiplier": 1
+    },
+    "小甜甜圆周": {
+      "multiplier": 1
+    },
+    "阴暗之魂": {
+      "multiplier": 1
+    },
+    "针刺之风": {
+      "multiplier": 1
+    },
+    "执政官": {
+      "multiplier": 1
+    }
+  },
+  "烈": {
+    "移位打击": {
+      "multiplier": 1.5,
+      "element": "火"
+    },
+    "刀锋疾驰": {
+      "multiplier": 1.4,
+      "element": "火"
+    },
+    "风雷震落": {
+      "multiplier": 1.4,
+      "element": "火"
+    },
+    "火焰破坏者": {
+      "multiplier": 1.4,
+      "element": "火"
+    },
+    "阿索尼斯特": {
+      "multiplier": 1
+    },
+    "暗影之手": {
+      "multiplier": 1
+    },
+    "爆发连锁": {
+      "multiplier": 1
+    },
+    "卑鄙手段": {
+      "multiplier": 1
+    },
+    "惩罚": {
+      "multiplier": 1
+    },
+    "火焰核心": {
+      "multiplier": 1
+    },
+    "极度打击": {
+      "multiplier": 1.1
+    },
+    "接纳边缘": {
+      "multiplier": 3
+    },
+    "九齿钉耙": {
+      "multiplier": 10
+    },
+    "灵巧猎手": {
+      "multiplier": 1
+    },
+    "猛踢": {
+      "multiplier": 1
+    },
+    "起始边缘": {
+      "multiplier": 1
+    },
+    "三倍边缘": {
+      "multiplier": 3
+    },
+    "扇之刃": {
+      "multiplier": 6
+    },
+    "天降雨点": {
+      "multiplier": 8
+    },
+    "星形耳钉": {
+      "multiplier": 1
+    },
+    "致残惩罚者": {
+      "multiplier": 1
+    },
+    "致残惩罚者攻击": {
+      "multiplier": 1
+    },
+    "致命狂镰": {
+      "multiplier": 1
+    },
+    "终结": {
+      "multiplier": 33
+    }
+  },
+  "影": {
+    "起始边缘": {
+      "multiplier": 1.5,
+      "element": "暗"
+    },
+    "惩罚": {
+      "multiplier": 1.4,
+      "element": "暗"
+    },
+    "致命狂镰": {
+      "multiplier": 1.4,
+      "element": "暗"
+    },
+    "暗鸦陷阱": {
+      "multiplier": 1
+    },
+    "暗影之手": {
+      "multiplier": 1
+    },
+    "爆发连锁": {
+      "multiplier": 1
+    },
+    "卑鄙手段": {
+      "multiplier": 1
+    },
+    "刀锋疾驰": {
+      "multiplier": 1
+    },
+    "风雷震落": {
+      "multiplier": 1
+    },
+    "火焰核心": {
+      "multiplier": 1
+    },
+    "火焰破坏者": {
+      "multiplier": 1
+    },
+    "极度打击": {
+      "multiplier": 0.8
+    },
+    "接纳边缘": {
+      "multiplier": 3
+    },
+    "九齿钉耙": {
+      "multiplier": 16,
+      "element": "暗"
+    },
+    "九齿钉耙EX": {
+      "multiplier": 16,
+      "element": "暗"
+    },
+    "猛踢": {
+      "multiplier": 1
+    },
+    "三倍边缘": {
+      "multiplier": 3
+    },
+    "扇之刃": {
+      "multiplier": 6
+    },
+    "天昏地暗": {
+      "multiplier": 1
+    },
+    "天降雨点": {
+      "multiplier": 8
+    },
+    "星形耳钉": {
+      "multiplier": 1
+    },
+    "移位打击": {
+      "multiplier": 1
+    },
+    "致残惩罚者": {
+      "multiplier": 1
+    },
+    "终结": {
+      "multiplier": 33
+    }
+  },
+  "曜": {
+    "暴怒": {
+      "multiplier": 1.5
+    },
+    "圆环强击": {
+      "multiplier": 13.23
+    },
+    "圆环强击EX": {
+      "multiplier": 13.23
+    },
+    "阿兹那之约": {
+      "multiplier": 5.4,
+      "element": "暗"
+    },
+    "暗夜爆破": {
+      "multiplier": 1
+    },
+    "暗影聚焦": {
+      "multiplier": 1.2
+    },
+    "暗影之手": {
+      "multiplier": 1
+    },
+    "卑鄙手段": {
+      "multiplier": 1
+    },
+    "查克拉幻影": {
+      "multiplier": 1
+    },
+    "查克拉强击": {
+      "multiplier": 1
+    },
+    "黑暗线条": {
+      "multiplier": 2
+    },
+    "黑暗信念": {
+      "multiplier": 7.5,
+      "cooldown": 125
+    },
+    "幻象攻击": {
+      "multiplier": 19
+    },
+    "猛踢": {
+      "multiplier": 1
+    },
+    "能量环": {
+      "multiplier": 1
+    },
+    "日光焰": {
+      "multiplier": 1.3
+    },
+    "三倍边缘": {
+      "multiplier": 3
+    },
+    "扇之刃": {
+      "multiplier": 6
+    },
+    "星形耳钉": {
+      "multiplier": 1
+    },
+    "血浆迸射": {
+      "multiplier": 1
+    },
+    "幽灵伪装": {
+      "multiplier": 1
+    },
+    "阿兹纳之约": {
+      "multiplier": 5.4,
+      "element": "暗"
+    },
+    "暗影召唤术": {
+      "multiplier": 16,
+      "cooldown": 30,
+      "element": "暗"
+    }
+  },
+  "暗": {
+    "暗夜爆破": {
+      "multiplier": 1.4
+    },
+    "血浆迸射": {
+      "multiplier": 1.4
+    },
+    "幻象攻击": {
+      "multiplier": 20.8
+    },
+    "幻象攻击EX": {
+      "multiplier": 20.8
+    },
+    "阿兹那之约": {
+      "multiplier": 5.4,
+      "element": "暗"
+    },
+    "暗影聚焦": {
+      "multiplier": 1.2
+    },
+    "暗影之手": {
+      "multiplier": 1
+    },
+    "暴怒": {
+      "multiplier": 1
+    },
+    "卑鄙手段": {
+      "multiplier": 1
+    },
+    "查克拉幻影": {
+      "multiplier": 1
+    },
+    "查克拉强击": {
+      "multiplier": 1
+    },
+    "黑暗线条": {
+      "multiplier": 3
+    },
+    "黑暗信念": {
+      "multiplier": 7.5,
+      "cooldown": 125
+    },
+    "黄昏之光": {
+      "multiplier": 20.1
+    },
+    "猛踢": {
+      "multiplier": 1
+    },
+    "能量环": {
+      "multiplier": 1
+    },
+    "三倍边缘": {
+      "multiplier": 3
+    },
+    "扇之刃": {
+      "multiplier": 6
+    },
+    "星形耳钉": {
+      "multiplier": 1
+    },
+    "幽灵伪装": {
+      "multiplier": 1
+    },
+    "圆环强击": {
+      "multiplier": 9.45
+    },
+    "阿兹纳之约": {
+      "multiplier": 5.4,
+      "element": "暗"
+    },
+    "暗影召唤术": {
+      "multiplier": 16,
+      "cooldown": 30,
+      "element": "暗"
+    }
+  },
+  "黑暗复仇者": {
+    "新月之刃": {
+      "multiplier": 3.6
+    },
+    "冲锋连击": {
+      "multiplier": 2
+    },
+    "冲击波": {
+      "multiplier": 1
+    },
+    "刀锋之步": {
+      "multiplier": 1
+    },
+    "刀锋之灭": {
+      "multiplier": 1
+    },
+    "复仇冲击": {
+      "multiplier": 1
+    },
+    "复仇风暴": {
+      "multiplier": 1.3
+    },
+    "黑暗冲浪": {
+      "multiplier": 16,
+      "damage_types": [
+        "P"
+      ]
+    },
+    "黑暗撞击": {
+      "multiplier": 1
+    },
+    "火焰冲刺": {
+      "multiplier": 1.44
+    },
+    "火焰冲击": {
+      "multiplier": 1
+    },
+    "火焰连击": {
+      "multiplier": 1.56
+    },
+    "觉醒": {
+      "multiplier": 1
+    },
+    "觉醒•黑暗之刃": {
+      "multiplier": 18
+    },
+    "灵魂之刃": {
+      "multiplier": 3
+    },
+    "凌空暴击": {
+      "multiplier": 1
+    },
+    "升龙斩": {
+      "multiplier": 1
+    },
+    "跳劈": {
+      "multiplier": 1
+    },
+    "重钩拳": {
+      "multiplier": 1
+    },
+    "重斩": {
+      "multiplier": 1
+    }
+  },
+  "???": {
+    "????EX": {
+      "multiplier": 40,
+      "element": "?",
+      "description": "???????????1???????60%????20?????40??20????????????????????"
+    }
+  },
+  "银色猎人": {
+    "银色猎人": {
+      "multiplier": 1
+    },
+    "二连射": {
+      "multiplier": 2
+    },
+    "多段射击": {
+      "multiplier": 7
+    },
+    "起身踢": {
+      "multiplier": 1.05
+    },
+    "飓风狂射": {
+      "multiplier": 1.15
+    },
+    "瞬间回避": {
+      "multiplier": 1
+    },
+    "银色箭雨": {
+      "multiplier": 8.12,
+      "cooldown": 9
+    },
+    "银色箭雨EX": {
+      "multiplier": 8.12
+    },
+    "瞬步射击": {
+      "multiplier": 1,
+      "cooldown": 5.5
+    },
+    "箭矢风暴": {
+      "multiplier": 11.2,
+      "cooldown": 7.5
+    },
+    "箭矢风暴EX": {
+      "multiplier": 11.2
+    },
+    "银色飞弹": {
+      "multiplier": 7,
+      "cooldown": 6
+    },
+    "银色飞弹EX": {
+      "multiplier": 7
+    },
+    "螺旋飓风": {
+      "multiplier": 1.61,
+      "cooldown": 14
+    },
+    "螺旋飓风EX": {
+      "multiplier": 1.61
+    },
+    "圣弩之境": {
+      "multiplier": 1
+    },
+    "召唤猎鹰": {
+      "multiplier": 1
+    },
+    "猎人翻滚": {
+      "multiplier": 1
+    },
+    "猎人之眼": {
+      "multiplier": 1
+    },
+    "烈风飞腿": {
+      "multiplier": 1
+    },
+    "箭雨突袭": {
+      "multiplier": 1
+    },
+    "自由袭击": {
+      "multiplier": 1.5
+    },
+    "十字弓链": {
+      "multiplier": 1
+    },
+    "陷阱大师": {
+      "multiplier": 1
+    },
+    "捕捉": {
+      "multiplier": 1
+    }
+  }
+}
