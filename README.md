@@ -16,9 +16,9 @@ engine/
   live/                  报文解析、事件匹配、悬浮窗快照
     skill_identity.py      技能身份归一化（实时链路与评分链路共用的最小公共层，不依赖 scoring）
     protocol.py            抓包协议编解码
-    score_sync.py          匿名队伍评分上报
+    capture_hash.py        抓包文件内容哈希（回放缓存键）
     wire/                  协议分体解码器（actor / combat / profile / status）
-  native/                业务服务层（采集、悬浮窗、回放评分、技能身份）
+  native/                业务服务层（采集、悬浮窗、技能身份）
   data/modular/          配装与技能表
   data/profiles/         Boss 技能 / 动作 / 血量档位 / 客户端协议配置
   assets/                图标等静态资源
@@ -45,11 +45,11 @@ version.json             唯一版本真源
 
 ```
 version.json                      ← 只有这里要人改
-   product         = "4.88.0"     打包元数据（包名 / 安装器 / Cargo / pyproject）
-   engine_protocol = "4.88"       运行时握手与前端显示（去掉尾部 .0 后与 product 等价）
+   product         = "5.0.0"     打包元数据（包名 / 安装器 / Cargo / pyproject）
+   engine_protocol = "5.0"        运行时握手与前端显示（x.y.0 会自动去掉末尾 .0）
         │
         ├── 构建期读取（前端）──> app/vite.config.ts 读文件 → define 注入 __APP_VERSION__
-        │                          └─> app/src/appVersion.ts ──> 界面上的 V4.88
+        │                          └─> app/src/appVersion.ts ──> 界面上的 V5.0
         │                          （不经过 package.json，改完 version.json 立即生效）
         │
         ├── python tools/sync_version.py ──> app/package.json
@@ -86,7 +86,7 @@ python tools/sync_version.py --check
 `app/vite.config.ts` 在 dev / build 时**直接读**仓库根的 `version.json`：
 
 - 取 `engine_protocol`（缺失回退 `product`），再去掉尾部 `.0`；
-- 通过 Vite 的 `define` 内联成 `__APP_VERSION__`，`src/appVersion.ts` 用它拼 `V4.88`；
+- 通过 Vite 的 `define` 内联成 `__APP_VERSION__`，`src/appVersion.ts` 用它拼 `V5.0`；
 - 生产产物里是**普通字符串常量**（`grep dist/assets/*.js` 能直接看到），运行时不再读任何文件。
 
 所以：**改 `version.json` → 重启 dev 服务器（或重新 build）就生效**，不需要先跑 sync，
@@ -106,7 +106,7 @@ python tools/sync_version.py --check
 | 3 | `server.py` 的 `_FALLBACK_APP_VERSION` | 前两者都拿不到才有值，正常情况不该发生 |
 
 > 唯一的纯装饰性字面量：`app/src-tauri/tauri.conf.json` 的窗口标题
-> `"DN倒计时工具 V4.88"`。Tauri 配置不支持模板变量，这行只能手改；它不参与
+> `"DN倒计时工具 V5.0"`。Tauri 配置不支持模板变量，这行只能手改；它不参与
 > `/api/health`、不参与更新器判断，改漏了不影响功能，只是标题栏数字旧。
 
 > 恢复 PyInstaller 打包时注意：`version.json` 在包目录外面，spec 的 `datas`
@@ -126,7 +126,7 @@ curl http://127.0.0.1:48710/api/health
 ```
 
 ```json
-{"ok":true,"ready":true,"product":"dragon-nest-battle-platform","version":"4.88",
+{"ok":true,"ready":true,"product":"dragon-nest-battle-platform","version":"5.0",
  "apiRevision":"20261023-countdown-only","apiCapabilities":["capture-control-v1", "..."], "windowFree":true}
 ```
 
@@ -223,3 +223,7 @@ POST /api/npcap/detect | test
 ```
 
 配装、配队、评分、排行、历史记录、导出 CSV、诊断上传等接口与页面已从代码中删除。
+
+**匿名队伍评分上报 / 云端身份同步已整体移除**（2026-10）：不再有任何后台网络请求，
+引擎运行期间不向外发送任何数据。回放缓存仍使用本地 `capture_hash.py` 的内容哈希，
+纯本地计算、不联网。

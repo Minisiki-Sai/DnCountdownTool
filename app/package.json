@@ -1,7 +1,7 @@
 {
   "name": "dragon-nest-countdown",
   "private": true,
-  "version": "4.88.0",
+  "version": "5.0.0",
   "type": "module",
   "engines": {
     "node": ">=22.6"

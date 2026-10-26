@@ -880,7 +880,7 @@ dependencies = [
 
 [[package]]
 name = "dn-countdown"
-version = "4.88.0"
+version = "5.0.0"
 dependencies = [
  "base64 0.22.1",
  "image",

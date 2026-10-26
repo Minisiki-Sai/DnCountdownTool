@@ -10,7 +10,7 @@ import ReplayView from "./views/ReplayView.vue";
 import BuffOverlay from "./components/BuffOverlay.vue";
 import { simulatorApi } from "./services/api";
 import { replayActive, stopReplay } from "./services/replaySource";
-import { APP_NAME, APP_SHORT_NAME, APP_VERSION_LABEL } from "./appVersion";
+import { APP_NAME, APP_SHORT_NAME, APP_AUTHOR, APP_VERSION_LABEL } from "./appVersion";
 import { readGlobalHotkeyConfiguration } from "./utils/globalHotkeys";
 import {
   beginOverlaySession,
@@ -217,7 +217,10 @@ onUnmounted(() => {
         <img src="/app-icon.png" alt="" />
         <span class="frost-brand-copy">
           <strong>{{ APP_SHORT_NAME }}</strong>
-          <span>{{ APP_VERSION_LABEL }} · 抓包倒计时</span>
+          <span class="frost-brand-meta">
+            <span>{{ APP_VERSION_LABEL }}</span>
+            <span class="frost-author">作者：{{ APP_AUTHOR }}</span>
+          </span>
         </span>
       </button>
 

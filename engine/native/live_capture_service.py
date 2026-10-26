@@ -43,7 +43,6 @@ from ..live.replay_normalization import (
 from ..live.identity_cache import (
     CachedPlayerIdentity,
     PersistentPlayerIdentityCache,
-    PlayerIdentityCloudBridge,
 )
 from ..live.dpscap_segments import post_capture_splitter
 from ..live.catch_up import LiveCatchUpPolicy
@@ -242,14 +241,9 @@ class NativeLiveCapture:
             if identity_cache_path is not None
             else None
         )
-        self._identity_cloud_bridge = (
-            PlayerIdentityCloudBridge(
-                self._persistent_identity_cache,
-                self._accept_cloud_identity_bindings,
-            )
-            if self._persistent_identity_cache is not None
-            else None
-        )
+        # 匿名队伍评分上报 / 云端身份同步已整体移除：不再有任何后台网络调用。
+        # 保留该属性为 None，是因为下方多处调用点以 `is not None` 守护。
+        self._identity_cloud_bridge = None
         self._identity_import_thread: threading.Thread | None = None
         # Keep the latest packet-confirmed local-character profile in memory
         # for the lifetime of exactly one game process.  The always-on TCP

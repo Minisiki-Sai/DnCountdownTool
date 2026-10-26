@@ -68,11 +68,11 @@ def decode_version():
     return digest.hexdigest()
 
 def decode_signature(path):
-    from .team_score_sync import capture_content_hash
+    from .capture_hash import capture_content_hash
     return hashlib.sha256((capture_content_hash(Path(path))+decode_version()).encode()).hexdigest()
 
 def signature(path, targets):
-    from .team_score_sync import capture_content_hash
+    from .capture_hash import capture_content_hash
     content = capture_content_hash(Path(path))
     key = hashlib.sha256(json.dumps([content, sorted(targets) if targets is not None else 'all-targets', evidence_version()], ensure_ascii=False).encode()).hexdigest()
     return content, key

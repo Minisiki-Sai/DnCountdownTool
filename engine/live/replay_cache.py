@@ -17,7 +17,7 @@ from typing import Any
 
 from .action_parser import action_parser_mode
 from .aggregator import CombatAggregator
-from .team_score_sync import capture_content_hash
+from .capture_hash import capture_content_hash
 from .version_fingerprint import replay_decoder_fingerprint
 
 

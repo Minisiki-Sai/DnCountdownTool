@@ -1,6 +1,6 @@
 [project]
 name = "dn-countdown"
-version = "4.88.0"
+version = "5.0.0"
 description = "龙之谷 ACT 倒计时工具（增益/减益 + Boss 技能双悬浮窗）"
 requires-python = ">=3.11"
 dependencies = []

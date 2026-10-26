@@ -1,6 +1,6 @@
 [package]
 name = "dn-countdown"
-version = "4.88.0"
+version = "5.0.0"
 description = "DN countdown overlays for Dragon Nest, parsed from Npcap captures"
 authors = ["帅气迷人机智幻"]
 edition = "2021"

@@ -1,6 +1,6 @@
 {
-  "product": "4.88.0",
-  "engine_protocol": "4.88",
+  "product": "5.0.0",
+  "engine_protocol": "5.0",
   "capture_protocol": "576",
-  "note": "唯一版本真源：product 用于打包元数据，engine_protocol 用于运行时握手（两者去掉尾部 .0 后等价）"
+  "note": "唯一版本真源：product 用于打包元数据，engine_protocol 用于运行时握手（x.y.0 形式会自动去掉末尾 .0）"
 }

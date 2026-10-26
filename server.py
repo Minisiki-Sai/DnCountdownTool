@@ -8,6 +8,7 @@ import json
 import multiprocessing
 import os
 import platform
+import re
 import sys
 import threading
 import time
@@ -253,7 +254,7 @@ try:
 except OSError:
     pass
 
-_FALLBACK_APP_VERSION = "4.88"
+_FALLBACK_APP_VERSION = "5.0"
 
 
 def _version_from_file() -> str:
@@ -289,7 +290,9 @@ def _version_from_file() -> str:
         for key in ("engine_protocol", "product"):
             value = str(payload.get(key) or "").strip()
             if value:
-                return value.removesuffix(".0")
+                # 只在三段式 x.y.0 时去掉末尾 .0（4.88.0 -> 4.88）。
+                # 不能无条件 removesuffix(".0")：那样 5.0 会被削成 5。
+                return re.sub(r"^(\d+\.\d+)\.0$", r"\1", value)
     return ""
 
 

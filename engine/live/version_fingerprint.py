@@ -94,7 +94,6 @@ _REPLAY_MODULES = (
 
 _SCORE_MODULES = (
     "engine.mixins.skill_timeline_effects",
-    "engine.live.team_score_sync",
     "engine.job_mechanics",
     "engine.cooldown",
     "engine.native_timeline",
@@ -163,7 +162,6 @@ _SCORE_MODULES = (
     "engine.live.timing_ablation",
     "engine.mechanism_timeline",
     "engine.native.overlay_service",
-    "engine.native.replay_score_service",
     "engine.profile_build_sync",
     "engine.shared",
     "engine.skill_adjustments",

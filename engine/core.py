@@ -75,14 +75,6 @@ from .live.sources import (
 )
 from .live.npcap import find_npcap_dll, set_current_thread_low_priority
 from .live.replay_cache import ReplayDiskCache, replay_cache_identity
-from .live.team_score_cache import TeamScoreDiskCache, team_score_cache_key
-from .live.team_score_sync import (
-    TeamScoreExportRow,
-    capture_content_hash,
-    resolve_score_nest,
-    score_export_job,
-)
-from .live.score_sync import V410ScoreSyncManager
 
 V410_USER_CONFIG_DIR = Path(os.getenv("APPDATA") or Path.home()) / "DragonNestBuildSimulator"
 APP_VERSION_COMPACT = re.sub(r"\D", "", os.getenv("DRAGON_NEST_APP_VERSION", "4.10")) or "410"
@@ -1028,9 +1020,8 @@ from .native.overlay_service import NativeOverlayMixin, bind_host_globals as _bi
 from .native.profile_sync_service import NativeProfileSyncMixin, bind_host_globals as _bind_NativeProfileSyncMixin
 from .native.build_service import NativeBuildMixin, bind_host_globals as _bind_NativeBuildMixin
 from .native.team_service import NativeTeamMixin, bind_host_globals as _bind_NativeTeamMixin
-from .native.replay_score_service import NativeReplayScoreMixin, bind_host_globals as _bind_NativeReplayScoreMixin
 
-class NativeSimulatorCore(NativeCustomTeamMixin, NativeOverlayMixin, NativeProfileSyncMixin, NativeBuildMixin, NativeTeamMixin, NativeReplayScoreMixin):
+class NativeSimulatorCore(NativeCustomTeamMixin, NativeOverlayMixin, NativeProfileSyncMixin, NativeBuildMixin, NativeTeamMixin):
     """Window-free application service for the V4.10 Vue frontend."""
 
     def __init__(self, store: DataStore, calculator: BuildCalculator) -> None:
@@ -1061,8 +1052,6 @@ class NativeSimulatorCore(NativeCustomTeamMixin, NativeOverlayMixin, NativeProfi
         self._score_keys_by_replay: dict[str, str] = {}
         self._score_benchmark_nests: dict[str, str] = {}
         self._replay_disk_cache = ReplayDiskCache()
-        self._team_score_disk_cache = TeamScoreDiskCache()
-        self._score_sync = V410ScoreSyncManager()
         self._auto_glyph_cache: dict[str, list[dict[str, Any]]] = {}
         self._personal_timeline_cache: dict[str, dict[str, Any]] = {}
         self._custom_timeline_cache: dict[str, dict[str, Any]] = {}
@@ -1330,7 +1319,6 @@ class NativeSimulatorCore(NativeCustomTeamMixin, NativeOverlayMixin, NativeProfi
         finally:
             self._shutdown_teammate_projection_worker()
             self.jobs.shutdown()
-            self._score_sync.close()
             reset_timeline_process_pool()
 
     def mechanism_templates(self) -> dict[str, list[dict[str, Any]]]:
@@ -1479,4 +1467,3 @@ _bind_NativeOverlayMixin(globals())
 _bind_NativeProfileSyncMixin(globals())
 _bind_NativeBuildMixin(globals())
 _bind_NativeTeamMixin(globals())
-_bind_NativeReplayScoreMixin(globals())

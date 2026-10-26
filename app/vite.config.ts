@@ -31,7 +31,8 @@ function readVersionSource(): { product: string; runtime: string } {
 }
 
 const VERSION = readVersionSource();
-const APP_VERSION = VERSION.runtime.replace(/\.0$/, "");
+// 只在三段式 x.y.0 时去掉末尾 .0（4.88.0 -> 4.88）；否则 5.0 会被削成 5。
+const APP_VERSION = VERSION.runtime.replace(/^(\d+\.\d+)\.0$/, "$1");
 
 /**
  * 安装包版本取自 package.json / Cargo.toml / tauri.conf.json，
