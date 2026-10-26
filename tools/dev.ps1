@@ -109,16 +109,49 @@ function Write-Step { param([string]$Text) Write-Host "== $Text" -ForegroundColo
 function Write-Note { param([string]$Text) Write-Host "   $Text" -ForegroundColor DarkGray }
 function Write-Warn { param([string]$Text) Write-Host "!! $Text" -ForegroundColor Yellow }
 
+function Test-PnpmUsable {
+    # `pnpm --version` 能过，但真正执行脚本时仍可能因为缺平台原生二进制
+    # （Error: no @pnpm/exe.win32-x64 native binary）而失败。所以必须实测
+    # 一次 run，才敢把它当可用。__pnpm_probe__ 不存在，--if-present 会直接返回。
+    param([string]$PnpmPath, [string]$ProbeDir)
+    $pushed = $false
+    try {
+        Push-Location -LiteralPath $ProbeDir
+        $pushed = $true
+        & $PnpmPath run --if-present __pnpm_probe__ *> $null
+        $code = $LASTEXITCODE
+        return ($code -eq 0)
+    } catch {
+        return $false
+    } finally {
+        if ($pushed) { Pop-Location }
+    }
+}
+
 function Resolve-PnpmPath {
+    # 候选顺序：DN_PNPM 显式指定 → PATH → 常见安装位置 → 内置 node 目录。
+    # 逐个实测可用性，跳过坏掉的那些（否则会出现「pnpm 明明在，却一条命令都跑不动」）。
+    $candidates = New-Object System.Collections.ArrayList
+    if ($env:DN_PNPM) { [void]$candidates.Add($env:DN_PNPM) }
     $cmd = Get-Command pnpm.cmd -ErrorAction SilentlyContinue
-    if ($cmd) { return $cmd.Source }
-    $candidates = @(
-        (Join-Path $env:APPDATA 'npm\pnpm.cmd'),
-        (Join-Path $env:ProgramFiles 'nodejs\pnpm.cmd')
-    )
-    $candidates += @(Get-ChildItem -Path (Join-Path $env:USERPROFILE '.workbuddy\binaries\node\versions') -Filter 'pnpm.CMD' -Recurse -ErrorAction SilentlyContinue | ForEach-Object { $_.FullName })
+    if ($cmd) { [void]$candidates.Add($cmd.Source) }
+    [void]$candidates.Add((Join-Path $env:APPDATA 'npm\pnpm.cmd'))
+    [void]$candidates.Add((Join-Path $env:ProgramFiles 'nodejs\pnpm.cmd'))
+    foreach ($item in @(Get-ChildItem -Path (Join-Path $env:USERPROFILE '.workbuddy\binaries\node\versions') -Filter 'pnpm.CMD' -Recurse -ErrorAction SilentlyContinue)) {
+        [void]$candidates.Add($item.FullName)
+    }
+
+    $seen = @{}
     foreach ($path in $candidates) {
-        if ($path -and (Test-Path -LiteralPath $path)) { return $path }
+        if (-not $path) { continue }
+        $key = $path.ToLowerInvariant()
+        if ($seen.ContainsKey($key)) { continue }
+        $seen[$key] = $true
+        if (-not (Test-Path -LiteralPath $path)) { continue }
+        if (Test-PnpmUsable -PnpmPath $path -ProbeDir $app) {
+            return $path
+        }
+        Write-Warn "跳过不可用的 pnpm：$path（缺原生二进制或装坏了）"
     }
     return $null
 }
@@ -435,7 +468,24 @@ $restartTimes = New-Object System.Collections.ArrayList
 try {
     while ($true) {
         $shell.Refresh()
-        if ($shell.HasExited) { Write-Warn "前端进程已退出（exit=$($shell.ExitCode)）"; break }
+        if ($shell.HasExited) {
+            Write-Warn "前端进程已退出（exit=$($shell.ExitCode)）"
+            # pnpm / tauri 的报错走 stderr，且 exit code 常常还是 0，
+            # 只看退出码会以为「正常结束」。把日志尾部打出来才看得见真因。
+            if (Test-Path -LiteralPath $shellLog) {
+                $tail = @(Get-Content -LiteralPath $shellLog -Tail 15 -ErrorAction SilentlyContinue)
+                if ($tail.Count -gt 0) {
+                    Write-Warn "下面是 .dev\shell.log 的最后 $($tail.Count) 行："
+                    foreach ($line in $tail) { Write-Host "   $line" -ForegroundColor DarkYellow }
+                }
+                if ((Get-Content -LiteralPath $shellLog -Raw -ErrorAction SilentlyContinue) -match 'no @pnpm/exe') {
+                    Write-Warn 'pnpm 安装不完整（缺 @pnpm/exe 原生二进制）。修法二选一：'
+                    Write-Note '  pnpm i -g pnpm@10    # 重装全局 pnpm'
+                    Write-Note ('  $env:DN_PNPM = "<可用的 pnpm.cmd 路径>"    # 或直接指定一个能用的')
+                }
+            }
+            break
+        }
 
         $backend.Refresh()
         if ($backend.HasExited) {

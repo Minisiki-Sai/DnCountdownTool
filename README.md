@@ -165,6 +165,13 @@ powershell -ExecutionPolicy Bypass -File tools\dev.ps1
   探测不到会打印警告；也可用 `DN_MSVC_ROOT` / `DN_SDK_ROOT` / `DN_SDK_VER` 手动指定
 - 适合：调两个悬浮窗的窗口行为、托盘、全局快捷键
 
+> **起不来怎么查**：完整输出在 `.dev\shell.log`；前端进程退出时脚本会把最后 15 行直接打到控制台。
+> 两种常见故障：
+> - `no @pnpm/exe.win32-x64 native binary` —— 全局 pnpm 装坏了。这种 pnpm `--version` 能过，
+>   但任何 `run` 都会失败。脚本会自动跳过并改用可用的那个；也可 `$env:DN_PNPM = "<pnpm.cmd 路径>"` 指定。
+> - `找不到 MSVC 链接器` —— 装 VS Build Tools（勾选「使用 C++ 的桌面开发」），
+>   或用 `DN_MSVC_ROOT` / `DN_SDK_ROOT` / `DN_SDK_VER` 手动指定。
+
 ### 只起后端
 
 ```bash
