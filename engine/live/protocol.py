@@ -1497,6 +1497,70 @@ def decode_v576_boss_skill_starts(
     return tuple(next(iter(by_phase.values()))) if len(by_phase) == 1 else ()
 
 
+_SELF_STATE_MARKER = b"\x13\x54\x00"
+# 服务端状态实例 ID = 技能号 + 该偏移，用来排除「碰巧匹配」的里程碑字节。
+_V576_STATE_INSTANCE_OFFSET = 250_000_000
+
+
+def decode_v576_self_state_applies(
+    payload: bytes,
+    direction: str | None,
+    known_skill_ids: Iterable[int],
+) -> tuple[tuple[int, int], ...]:
+    """Decode server **self-applied** status records (owner is a player).
+
+    梦魇龙巢的换边印记（770008 地脉诅咒）是服务端直接挂在玩家身上的，
+    包里**没有 Boss actor**：
+
+        marker 13 54 00 | flag(u8) | owner(u32) | FF FF FF FF
+                        | skill(u32) | 实例ID(u32, = skill + 250000000) | EffectClass(u32) | ...
+
+    ``owner`` 是玩家，所以 ``decode_v576_boss_skill_starts`` 那条
+    「actor 必须是 Boss」的路永远看不到它。这里用 marker + ``FF FF FF FF``
+    + 实例 ID 三重校验，返回 ``(owner_actor_id, skill_index)``，同包去重。
+    """
+    if (
+        direction not in (None, "server_to_client")
+        or len(payload) < 30
+        or not known_skill_ids
+    ):
+        return ()
+    skills = (
+        known_skill_ids
+        if isinstance(known_skill_ids, (set, frozenset))
+        else frozenset(int(value) for value in known_skill_ids)
+    )
+    if not skills or not _v576_wire_may_contain_marker(
+        payload, (_SELF_STATE_MARKER,), start_offset=9
+    ):
+        return ()
+
+    by_phase: dict[int, list[tuple[int, int]]] = {}
+    for phase in range(len(_V576_BODY_XOR_KEY)):
+        body = _decode_v576_body(payload, phase)
+        rows: list[tuple[int, int]] = []
+        offset = body.find(_SELF_STATE_MARKER, 9)
+        while offset >= 0:
+            if offset + 20 <= len(body) and body[offset + 8:offset + 12] == b"\xff\xff\xff\xff":
+                owner = int.from_bytes(body[offset + 4:offset + 8], "little")
+                skill = int.from_bytes(body[offset + 12:offset + 16], "little")
+                instance = int.from_bytes(body[offset + 16:offset + 20], "little")
+                if (
+                    owner
+                    and skill in skills
+                    and instance == skill + _V576_STATE_INSTANCE_OFFSET
+                ):
+                    rows.append((owner, skill))
+            offset = body.find(_SELF_STATE_MARKER, offset + 1)
+        if rows:
+            by_phase[phase] = rows
+    if not by_phase:
+        return ()
+    # 同一记录可能在多个 phase 下重复命中，取命中最多的一组（并列时取最小 phase）。
+    best_phase = max(sorted(by_phase), key=lambda phase: len(by_phase[phase]))
+    return tuple(dict.fromkeys(by_phase[best_phase]))
+
+
 def decode_v576_boss_actions(
     payload: bytes,
     direction: str | None = None,

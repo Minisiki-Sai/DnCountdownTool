@@ -31,6 +31,9 @@ export const VOICE_RULES = [
   { key: 'sea-ice-bind', nest: 'sea-nightmare', name: '海龙 · 冰捆', ids: [325456] },
   { key: 'sea-shadow-explosion', nest: 'sea-nightmare', name: '海龙 · 黑影爆炸', ids: [325478] },
   { key: 'sea-hp-flight', nest: 'sea-nightmare', name: '海龙 · 飞天预警', ids: [] },
+  // 换边（置换）：770008 地脉诅咒是服务端给玩家自己挂的 self-cast 状态，
+  // 一次两人、约 124 秒一轮。后端已按副本判定后单独发，见 nightmare_swap_voice.py。
+  { key: 'sea-swap', nest: 'sea-nightmare', name: '海龙 · 换边（置换）', ids: [770008] },
 ];
 export function immediateMechanicText(skill: number): string {
   return '';
@@ -53,6 +56,12 @@ export const SEA_MECHANICS: Record<number, { text: string; upcoming: string; coo
   50317: { text: '注意旋风', upcoming: '旋风已好', cooldownMs: 60000, reminderMs: 55000, anchor: 'start' },
   50311: { text: '注意砸地', upcoming: '砸地已好', cooldownMs: 60000, reminderMs: 55000, anchor: 'start' },
   50313: { text: '注意黑洞', upcoming: '黑洞已好', cooldownMs: 60000, reminderMs: 55000, anchor: 'start' },
+  // 换边：抓包实测 121.7 / 123.2 / 124.0 / 124.3 秒，取 124s。
+  // 提前量 30 秒（reminderMs = 124000 - 30000）：换边要跑到法阵再等人，
+  // 20 秒实测不够站位，按用户要求改成倒计时 30 秒就开始播。
+  // text = 触发时的「换边完成」（770008 是两人互换后服务端挂的印记，播报即确认本次已完成）；
+  // upcoming = 距下次 30 秒的「准备换边，倒计时30秒」。两句都有独立录音。
+  770008: { text: '换边完成', upcoming: '准备换边，倒计时30秒', cooldownMs: 124000, reminderMs: 94000, anchor: 'start' },
 };
 export function seaMechanicText(skill: number, upcoming = false): string {
   const rule = SEA_MECHANICS[upcoming ? seaMechanicKey(skill) : skill];
@@ -285,6 +294,9 @@ export function hpAnnouncement(template: number, threshold: number, nest: string
 
 export function voiceModes(rule: typeof VOICE_RULES[number]) {
   if (rule.key === 'classic-bomb-add') return {release:true,warning:true};
+  // 换边：770008 是两人互换后服务端挂的印记 → 触发即播「换边完成」；
+  // 距下次 30 秒再播「准备换边，倒计时30秒」。倒计时由 warning 控 started。
+  if (rule.key === 'sea-swap') return { release: true, warning: true };
   const classic = [...CLASSIC_RULES,...HARD_RULES,...SAND_RULES].find(r => r.key === rule.key);
   if (classic) return { release:classic.release, warning:classic.warning };
   if (rule.key === 'sea-shadow-explosion') return { release: false, warning: true };

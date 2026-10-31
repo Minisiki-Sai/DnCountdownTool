@@ -2,7 +2,7 @@
 /**
  * 语音资源构建期校验。
  *
- * 语音播报是产品核心资源（4 个音色 × 158 条短语 = 722 个 wav，约 53MB）。
+ * 语音播报是产品核心资源（2 个音色 × 160 条短语 = 322 个 wav，约 24MB）。
  * 这些文件走 Git LFS，一旦没 pull 或在搬运时漏掉，前端只会静默降级成
  * 「无声版」——功能不报错、用户只觉得没声音。所以这里在构建前硬性校验：
  *
@@ -17,9 +17,9 @@
  *   # 或
  *   pnpm verify:voices
  *
- * 说明：manifest 里 158 条短语，但 Vivian / Serena 各多 44 个历史音频、
- * Vivi2 / Xiaohe 各多 1 个（`跳` 的旧版本，供 qwenVoiceAssets.test.ts 对比
- * 音量）。这些「多余文件」是刻意保留的，不算错误，只在 verbose 下提示。
+ * 说明：manifest 里 160 条短语，但 Vivi2 / Xiaohe 各多 1 个（`跳` 的旧版本，
+ * 供 qwenVoiceAssets.test.ts 对比音量）。这些「多余文件」是刻意保留的，
+ * 不算错误，只在 verbose 下提示。
  */
 
 import { readFileSync, readdirSync, statSync } from 'node:fs';
@@ -32,7 +32,7 @@ const VOICES_ROOT = join(APP_ROOT, 'public', 'voices');
 const MANIFEST_PATH = join(VOICES_ROOT, 'qwen3', 'manifest.json');
 
 /** 语音资源应有的 wav 总数。搬运/检出的硬性期望值。 */
-const EXPECTED_WAV_COUNT = 722;
+const EXPECTED_WAV_COUNT = 322;
 
 /** 单条语音文件的最小体积（字节）。低于它基本可以断定是 LFS 指针或空文件。 */
 const MIN_WAV_BYTES = 1024;

@@ -37,6 +37,23 @@ test('visual tracker works without any voice settings and filters independently'
   assert.deepEqual(tracker.countdowns(2000, ['sea-ice-eye']), []);
 });
 
+test('swap state keeps its 124s countdown even though it carries recipients', () => {
+  // 换边行的 recipients 只是「哪两个玩家换了位置」的事实记录，不是点名目标，
+  // 不能因此丢掉整条 124 秒倒计时（曾经就是这样，悬浮窗里永远看不到换边）。
+  const tracker = new SkillCountdownTracker();
+  tracker.observe([{ source:'swap', skill:770008, timestamp:0, kind:'swap_state',
+    recipients:[{id:'0x004DA97F'},{id:'0x004EAAE0'}] }], '梦魇海龙');
+  const swap = tracker.countdowns(1000, ['sea-swap']);
+  assert.equal(swap.length, 1);
+  assert.equal(swap[0].ruleKey, 'sea-swap');
+  assert.equal(swap[0].durationMs, 124000);
+  assert.equal(swap[0].remainingMs, 123000);
+  // 真正的点名行（recipients 是被点玩家）仍然不建倒计时。
+  tracker.observe([{ source:'dragon', skill:325447, timestamp:0, templateId:4237034,
+    recipients:[{id:'0x0000009A',job:'影舞者'}] }], '梦魇海龙');
+  assert.deepEqual(tracker.countdowns(1000, ['sea-ice-eye']), []);
+});
+
 test('ready skills persist, recast returns to countdown, death is actor scoped', () => {
   const tracker = new SkillCountdownTracker();
   const selected = ['sea-ice-eye','sea-apocalypse-star'];

@@ -451,7 +451,7 @@ onUnmounted(() => { reset(); window.clearInterval(timer); window.clearInterval(r
           </section>
         </fieldset>
         <label class="voice-field">中文音色<select v-model="settings.voice"><option v-if="!voiceChoices.length" value="">暂无中文音色</option><option v-for="v in voiceChoices" :key="v.key" :value="v.key">{{ v.label }}</option></select></label>
-        <p>四种音色，默认 Vivian（Vivi2.0 与小何2.0 来自豆包 TTS，Vivian / Serena 来自 Qwen3-TTS）。提示语随程序保存，战斗中离线播放，无需 Azure 账号或安装 Windows 音色。新机制提示语需要随版本更新音频。</p>
+        <p>两种音色，默认 Vivi2.0（Vivi2.0 与小何2.0 均来自豆包 TTS，同一套语音包）。提示语随程序保存，战斗中离线播放，无需 Azure 账号或安装 Windows 音色。新机制提示语需要随版本更新音频。</p>
         <details v-if="settings.nests.includes('sea-nightmare')" class="voice-mechanic-notes">
           <summary>查看播报规则</summary>
         <p>冰弹播报统一以“注意拉冰”开头。第一阶段：右向冰弹 → 注意拉冰，三连啄后前往右侧安全区；左向冰弹 → 注意拉冰，三连啄后前往左侧安全区。其他已识别阶段保留原方向规则，阶段未知不播报。按已识别的技能或已验证动作触发；阶段未知不猜测方向。</p>

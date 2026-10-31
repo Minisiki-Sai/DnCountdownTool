@@ -110,6 +110,8 @@
     "325622": {"name": "硬核·飞行冰河·清除增益", "internal_action": "Attack52_FlyGlacier_Start", "clears_player_buffs": true},
     "325641": {"name": "硬核·冰河冲击I·清除增益", "internal_action": "Attack06_GlacialWave", "clears_player_buffs": true},
     "325642": {"name": "硬核·冰河冲击II·清除增益", "internal_action": "Attack06_GlacialWave", "clears_player_buffs": true},
-    "325643": {"name": "硬核·冰河冲击III·清除增益", "internal_action": "Attack06_GlacialWave", "clears_player_buffs": true}
+    "325643": {"name": "硬核·冰河冲击III·清除增益", "internal_action": "Attack06_GlacialWave", "clears_player_buffs": true},
+    "770007": {"name": "审判印记（梦魇龙巢）", "internal_action": "Judge_Mark"},
+    "770008": {"name": "地脉诅咒 / 换边（梦魇龙巢）", "internal_action": "Swap_Side"}
   }
 }

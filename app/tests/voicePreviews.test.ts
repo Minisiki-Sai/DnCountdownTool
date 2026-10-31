@@ -5,8 +5,8 @@ import { voicePreviews, voiceGroups, toggleVoiceGroup } from '../src/utils/voice
 
 test('boss groups are complete, ordered and group toggles preserve other nests', () => {
   const groups = voiceGroups('sea-nightmare');
-  assert.deepEqual(groups.map(g => [g.name,g.rows.length]),[['狮蝎',5],['天启',6],['海龙',7]]);
-  assert.equal(new Set(groups.flatMap(g => g.rows.map(r => r.key))).size,18);
+  assert.deepEqual(groups.map(g => [g.name,g.rows.length]),[['狮蝎',5],['天启',6],['海龙',8]]);
+  assert.equal(new Set(groups.flatMap(g => g.rows.map(r => r.key))).size,19);
   assert.ok(groups.every(g => g.rows.every(r => !r.label.startsWith(`${g.name} · `))));
   const keys = groups[0].rows.map(r => r.key);
   const enabled = toggleVoiceGroup(['classic-claw','sea-ice-bind'],keys,true);

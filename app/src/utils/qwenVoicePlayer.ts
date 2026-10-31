@@ -1,11 +1,10 @@
+// 语音包只保留两个豆包音色（Vivi2.0 / 小何2.0），Vivian、Serena 已移除。
 export const QWEN_VOICES = [
   { key: 'Vivi2', label: 'Vivi2.0 · 清脆女声' },
   { key: 'Xiaohe', label: '小何2.0 · 清晰女声' },
-  { key: 'Vivian', label: 'Vivian · 明亮女声' },
-  { key: 'Serena', label: 'Serena · 温柔女声' },
 ] as const;
 export function qwenVoiceKey(value: string): string {
-  return QWEN_VOICES.some(v => v.key === value) ? value : 'Vivian';
+  return QWEN_VOICES.some(v => v.key === value) ? value : 'Vivi2';
 }
 export function announcementParts(text: string, phrases: Record<string, string>): string[] {
   const keys = Object.keys(phrases).sort((a, b) => b.length - a.length);

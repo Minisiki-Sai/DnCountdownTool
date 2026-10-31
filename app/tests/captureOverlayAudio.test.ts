@@ -49,7 +49,8 @@ function spokenTexts(): { capture: string; text: string; t: number }[] {
 }
 
 test("每个音色目录都在，并且 manifest 与目录一致", () => {
-  assert.ok(voices.length >= 4, `音色只有 ${voices.length} 个`);
+  // 语音包只保留两个豆包音色（Vivi2.0 / 小何2.0）。
+  assert.ok(voices.length >= 2, `音色只有 ${voices.length} 个`);
   for (const voice of voices) {
     assert.ok(existsSync(join(VOICE_ROOT, voice)), `缺少音色目录 ${voice}`);
   }

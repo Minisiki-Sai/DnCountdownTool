@@ -56,7 +56,7 @@ export function readSplitGroupHint(raw: unknown): SplitGroupHint | null {
  * 百分比或召唤物触发的机制倒计时（回放实测：沙龙硬核 t=99s / t=493s 各有一条
  * 怪物出场行被误吞）。
  */
-const STATE_KINDS = new Set(['boss_hp_state', 'boss_hp_threshold', 'monster_spawn']);
+const STATE_KINDS = new Set(['boss_hp_state', 'boss_hp_threshold', 'monster_spawn', 'swap_state']);
 
 export function filterCurrentGroupRows<T extends { templateId?: number; kind?: string }>(
   rows: readonly T[],

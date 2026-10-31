@@ -3394,6 +3394,13 @@ class V576DecoderCoreMixin:
         decoded_for_cast = self.last_decoded_message
         events: list[LiveDpsEvent] = []
         events.extend(tcp_roster_events)
+        # 梦魇龙巢的换边印记是服务端给「玩家自己」挂的状态（self-cast），
+        # 包里没有 Boss actor，走不到下面按 Boss actor 分流的任何一条路。
+        # 它必须先判定副本再单独发，所以放在这里无条件执行；函数内部有
+        # marker 字节预筛，普通包只是一次短搜索。
+        from engine.live.nightmare_swap_voice import publish_nest_swap_state
+
+        publish_nest_swap_state(self, packet)
         if is_tcp:
             profile_probe = self._observe_profile_probe(packet, decoded_for_cast)
             if profile_probe is not None:

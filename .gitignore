@@ -27,6 +27,14 @@ app/node_modules/
 app/src-tauri/target/
 app/src-tauri/gen/
 
+# ---- DN 拆包逆向工作区（本地专用，禁止入库）----
+# 从游戏目录复制出来的 DLL / 提取的中间产物都属于厂商资产，只在本机保留
+.dn-unpack/
+dn-unpack-out/
+dn_pak_index.csv
+*.pak
+*.dnt
+
 # ---- 工具 / 编辑器 ----
 .workbuddy/
 .vscode/

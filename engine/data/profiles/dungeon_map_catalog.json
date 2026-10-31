@@ -20780,6 +20780,60 @@
       ]
     },
     {
+      "map_id": 17861,
+      "official_name": "试炼梦境·海龙萨芬特拉",
+      "display_name": "试炼梦境·海龙萨芬特拉",
+      "name_string_id": 917342,
+      "name_source": "uistring",
+      "map_type": 3,
+      "map_subtype": 1,
+      "category": "巢穴",
+      "content_kind": "nest",
+      "include_build_flag": true,
+      "enter_condition_table_id": 17008,
+      "allow_map_type": 512,
+      "map_sid": 0,
+      "gate_map_ids": [],
+      "tool_names": [
+        "SeaDragonNest_Utmost_1_Practice"
+      ],
+      "grid_directories": [
+        "seadragonnest_utmost_1_practice"
+      ],
+      "grid_resource_found": true,
+      "stage_sets": [
+        {
+          "stage_set_id": 76650,
+          "title": "梦魇龙巢",
+          "stage_set_type": 2
+        }
+      ]
+    },
+    {
+      "map_id": 17862,
+      "official_name": "试炼梦境·海龙萨芬特拉",
+      "display_name": "试炼梦境·海龙萨芬特拉",
+      "name_string_id": 917342,
+      "name_source": "uistring",
+      "map_type": 3,
+      "map_subtype": 1,
+      "category": "巢穴",
+      "content_kind": "nest",
+      "include_build_flag": true,
+      "enter_condition_table_id": 17008,
+      "allow_map_type": 512,
+      "map_sid": 0,
+      "gate_map_ids": [],
+      "tool_names": [
+        "SeaDragonNest_Utmost_Boss_Practice"
+      ],
+      "grid_directories": [
+        "seadragonnest_utmost_boss_practice"
+      ],
+      "grid_resource_found": true,
+      "stage_sets": []
+    },
+    {
       "map_id": 17900,
       "official_name": "抉择之地",
       "display_name": "抉择之地",
@@ -26519,16 +26573,22 @@
       ],
       "include_build_true_map_ids": [
         17008,
-        17009
+        17009,
+        17861,
+        17862
       ],
       "include_build_false_map_ids": [],
       "tool_names": [
         "SeaDragonNest_Utmost_1",
-        "SeaDragonNest_Utmost_Boss"
+        "SeaDragonNest_Utmost_Boss",
+        "SeaDragonNest_Utmost_1_Practice",
+        "SeaDragonNest_Utmost_Boss_Practice"
       ],
       "all_map_ids": [
         17008,
-        17009
+        17009,
+        17861,
+        17862
       ]
     },
     {

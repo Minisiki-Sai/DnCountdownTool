@@ -48,7 +48,7 @@ test('both laser directions share selection, speech and one actor-scoped cooldow
 test('nightmare announcements are grouped by boss with stable preference keys', () => {
   const rows = VOICE_RULES.filter(r => r.nest === 'sea-nightmare');
   assert.deepEqual(rows.map(r => r.name.split(' · ')[0]), [
-    ...Array(5).fill('狮蝎'), ...Array(6).fill('天启'), ...Array(7).fill('海龙'),
+    ...Array(5).fill('狮蝎'), ...Array(6).fill('天启'), ...Array(8).fill('海龙'),
   ]);
   assert.equal(rows.find(r => r.key === 'sea-breath')?.name, '海龙 · 拉冰');
   assert.equal(rows.find(r => r.key === 'sea-hp-flight')?.name, '海龙 · 飞天预警');
@@ -317,4 +317,31 @@ test('multi-selection filters nests and skills independently', () => {
   assert.ok(voiceRule(34849, '黑龙经典', s));
   assert.equal(voiceRule(34855, '黑龙经典', s), undefined);
   assert.equal(voiceRule(735017, '黑龙硬核', s), undefined);
+});
+
+test('swap state (770008) arms a 124s countdown but only speaks 30s ahead', () => {
+  const s = normalizeVoiceSettings({enabled:true});
+  const rule = voiceRule(770008, '梦魇龙巢（海龙）', s);
+  assert.equal(rule?.key, 'sea-swap');
+  // 其他副本不认这条，避免 source 是玩家时被误播。
+  assert.equal(voiceRule(770008, '黑龙经典', s), undefined);
+  assert.equal(seaMechanicText(770008), '换边完成');
+  assert.equal(seaMechanicText(770008, true), '准备换边，倒计时30秒');
+  assert.deepEqual(
+    voiceModes({key:'sea-swap',nest:'sea-nightmare',name:'海龙 · 换边（置换）',ids:[770008]}),
+    {release:true,warning:true},
+  );
+
+  // 语音：触发即播「换边完成」；距下次 30 秒播预警（reminderMs 94000 = 124000 - 30000）。
+  const warn = new SeaReminderClock();
+  warn.started(770008, 0, 'swap');
+  assert.deepEqual(warn.due(93000), []);
+  assert.deepEqual(warn.due(94000), ['准备换边，倒计时30秒']);
+
+  // 悬浮窗：整段 124 秒倒计时。
+  const cool = new SeaReminderClock('cooldown');
+  cool.started(770008, 0, 'swap');
+  assert.equal(cool.countdowns(0)[0]?.durationMs, 124000);
+  assert.deepEqual(cool.countdowns(123000)[0]?.ready, false);
+  assert.deepEqual(cool.countdowns(124000)[0]?.ready, true);
 });

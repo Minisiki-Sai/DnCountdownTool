@@ -85,6 +85,11 @@ export function voicePreviews(rule: typeof VOICE_RULES[number]) {
     option('三阶段·右侧', seaBreathText(325430,4237023)),
   ];
   if (rule.key === 'sea-hp-flight') return [option('66%／56%', '马上飞天、注意躲避龙息消灭暗影'), option('46%／36%／26%／16%／6%', '马上飞天、注意上炮')];
+  // 换边两句都有独立录音：触发时的「换边完成」+ 距下次 30 秒的预警。
+  if (rule.key === 'sea-swap') return [
+    option('换边完成', '换边完成'),
+    option('倒计时 30 秒', '准备换边，倒计时30秒'),
+  ];
   if (rule.key === 'sea-minotaur') return [option('出现', '速击杀牛头怪'), option('即将出现（地狱犬85/65/45/25%）', '牛头怪即将出现')];
   if (rule.key === 'sea-apocalypse-rotating-laser') return [option('顺时针',seaMechanicText(50408)),option('逆时针',seaMechanicText(50409)),option('冷却预警',seaMechanicText(50408,true))];
   const text = seaMechanicText(rule.ids[0]);

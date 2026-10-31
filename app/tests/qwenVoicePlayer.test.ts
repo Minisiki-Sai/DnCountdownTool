@@ -4,12 +4,11 @@ import { QWEN_VOICES, qwenVoiceKey, announcementParts, QwenVoicePlayer } from '.
 
 test('bundled Qwen speaker keys, migrate native preferences', () => {
   const keys = QWEN_VOICES.map(v => v.key);
-  assert.deepEqual(keys, ['Vivi2', 'Xiaohe', 'Vivian', 'Serena']);
+  assert.deepEqual(keys, ['Vivi2', 'Xiaohe']);
   for (const key of keys) assert.equal(qwenVoiceKey(key), key, `${key} must not fall back`);
-  assert.equal(qwenVoiceKey('Microsoft Huihui'), 'Vivian');
-  assert.equal(qwenVoiceKey(''), 'Vivian');
-  assert.equal(qwenVoiceKey('Uncle_Fu'), 'Vivian', 'removed speaker falls back');
-  assert.equal(qwenVoiceKey('Dylan'), 'Vivian', 'removed speaker falls back');
+  // 旧版本存过的音色已从语音包移除，统一迁到默认的 Vivi2.0。
+  for (const legacy of ['Vivian', 'Serena', 'Microsoft Huihui', '', 'Uncle_Fu', 'Dylan'])
+    assert.equal(qwenVoiceKey(legacy), 'Vivi2', `${legacy || '(empty)'} falls back to Vivi2`);
 });
 
 test('stop cancels pending load; warm cache plays without network; no backlog', async () => {
@@ -38,16 +37,16 @@ test('stop cancels pending load; warm cache plays without network; no backlog', 
   }) as typeof fetch;
   try {
     const player = new QwenVoicePlayer('/voices/');
-    const pending = player.play(['跳'], 'Vivian', 0.4, true);
+    const pending = player.play(['跳'], 'Vivi2', 0.4, true);
     await new Promise(resolve => setImmediate(resolve));
     player.stop(); release(); await pending;
     assert.equal(starts, 0);
-    await player.warm('Vivian');
+    await player.warm('Vivi2');
     const before = requests;
-    await player.play(['跳'], 'Vivian', 0.4, true);
+    await player.play(['跳'], 'Vivi2', 0.4, true);
     assert.equal(starts, 1); assert.equal(requests, before);
     assert.equal(gains[0]?.value, 0.4);
-    await player.play(['跳'], 'Vivian', 0.4, false);
+    await player.play(['跳'], 'Vivi2', 0.4, false);
     assert.equal(starts, 2);
     assert.equal(stops, 0); // Live alerts overlap without cancelling the first.
     player.dispose(); assert.equal(stops, 2);
@@ -83,11 +82,11 @@ test('independent alerts overlap; fragments of one sentence stay ordered', async
     : { ok: true, arrayBuffer: async () => new ArrayBuffer(0) }) as typeof fetch;
   try {
     const player = new QwenVoicePlayer('/voices/');
-    await player.warm('Vivian');
-    await player.play(['注意拉冰，前往龙左侧安全区', '跳'], 'Vivian', 0.8, false);
+    await player.warm('Vivi2');
+    await player.play(['注意拉冰，前往龙左侧安全区', '跳'], 'Vivi2', 0.8, false);
     assert.deepEqual(starts.slice().sort((a,b) => a-b), [10, 10, 11]);
     assert.equal(stops, 0);
-    await player.play(['跳'], 'Vivian', 0.8, false);
+    await player.play(['跳'], 'Vivi2', 0.8, false);
     assert.equal(starts.at(-1), 10);
     assert.equal(stops, 0);
     player.dispose();
@@ -120,7 +119,7 @@ test('an uncached slow phrase does not hold another independent alert', async ()
   }) as typeof fetch;
   const player = new QwenVoicePlayer('/voices/');
   try {
-    const pending = player.play(['注意拉冰', '跳'], 'Vivian', .8, false);
+    const pending = player.play(['注意拉冰', '跳'], 'Vivi2', .8, false);
     await new Promise(resolve => setImmediate(resolve));
     assert.deepEqual(starts, [10]);
     release();

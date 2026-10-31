@@ -20,6 +20,15 @@ export type SkillCountdownSnapshot = { rows: SkillCountdown[]; publishedAt: numb
 
 type CountdownEvent = { source: string; skill: number; timestamp: number; kind?: string;
   templateId?: number; hpPercent?: number; confirmedEndTimestamp?: number; recipients?:unknown[] };
+/**
+ * 带 `recipients` 的行默认当「点名」处理：那串 ID 是被点到的玩家，不是技能起手，
+ * 拿它建倒计时会让点名凭空多出一行。
+ *
+ * 换边（`swap_state`）是例外：它的 recipients 只是「这一轮哪两个玩家换了位置」的
+ * 事实记录（`nightmare_swap_voice.py`），事件本身就是一次起手，必须建 124 秒计时器。
+ * 以前这里只看 `recipients` 的长度，换边整条被跳过 —— 表现是悬浮窗永远没有换边倒计时。
+ */
+const COUNTDOWN_RECIPIENT_KINDS = new Set(['swap_state']);
 /** Visual timers deliberately do not read voice-enabled or voice-selection preferences. */
 export class SkillCountdownTracker {
   private reminders = new SeaReminderClock('cooldown');
@@ -48,7 +57,8 @@ export class SkillCountdownTracker {
     for (const row of rows) {
       if (row.kind === 'boss_hp_state' || row.kind === 'boss_hp_threshold') {
         if (row.hpPercent !== undefined) this.reminders.health(row.templateId || 0, row.hpPercent, row.timestamp, row.source);
-      } else if (SEA_MECHANICS[row.skill]?.cooldownMs !== undefined && row.confirmedEndTimestamp === undefined && !row.recipients?.length) {
+      } else if (SEA_MECHANICS[row.skill]?.cooldownMs !== undefined && row.confirmedEndTimestamp === undefined
+        && (!row.recipients?.length || COUNTDOWN_RECIPIENT_KINDS.has(String(row.kind || '')))) {
         const key = `${row.source}:${seaMechanicKey(row.skill)}`;
         if (row.timestamp - (this.recent.get(key) ?? -Infinity) < 10000) continue;
         this.recent.set(key, row.timestamp);
