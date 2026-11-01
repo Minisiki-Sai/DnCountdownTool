@@ -70,18 +70,28 @@ class VoiceSignalFeed:
             return list(self._rows)
 
     def retired_sources(self, now_ms: int, exempt_templates=()) -> list[str]:
-        """血量贴地后彻底不再刷新的 Boss —— 视为已离场。
+        """血量不再刷新、且彻底没有新行的 Boss —— 视为已离场。
 
         客户端在 Boss 死亡的那一刻就停止更新血条，最后一条血量常常停在
         0.0x%（梦魇海龙实测：审判者天启停在 156428/900000000 = 0.017%），
         于是「HP 归零」这条规则永远等不到。不补这一条，它放过的技能会一直
         以「已好」挂在悬浮窗里，直到下一次会话。
 
-        两档，都是「血量已经贴地 + 不再刷新」：
+        两档，都只看「安静了多久」：
 
         - ≤0.5% 且安静 20 秒：正常残血死亡（服务器没补 0 包）。
-        - ≤5% 且安静 180 秒：阶段结束/换形态后这类 Boss 也会停更
-          （P2 的空中海龙停在 0.9%，之后再没有任何血量包）。
+        - ≤50% 且安静 180 秒：阶段结束/换形态后会停更（P2 空中海龙停在 0.9%），
+          以及**客户端在 Boss 死前就停止刷血**的情况 —— 实测梦魇海龙第一关的
+          天启最后一条停在 19.96%，之后再没有任何包，只按「贴地」判就永远等
+          不到它离场，它放过的技能会一直挂到冷却结束再念一句。
+
+        两档都限定在「血量已经掉过过半」。另一侧还没开打的 Boss 血量停在 100%，
+        会长时间既不刷新也不放技能（先集火天启、狮蝎那边空着是常见打法），
+        没有这个门槛就会把它判成离场、之后再打它整场不播。
+
+        ``last_active`` 已经把这个 Boss 的**技能行**也算进去，所以还在放技能
+        的不会被判掉；剩下唯一风险是「3 分钟纯演出、既无血量也无技能」，
+        实测没有出现过，且代价只是倒计时重建一次。
 
         ``exempt_templates`` 里的模板永不判离场：场景 Boss（梦魇海龙 P2 的空中
         海龙 4237034）任何玩家都选不中，血量长期停在 0.9%，全靠技能行维持
@@ -126,9 +136,10 @@ class VoiceSignalFeed:
                 percent = current_hp * 100.0 / total_hp
                 last_active = max(int(stamp or 0), last_row.get(str(source), 0))
                 quiet = clock - last_active
-                if (percent <= 0.5 and quiet >= 20_000) or (
-                    percent <= 5.0 and quiet >= 180_000
-                ):
+                # 只对「被打掉过半」的实体做静默判定：另一侧还没开打的 Boss 血量
+                # 停在 100%，会长时间既不刷新也不放技能（梦魇海龙第一关就是先集火
+                # 天启、狮蝎那边空着），不能把它判成离场。
+                if percent <= 50.0 and quiet >= (20_000 if percent <= 0.5 else 180_000):
                     retired.append(str(source))
         return sorted(retired)
 
@@ -166,8 +177,12 @@ class VoiceSignalFeed:
         # Share the audited entity denominator with statistics; never use a
         # stage damage budget or a separately hard-coded voice maximum.
         from .nest_hp_reference import profiles
-        maximum = next((p['entities'].get(template, {}).get('full_hp')
-                        for p in profiles() if p['label'] == '梦魇海龙'), None) if template in {'4235447','4237023','4237012'} else None
+        # 用 audit 表里该副本声明的**全部**实体，不再枚举三个白名单模板：
+        # 狮蝎（4235448，full_hp 10.8 亿）原先被排除在外，于是一条血量行都不发，
+        # 前端完全拿不到它的血量，死亡只能等服务端补 0 包 —— 0 包一丢，它放过
+        # 的技能就会一直挂在悬浮窗上（实测 00:54 那场狮蝎连 0 包都没有）。
+        sea_dragon = next((p for p in profiles() if p['label'] == '梦魇海龙'), None)
+        maximum = (sea_dragon or {}).get('entities', {}).get(template, {}).get('full_hp')
         if template in CLASSIC_THRESHOLDS:
             maximum = next((p['entities'].get(template, {}).get('full_hp')
                             for p in profiles() if p['label'] == '黑龙经典'), None)
@@ -194,8 +209,13 @@ class VoiceSignalFeed:
         base = dict(source=key, skill=0, timestamp=event.timestamp_ms, templateId=int(template), hpPercent=percent)
         if previous is None or band != old_band or (percent == 0 and previous != 0):
             self.publish(dict(base, kind='boss_hp_state', healthBand=f'{band}:{percent == 0}'))
-        thresholds = ([60,42] if template == '4235447' else [85,65,45,25] if template == '4237012'
-                      else [66,62,61,56,52,46,42,36,32,26,22,16,6])
+        # 只有这三个模板有阈值播报规则：天启 60/42、地狱犬 85/65/45/25、海龙本体
+        # 逐段。其余实体（狮蝎、福根、海龙其他形态）只要血量状态行 —— 不显式收口
+        # 的话狮蝎会落到 else 分支，套上海龙那张 13 档表，白白多出一串阈值行。
+        thresholds = ([60, 42] if template == '4235447'
+                      else [85, 65, 45, 25] if template == '4237012'
+                      else [66, 62, 61, 56, 52, 46, 42, 36, 32, 26, 22, 16, 6] if template == '4237023'
+                      else [])
         thresholds = CLASSIC_THRESHOLDS.get(template, thresholds)
         thresholds = HARD_THRESHOLDS.get(template, thresholds)
         thresholds = SAND_THRESHOLDS.get(template, thresholds)

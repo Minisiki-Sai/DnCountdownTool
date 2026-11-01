@@ -128,6 +128,19 @@ const EMPTY_RESULT: Omit<VoiceBatchResult, "reset" | "skipped" | "countdownsClea
 export const STALE_WINDOW_MS = 6000;
 export const FRESH_WINDOW_S = 5;
 export const REPEAT_WINDOW_MS = 10000;
+/** hint 空档（本机没在打登记 Boss）时，最多沿用上一次判定多久。 */
+export const STICKY_HINT_WINDOW_S = 60;
+
+/**
+ * 这个 Boss 在不在本机播报白名单里。
+ *
+ * `hint` 为空表示「识别不出主目标 → 不过滤」，恒真。
+ */
+function focusIncludes(hint: SplitGroupHint | null, templateId: unknown): boolean {
+  const focus = focusTemplates(hint);
+  if (!focus.length) return true;
+  return focus.includes(Number(templateId) || 0);
+}
 
 export class VoiceBatchEngine {
   readonly reminders = new SeaReminderClock();
@@ -139,6 +152,10 @@ export class VoiceBatchEngine {
 
   private recent = new Map<string, number>();
   private lastFocusTemplates: number[] = [];
+  /** 上一次拿到的完整 hint，以及拿到它的时刻/副本；用于空档沿用。 */
+  private lastHint: SplitGroupHint | null = null;
+  private lastHintAt = -Infinity;
+  private lastHintNest = "";
   private session = "";
   private sequence = 0;
 
@@ -147,6 +164,9 @@ export class VoiceBatchEngine {
     this.session = "";
     this.sequence = 0;
     this.lastFocusTemplates = [];
+    this.lastHint = null;
+    this.lastHintAt = -Infinity;
+    this.lastHintNest = "";
     this.recent.clear();
     this.clearAllClocks();
   }
@@ -227,13 +247,42 @@ export class VoiceBatchEngine {
     const rows = (meta.voiceEvents || []) as VoiceEventRow[];
     const latest = rows.length ? Math.max(...rows.map((row) => row.sequence)) : 0;
     // 白名单（focus）：语音一个开关、悬浮窗一个开关各管各的。关掉任一个就拿到
-    // 完整事件流；识别不出主目标时 hint 为 null，等于不过滤。
-    const hint = readSplitGroupHint(meta.focusGroup ?? meta.splitGroup);
+    // 完整事件流。
+    //
+    // 后端在本机 15 秒没打到登记 Boss 时给 null（语义是「选不出来就别过滤」）。
+    // 但空档里放行对侧技能行会**建出对方那只的倒计时**，而 leavingFocus 在
+    // focus 为空时按设计返回空数组，于是这些错行既不会被 observe 拦下、也不会
+    // 被清理，要一直挂到冷却结束、并在到期时念一句「XX已好」——实测一段 3.2 秒
+    // 的空档能让天启的六芒星在狮蝎侧挂满 80 秒。
+    //
+    // 所以空档时沿用上一次判定：它本来就是「最后一次能确定的正在打谁」。换会话、
+    // 换副本、或空档超过 STICKY_HINT_WINDOW_S 就放弃沿用，避免把上一只的白名单
+    // 套到新的战斗上。
+    const sessionId = String(meta.sessionId || "");
+    const elapsedSeconds = meta.elapsedSeconds || 0;
+    // 换记录/换统计：上一场的 focus 不能带过来（elapsedSeconds 会从 0 重算）。
+    if (this.session !== sessionId) {
+      this.lastHint = null;
+      this.lastHintAt = -Infinity;
+      this.lastHintNest = "";
+    }
+    const liveHint = readSplitGroupHint(meta.focusGroup ?? meta.splitGroup);
+    const stickyHint = liveHint === null
+      && this.session === sessionId
+      && this.lastHintNest === options.nest
+      && elapsedSeconds - this.lastHintAt <= STICKY_HINT_WINDOW_S
+      ? this.lastHint
+      : null;
+    const hint = liveHint ?? stickyHint;
+    if (liveHint) {
+      this.lastHint = liveHint;
+      this.lastHintAt = elapsedSeconds;
+      this.lastHintNest = options.nest;
+    }
     this.applyBossLifecycle(meta.retiredBossIds, hint, options);
     const voiceRows = options.settings.splitBossOnly ? filterCurrentGroupRows(rows, hint) : rows;
     const visualRows = options.visual.splitBossOnlyCurrent ? filterCurrentGroupRows(rows, hint) : rows;
 
-    const sessionId = String(meta.sessionId || "");
     if (this.session !== sessionId) {
       // 首包只立状态，绝不补播历史（换记录/刚打开页面时尤其明显）。
       this.reminders.clear();
@@ -274,7 +323,7 @@ export class VoiceBatchEngine {
       };
     }
 
-    const elapsedMs = (meta.elapsedSeconds || 0) * 1000;
+    const elapsedMs = elapsedSeconds * 1000;
     const isFresh = (row: VoiceEventRow) =>
       options.wallClockMs / 1000 - row.observedAt <= FRESH_WINDOW_S &&
       elapsedMs - row.timestamp <= STALE_WINDOW_MS;
@@ -362,12 +411,18 @@ export class VoiceBatchEngine {
         if (row.hpPercent !== undefined)
           this.reminders.health(row.templateId || 0, row.hpPercent, row.timestamp, row.source);
         if (row.kind === "boss_hp_threshold") {
-          const text = hpAnnouncement(
-            row.templateId || 0,
-            row.threshold || 0,
-            options.nest,
-            options.settings as never,
-          );
+          // 血量阈值是**全团事件**：服务端按 Boss 血量下发，队友在另一侧把血打到
+          // 60%/42%，你这边一样收得到。梦魇海龙这两个阈值念的又恰好是技能名
+          // （「召唤触手已好」「六芒星已好」），不按 focus 掐掉就会串到对侧组。
+          // 状态仍然写进 reminders（那是事实），只是不出声。
+          const text = (!options.settings.splitBossOnly || focusIncludes(hint, row.templateId))
+            ? hpAnnouncement(
+              row.templateId || 0,
+              row.threshold || 0,
+              options.nest,
+              options.settings as never,
+            )
+            : '';
           if (text) hpTexts.push(text);
         }
         continue;
