@@ -11,7 +11,12 @@ import {
   enabledOverlayWindowLabels,
   readBuffOverlaySettings,
 } from "../../utils/buffOverlaySettings";
-import { writeCaptureToggles } from "../../utils/captureToggles";
+import {
+  CAPTURE_TOGGLE_FALLBACK_LABELS,
+  readCaptureToggles,
+  resolveCaptureToggleLabels,
+  writeCaptureToggles,
+} from "../../utils/captureToggles";
 
 const CAPTURE_NOTICE_MS = 900;
 const TARGET_SELECTION_STORAGE_KEY = "dragon-nest-v420-buff-overlay-enabled";
@@ -34,8 +39,13 @@ export function useLiveCapture() {
   const capture = ref<CaptureStatus | null>(null);
   const loading = ref(false);
   const error = ref("");
-  const captureToggles = ref<Record<string, boolean>>({});
-  const captureToggleLabels = ref<Record<string, string>>({});
+  // 首帧就有两张卡：缓存值 + 内置标签。后端应答后用权威值覆盖。
+  const captureToggles = ref<Record<string, boolean>>(
+    readCaptureToggles() as Record<string, boolean>,
+  );
+  const captureToggleLabels = ref<Record<string, string>>({
+    ...CAPTURE_TOGGLE_FALLBACK_LABELS,
+  });
   const overlaySettingsOpen = ref(false);
   const overlayOptions = ref<BuffOverlayStatus["buffOptions"]>([]);
   const overlaySettings = ref<BuffOverlaySettings>(readBuffOverlaySettings());
@@ -165,16 +175,39 @@ export function useLiveCapture() {
     }
   }
 
+  /**
+   * 拉首页两个总开关的权威值/标签。
+   *
+   * 以前只在 `onMounted` 调一次，失败就算了 —— 但子组件的 mounted 比
+   * `App.vue` 的 health 重试更早，首次启动时后端 48710 往往还没 bind，
+   * 这个请求会直接 ECONNREFUSED。于是两张卡永久空白，直到重开窗口。
+   * 现在失败不致命（已有兜底标签），并交给 1 秒轮询继续补拉。
+   */
+  let toggleLoadInFlight = false;
+  let toggleLoadAuthoritative = false;
+
   async function loadCaptureToggles() {
+    if (toggleLoadInFlight) return;
+    toggleLoadInFlight = true;
     try {
       const payload = await simulatorApi.captureToggles();
-      captureToggles.value = payload.toggles || {};
-      captureToggleLabels.value = payload.labels || {};
+      const resolved = resolveCaptureToggleLabels(payload.labels);
+      captureToggles.value = payload.toggles || captureToggles.value;
+      captureToggleLabels.value = resolved.labels;
+      toggleLoadAuthoritative = resolved.authoritative;
       // 窗口显隐、发布器、热键都读这份缓存（它们拿不到网络上下文）。
       writeCaptureToggles(captureToggles.value);
     } catch {
-      // Keep the panel usable while the core is still starting.
+      // 后端还没起来：保留兜底标签与缓存值，下一次轮询再试。
+    } finally {
+      toggleLoadInFlight = false;
     }
+  }
+
+  /** 后端还没应答过就继续补拉；已应答则彻底停下，不产生额外请求。 */
+  function retryCaptureToggles() {
+    if (toggleLoadAuthoritative || toggleLoadInFlight) return;
+    void loadCaptureToggles();
   }
 
   async function setCaptureToggle(key: string, enabled: boolean) {
@@ -183,7 +216,9 @@ export function useLiveCapture() {
     try {
       const payload = await simulatorApi.setCaptureToggles(captureToggles.value);
       captureToggles.value = payload.toggles || captureToggles.value;
-      captureToggleLabels.value = payload.labels || captureToggleLabels.value;
+      const resolved = resolveCaptureToggleLabels(payload.labels);
+      captureToggleLabels.value = resolved.labels;
+      if (resolved.authoritative) toggleLoadAuthoritative = true;
       writeCaptureToggles(captureToggles.value);
       // 总开关只管「显示」：关掉立即隐藏该类悬浮窗，重新打开立即恢复。
       // 语音播报走独立事件流，不受这里影响。
@@ -291,7 +326,11 @@ export function useLiveCapture() {
   onMounted(() => {
     void refreshCapture();
     void loadCaptureToggles();
-    captureTimer = window.setInterval(() => void refreshCapture(), 1000);
+    captureTimer = window.setInterval(() => {
+      void refreshCapture();
+      // 同一个 1 秒节拍顺带补拉总开关：后端应答过之后这里直接 return。
+      retryCaptureToggles();
+    }, 1000);
     window.addEventListener("dragon-nest-live-hotkey-state", onHotkeyState);
   });
 

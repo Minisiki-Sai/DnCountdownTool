@@ -295,6 +295,18 @@ Get-ChildItem -LiteralPath $releaseDir -Filter *.dll -File -ErrorAction Silently
     Copy-Item -LiteralPath $_.FullName -Destination (Join-Path $outFull $_.Name) -Force
 }
 
+# 使用说明：源文件是仓库根的 README.md，包内另存为「使用说明.txt」——
+# .md 在没装 Markdown 阅读器的机器上双击没有默认关联，.txt 一定打得开。
+# 必须显式指定 -Encoding UTF8，否则 PS 5.1 会按 ANSI 读，中文变乱码。
+$readmeSource = Join-Path $root 'README.md'
+if (Test-Path -LiteralPath $readmeSource) {
+    $readmeText = Get-Content -LiteralPath $readmeSource -Raw -Encoding UTF8
+    [IO.File]::WriteAllText((Join-Path $outFull '使用说明.txt'), $readmeText, (New-Object Text.UTF8Encoding($true)))
+    Write-Step '已附带 使用说明.txt'
+} else {
+    Write-Note ('没有 ' + $readmeSource + '：包内不带使用说明。')
+}
+
 $runtimeOut = Join-Path $outFull 'runtime'
 $releaseId = ([guid]::NewGuid().ToString('N')).Substring(0, 12)
 $engineOut = Join-Path $runtimeOut ('engines\' + $releaseId)
@@ -315,31 +327,94 @@ $json = ($selection | ConvertTo-Json -Compress)
 [IO.File]::WriteAllText((Join-Path $engineOut 'engine-release.json'), $json, (New-Object Text.UTF8Encoding($false)))
 [IO.File]::WriteAllText((Join-Path $runtimeOut 'active-engine.json'), $json, (New-Object Text.UTF8Encoding($false)))
 
-$npcap = Join-Path $root 'third_party\npcap\npcap-1.88.exe'
-if (Test-Path -LiteralPath $npcap) {
-    New-Item -ItemType Directory -Path (Join-Path $outFull 'third_party\npcap') -Force | Out-Null
-    Copy-Item -LiteralPath $npcap -Destination (Join-Path $outFull 'third_party\npcap\npcap-1.88.exe') -Force
-    Write-Step '已附带 Npcap 安装包'
+# --- Npcap 安装包（可选）----------------------------------------------------
+# repo 里放 third_party\npcap\*.exe，打包时整个目录带走；启动器在机器上没装
+# Npcap 时直接调它，装完再启动客户端。
+#
+# 许可提醒：Npcap 免费版 EULA 写着 "may be used (but not externally
+# redistributed)"，随产品外部分发需要 Nmap Project 的 OEM 再分发许可。
+$npcapSource = Join-Path $root 'third_party\npcap'
+$npcapInstaller = ''
+if (Test-Path -LiteralPath $npcapSource) {
+    $npcapExes = @(Get-ChildItem -LiteralPath $npcapSource -Filter '*.exe' -File -ErrorAction SilentlyContinue |
+        Sort-Object LastWriteTime -Descending)
+    if ($npcapExes.Count -gt 0) {
+        $npcapOut = Join-Path $outFull 'third_party\npcap'
+        New-Item -ItemType Directory -Path $npcapOut -Force | Out-Null
+        foreach ($file in $npcapExes) {
+            Copy-Item -LiteralPath $file.FullName -Destination (Join-Path $npcapOut $file.Name) -Force
+        }
+        $npcapInstaller = $npcapExes[0].Name
+        Write-Step ('已附带 Npcap 安装包：' + $npcapInstaller)
+    } else {
+        Write-Note 'third_party\npcap 里没有 *.exe：包内不带安装包，没装 Npcap 的机器只能自己去官网下载。'
+    }
 } else {
-    Write-Note '缺少 third_party\npcap\npcap-1.88.exe：包内不带抓包驱动，用户需自行准备 Npcap。'
+    Write-Note '没有 third_party\npcap：包内不带 Npcap 安装包，没装 Npcap 的机器只能自己去官网下载。'
 }
 
+# 启动器：装了 Npcap 就直接启动客户端，没装就拉起包里的安装包。
+#
+# 编码要点（实测 Win11 26200）：cmd 的批处理解析在 chcp 65001 之后遇到多字节
+# 字符会算错行偏移，后面的行被截断、串行成「xx 不是内部或外部命令」；UTF-8 带
+# BOM 又会把第一行 @echo off 弄成命令报错。所以启动器必须写成 GBK(CP936)，
+# 并在第二行 chcp 936，中文才在各语言版 Windows 上都正常。
+$launcherEncoding = $null
+try { $launcherEncoding = [Text.Encoding]::GetEncoding(936) } catch { $launcherEncoding = $null }
+if (-not $launcherEncoding) {
+    Write-Note '警告：当前 PowerShell 拿不到 CP936 编码器，启动器只能回退 UTF-8，中文提示可能乱码（用 powershell.exe 5.1 运行即可）。'
+    $launcherEncoding = New-Object Text.UTF8Encoding($false)
+}
 $launcher = @'
 @echo off
+chcp 936>nul
 setlocal EnableExtensions
 cd /d "%~dp0"
-for %%F in (*.exe) do (
-    if /I not "%%~nF"=="DragonNestEngine" (
-        start "" "%%~fF"
-        exit /b 0
-    )
+
+rem 判断顺序和客户端「Ncap 路径」的自动探测一致：手动配过的路径 → 系统安装
+rem → 包内自带的 wpcap.dll。任意一处命中就当作已安装，直接启动。
+if exist "%~dp0data\npcap.json" goto launch
+if exist "%SystemRoot%\System32\Npcap\wpcap.dll" goto launch
+if exist "%SystemRoot%\System32\wpcap.dll" goto launch
+if exist "%~dp0third_party\npcap\wpcap.dll" goto launch
+if exist "%~dp0runtime\npcap\wpcap.dll" goto launch
+
+rem 没装：用包里带的安装包
+set "NPCAP_SETUP="
+if exist "%~dp0third_party\npcap\*.exe" for %%F in ("%~dp0third_party\npcap\*.exe") do if not defined NPCAP_SETUP set "NPCAP_SETUP=%%~fF"
+if not defined NPCAP_SETUP goto no_setup
+
+echo.
+echo  未检测到 Npcap 抓包驱动，正在启动安装包...
+echo  安装完成后会自动打开客户端。
+echo.
+start /wait "" "%NPCAP_SETUP%"
+goto launch
+
+:no_setup
+echo.
+echo  未检测到 Npcap 抓包驱动，包内也没有安装包。
+echo  请到 https://npcap.com 下载安装后再运行本程序。
+echo.
+pause
+exit /b 1
+
+:launch
+if exist "%~dp0__MAIN_EXE__" (
+    start "" "%~dp0__MAIN_EXE__"
+    exit /b 0
 )
-echo Desktop executable was not found next to this launcher.
+for %%F in ("%~dp0*.exe") do (
+    start "" "%%~fF"
+    exit /b 0
+)
+echo  没有找到桌面主程序，请确认压缩包完整解压后再运行。
 pause
 exit /b 1
 '@
+$launcher = $launcher.Replace('__MAIN_EXE__', $mainExe.Name)
 [IO.File]::WriteAllText((Join-Path $outFull 'Start-Portable.bat'),
-    ($launcher -replace "`r?`n", "`r`n"), (New-Object Text.UTF8Encoding($false)))
+    ($launcher -replace "`r?`n", "`r`n"), $launcherEncoding)
 
 # --- 4. 压缩 ----------------------------------------------------------------
 $zipPath = $outFull + '.zip'
@@ -369,6 +444,11 @@ if (-not $NoZip -and (Test-Path -LiteralPath $zipPath)) {
 }
 Write-Output ('[portable] Executable: ' + $mainExe.Name)
 Write-Output ('[portable] Version  : ' + $appVersion)
+if ($npcapInstaller) {
+    Write-Output ('[portable] Npcap    : 包内附带 ' + $npcapInstaller + '（启动器可一键安装）')
+} else {
+    Write-Output '[portable] Npcap    : 未附带安装包，启动器会引导用户去 npcap.com 下载'
+}
 Write-Output ('[portable] Elapsed  : ' + (Format-Elapsed $total.Elapsed))
 Write-Output '[portable] Next: 双击包内的 Start-Portable.bat（首次会请求管理员权限，抓包需要）。'
 Write-Output '[portable] ================================================'
